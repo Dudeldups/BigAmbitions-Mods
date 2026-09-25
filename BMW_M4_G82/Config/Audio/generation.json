@@ -1,0 +1,73 @@
+{
+  "engine": "2,993 cc BMW S58 twin-turbo inline-six",
+  "firing_frequency": "three combustion events per crankshaft revolution",
+  "recorded_samples": false,
+  "layers": [
+    {
+      "name": "EngineLow.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.22057335275639156,
+      "method": "deterministic additive twin-turbo inline-six synthesis"
+    },
+    {
+      "name": "EngineLowLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.15971200710843927,
+      "method": "deterministic additive twin-turbo inline-six synthesis"
+    },
+    {
+      "name": "EngineMid.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.2498104029535086,
+      "method": "deterministic additive twin-turbo inline-six synthesis"
+    },
+    {
+      "name": "EngineMidLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.16295426103334157,
+      "method": "deterministic additive twin-turbo inline-six synthesis"
+    },
+    {
+      "name": "EngineHigh.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.22315496676714913,
+      "method": "deterministic additive twin-turbo inline-six synthesis"
+    },
+    {
+      "name": "EngineHighLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.17045768176042486,
+      "method": "deterministic additive twin-turbo inline-six synthesis"
+    }
+  ],
+  "transients": [
+    {
+      "name": "ExhaustPop1.wav",
+      "samples": 9702,
+      "seconds": 0.22,
+      "peak": 0.5234033707083063,
+      "method": "deterministic filtered-noise attack with decaying S58 low-mid body"
+    },
+    {
+      "name": "ExhaustPop2.wav",
+      "samples": 10804,
+      "seconds": 0.24498866213151926,
+      "peak": 0.5106191587492864,
+      "method": "deterministic filtered-noise attack with decaying S58 low-mid body"
+    },
+    {
+      "name": "ExhaustPop3.wav",
+      "samples": 11907,
+      "seconds": 0.27,
+      "peak": 0.6079244327130281,
+      "method": "deterministic filtered-noise attack with decaying S58 low-mid body"
+    }
+  ],
+  "runtime_layers": []
+}

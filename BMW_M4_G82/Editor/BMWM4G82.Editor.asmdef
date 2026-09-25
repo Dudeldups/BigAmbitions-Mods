@@ -1,0 +1,17 @@
+{
+  "name": "BMWM4G82.Editor",
+  "rootNamespace": "",
+  "references": [
+    "BMWM4G82",
+    "ModBuilder.Editor"
+  ],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
