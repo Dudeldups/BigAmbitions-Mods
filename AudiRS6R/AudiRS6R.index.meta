@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 8a66ddf7649adb04b8ddcc62314606e3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: audirs6r
+  assetBundleVariant: unity3d
+  script: {fileID: 13981, guid: 0000000000000000e000000000000000, type: 0}

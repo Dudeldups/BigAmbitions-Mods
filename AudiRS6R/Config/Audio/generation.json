@@ -1,0 +1,134 @@
+{
+  "source": "AudiRevving.wav",
+  "source_sha256": "f190ee6c5879bf8df625ab76ffba2e96c9afd15696055064be83decc0a246cff",
+  "method": "stationary harmonic/noise resynthesis; acoustic references are not engine RPM",
+  "layers": [
+    {
+      "name": "EngineLow",
+      "seconds": 2.0,
+      "peak": 0.27484965628439534,
+      "rms": 0.12000000000000001,
+      "rms_span_db": 0.2438380971222991,
+      "seam_step": 0.0023693066966917475,
+      "section": [
+        0.32,
+        0.62
+      ],
+      "source_harmonic_hz": 188.46,
+      "reference_hz": 96
+    },
+    {
+      "name": "EngineMid",
+      "seconds": 2.0,
+      "peak": 0.26666193845373015,
+      "rms": 0.12,
+      "rms_span_db": 0.34433327545683823,
+      "seam_step": 0.00495261969455732,
+      "section": [
+        1.5,
+        2.08
+      ],
+      "source_harmonic_hz": 242.31,
+      "reference_hz": 176
+    },
+    {
+      "name": "EngineHigh",
+      "seconds": 2.0,
+      "peak": 0.291451107216326,
+      "rms": 0.12,
+      "rms_span_db": 0.3308456660597467,
+      "seam_step": 0.0012426495641623958,
+      "section": [
+        3.82,
+        4.35
+      ],
+      "source_harmonic_hz": 246.14,
+      "reference_hz": 320
+    }
+  ],
+  "loaded_layers": [
+    {
+      "name": "EngineLowLoad",
+      "seconds": 2.0,
+      "peak": 0.19967150109078477,
+      "rms": 0.12,
+      "rms_span_db": 0.38485376048030806,
+      "seam_step": 0.0005614184536651134,
+      "reference_hz": 96,
+      "method": "stronger lower/odd partials and saturation with parallel base detail, same RMS as base"
+    },
+    {
+      "name": "EngineMidLoad",
+      "seconds": 2.0,
+      "peak": 0.19767652550023776,
+      "rms": 0.12,
+      "rms_span_db": 0.2386700551870806,
+      "seam_step": 0.0011527985934748908,
+      "reference_hz": 176,
+      "method": "stronger lower/odd partials and saturation with parallel base detail, same RMS as base"
+    },
+    {
+      "name": "EngineHighLoad",
+      "seconds": 2.0,
+      "peak": 0.19802955538571904,
+      "rms": 0.12000000000000001,
+      "rms_span_db": 0.15479015550399794,
+      "seam_step": 0.00030165078078281393,
+      "reference_hz": 320,
+      "method": "stronger lower/odd partials and saturation with parallel base detail, same RMS as base"
+    }
+  ],
+  "pops": [
+    {
+      "name": "ExhaustPop1",
+      "seconds": 0.2,
+      "peak": 0.6952249794192179,
+      "rms": 0.06683494957100689,
+      "rms_span_db": 22.131015204710998,
+      "seam_step": 3.840457755705224e-10,
+      "centroid_hz": 2097.188652462311,
+      "above_2khz_fraction": 0.2545924690255211,
+      "body_70_700hz_fraction": 0.6664694975437778,
+      "first_5ms_energy_fraction": 0.2846594205412702,
+      "after_100ms_energy_fraction": 0.0060848209412739974,
+      "method": "80% original revision13 attack/noise plus 20% aligned low-mid copy at matched RMS, silent endpoints",
+      "body_lowpass_hz": 1100,
+      "original_mix": 0.8,
+      "body_mix": 0.2
+    },
+    {
+      "name": "ExhaustPop2",
+      "seconds": 0.22498866213151927,
+      "peak": 0.6843726643627346,
+      "rms": 0.06753696071011568,
+      "rms_span_db": 22.217298644109633,
+      "seam_step": 1.8427091923329328e-10,
+      "centroid_hz": 2032.2954543402702,
+      "above_2khz_fraction": 0.24685244418630453,
+      "body_70_700hz_fraction": 0.6798294814633655,
+      "first_5ms_energy_fraction": 0.3077622241900918,
+      "after_100ms_energy_fraction": 0.00603048777486167,
+      "method": "80% original revision13 attack/noise plus 20% aligned low-mid copy at matched RMS, silent endpoints",
+      "body_lowpass_hz": 1100,
+      "original_mix": 0.8,
+      "body_mix": 0.2
+    },
+    {
+      "name": "ExhaustPop3",
+      "seconds": 0.25,
+      "peak": 0.6612516758602358,
+      "rms": 0.05516521685410747,
+      "rms_span_db": 21.730692040412713,
+      "seam_step": 1.0662748026366861e-09,
+      "centroid_hz": 2323.243261249211,
+      "above_2khz_fraction": 0.2867612100085739,
+      "body_70_700hz_fraction": 0.6627175427177849,
+      "first_5ms_energy_fraction": 0.24648848168953846,
+      "after_100ms_energy_fraction": 0.006734145560526362,
+      "method": "80% original revision13 attack/noise plus 20% aligned low-mid copy at matched RMS, silent endpoints",
+      "body_lowpass_hz": 1100,
+      "original_mix": 0.8,
+      "body_mix": 0.2
+    }
+  ]
+}
