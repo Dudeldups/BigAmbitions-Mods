@@ -1,0 +1,25 @@
+{
+  "name": "MCG_Doom",
+  "rootNamespace": "MCG_Doom",
+  "references": [
+    "Unity.ugui"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [
+    "WindowsStandalone64",
+    "macOSStandalone",
+    "LinuxStandalone64"
+  ],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "LIB_BaComputerGames.dll",
+    "BigAmbitions.ModAPI.dll"
+  ],
+  "autoReferenced": false,
+  "defineConstraints": [
+    "BA_GAME_DLLS_IMPORTED"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

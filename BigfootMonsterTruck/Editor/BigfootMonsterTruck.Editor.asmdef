@@ -1,0 +1,13 @@
+{
+  "name": "BigfootMonsterTruck.Editor",
+  "references": ["BigfootMonsterTruck"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

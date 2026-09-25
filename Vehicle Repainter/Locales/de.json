@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "LACKART",
+  "vehicle-repainter:finish_factory": "Original",
+  "vehicle-repainter:finish_matte": "Matt",
+  "vehicle-repainter:finish_satin": "Seidenmatt",
+  "vehicle-repainter:finish_gloss": "Glanz",
+  "vehicle-repainter:finish_high_gloss": "Hochglanz",
+  "vehicle-repainter:finish_unavailable": "Lackart für dieses Fahrzeug nicht verfügbar",
+  "vehicle-repainter:update_notice_title": "Vehicle Repainter – Update",
+  "vehicle-repainter:update_notice_body": "- Wähle Original, Matt, Seidenmatt, Glanz oder Hochglanz unabhängig von der Lackfarbe.\n- Sieh dir Farbe und Lackart vor dem Kauf direkt am Fahrzeug an.\n- Die Lackart wird pro Fahrzeug gespeichert und beim Laden wiederhergestellt.\n- Der Preis richtet sich nach der Lackart: von 800 $ bis 1.800 $.",
+  "vehicle-repainter:update_notice_got_it": "Verstanden"
+}

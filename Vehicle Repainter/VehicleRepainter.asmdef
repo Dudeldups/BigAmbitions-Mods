@@ -1,0 +1,26 @@
+{
+  "name": "VehicleRepainter",
+  "rootNamespace": "VehicleRepainter",
+  "references": [
+    "GUID:776d03a35f1b52c4a9aed9f56d7b4229"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "BigAmbitions.dll",
+    "BigAmbitions.InputSystem.dll",
+    "BigAmbitions.Items.dll",
+    "BigAmbitions.ModAPI.dll",
+    "BigAmbitions.SoundSystem.dll",
+    "HGExtensions.dll",
+    "HGPlugins.dll"
+  ],
+  "autoReferenced": false,
+  "defineConstraints": [
+    "BA_GAME_DLLS_IMPORTED"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

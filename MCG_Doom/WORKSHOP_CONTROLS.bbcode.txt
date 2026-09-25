@@ -1,0 +1,12 @@
+[h2]Controls[/h2]
+
+Because Big Ambitions / More Computer Games reserves some keys, two original DOOM controls are remapped:
+
+[b]P[/b] - Open the DOOM menu
+[b]E[/b] - Toggle the automap
+
+[b]Esc[/b] - Big Ambitions pause menu
+[b]Backspace[/b] - Return to the computer game selection
+[b]Tab[/b] - Leave the computer
+
+Standard DOOM controls such as movement, firing, using doors/switches and weapon selection work normally.

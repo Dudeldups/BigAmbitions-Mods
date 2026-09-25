@@ -1,0 +1,18 @@
+{
+  "name": "Porsche911GT3RS.Editor",
+  "rootNamespace": "",
+  "references": [
+    "Porsche911GT3RS",
+    "ModBuilder.Editor"
+  ],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
+

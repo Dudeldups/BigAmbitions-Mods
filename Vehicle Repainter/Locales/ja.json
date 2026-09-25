@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "仕上げ",
+  "vehicle-repainter:finish_factory": "純正",
+  "vehicle-repainter:finish_matte": "マット",
+  "vehicle-repainter:finish_satin": "サテン",
+  "vehicle-repainter:finish_gloss": "光沢",
+  "vehicle-repainter:finish_high_gloss": "高光沢",
+  "vehicle-repainter:finish_unavailable": "この車両では仕上げを変更できません",
+  "vehicle-repainter:update_notice_title": "Vehicle Repainter のアップデート",
+  "vehicle-repainter:update_notice_body": "- 新しい塗装仕上げ：純正、マット、サテン、光沢、高光沢。色とは別に仕上げを選べます。\n- 確定前に車両で色と仕上げをプレビューできます。\n- 仕上げは車両ごとに保存され、セーブデータの読み込み時に復元されます。\n- 再塗装の価格は仕上げによって変わり、800～1,800ドルです。",
+  "vehicle-repainter:update_notice_got_it": "了解"
+}

@@ -1,0 +1,38 @@
+[h1]DOOM for More Computer Games[/h1]
+
+Run the classic DOOM shareware episode directly on your computer in Big Ambitions.
+
+[h2]Required mod[/h2]
+
+[url=https://steamcommunity.com/workshop/filedetails/?id=3793604724][b]LIB BA More Computer Games[/b][/url] is required and must be installed separately.
+
+[h2]Included[/h2]
+
+- The original DOOM shareware episode (Episode 1: Knee-Deep in the Dead)
+- Original music
+- Original sound effects
+- Keyboard and mouse controls
+- DOOM menus, automap and demos
+
+[h2]Controls[/h2]
+
+Because Big Ambitions / More Computer Games reserves some of DOOM's original keys, these controls are remapped:
+
+[b]P[/b] - Open the DOOM menu
+[b]E[/b] - Toggle the automap
+
+[b]Backspace[/b] - Return to the computer game selection
+[b]Tab[/b] - Leave the computer
+
+Standard DOOM controls such as movement, firing, using doors/switches and weapon selection work normally. A short reminder is also shown when DOOM starts.
+
+[h2]About the included DOOM data[/h2]
+
+This mod contains the original, unmodified DOOM 1.9 shareware IWAD. It contains Episode 1 only; this mod does not include the registered/full DOOM game data.
+
+Managed Doom is used under GPLv2-or-later, MeltySynth under the MIT License, and TimGM6mb under GPL-2. Full third-party notices and redistributed license information are included with the mod.
+
+[h2]Source code[/h2]
+
+The complete corresponding source for version 1.0.0, including the modified Managed Doom and MeltySynth sources, is available here:
+[url=https://github.com/Dudeldups/big-ambitions-mods/tree/mcg-doom-v1.0.0/Assets/Mods/MCG_Doom]MCG_Doom 1.0.0 source code[/url]

@@ -1,0 +1,59 @@
+{
+  "engine": "8.0 litre quad-turbocharged W16",
+  "firing_frequency": "eight combustion events per crankshaft revolution",
+  "recorded_samples": false,
+  "layers": [
+    {
+      "name": "EngineLow.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.22275557648672542,
+      "method": "deterministic additive W16 synthesis"
+    },
+    {
+      "name": "EngineLowLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.21888219465915457,
+      "method": "deterministic additive loaded-W16 synthesis"
+    },
+    {
+      "name": "EngineMid.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.21720368372102536,
+      "method": "deterministic additive W16 synthesis"
+    },
+    {
+      "name": "EngineMidLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.20175185811506988,
+      "method": "deterministic additive loaded-W16 synthesis"
+    },
+    {
+      "name": "EngineHigh.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.2128396205785435,
+      "method": "deterministic additive W16 synthesis"
+    },
+    {
+      "name": "EngineHighLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.20823832470519063,
+      "method": "deterministic additive loaded-W16 synthesis"
+    }
+  ],
+  "horn": {
+    "name": "Horn.wav",
+    "samples": 88200,
+    "seconds": 2.0,
+    "peak": 0.4842990861984623,
+    "method": "deterministic dual-tone horn synthesis"
+  },
+  "runtime_layers": [
+    "low-gain procedural quad-turbo airflow"
+  ]
+}

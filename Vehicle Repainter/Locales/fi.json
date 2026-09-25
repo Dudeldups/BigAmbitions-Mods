@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "PINTA",
+  "vehicle-repainter:finish_factory": "Vakio",
+  "vehicle-repainter:finish_matte": "Matta",
+  "vehicle-repainter:finish_satin": "Satiini",
+  "vehicle-repainter:finish_gloss": "Kiiltävä",
+  "vehicle-repainter:finish_high_gloss": "Huippukiilto",
+  "vehicle-repainter:finish_unavailable": "Pintavaihtoehto ei ole saatavilla tälle ajoneuvolle",
+  "vehicle-repainter:update_notice_title": "Vehicle Repainter -päivitys",
+  "vehicle-repainter:update_notice_body": "- Uudet maalipinnat: Vakio, Matta, Satiini, Kiiltävä ja Huippukiilto. Valitse maalipinta väristä riippumatta.\n- Esikatsele väriä ja maalipintaa autossa ennen vahvistamista.\n- Valittu maalipinta tallennetaan ajoneuvokohtaisesti ja palautetaan tallennusta ladattaessa.\n- Uudelleenmaalauksen hinta riippuu maalipinnasta: 800–1 800 $.",
+  "vehicle-repainter:update_notice_got_it": "Selvä"
+}

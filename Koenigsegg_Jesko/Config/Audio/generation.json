@@ -1,0 +1,17 @@
+{
+  "engine": "5.0 litre twin-turbocharged flat-plane V8",
+  "recorded_samples": false,
+  "source": "deterministic synthesized vehicle audio adapted from the SDK vehicle baseline",
+  "layers": [
+    "EngineLow.wav",
+    "EngineLowLoad.wav",
+    "EngineMid.wav",
+    "EngineMidLoad.wav",
+    "EngineHigh.wav",
+    "EngineHighLoad.wav"
+  ],
+  "runtime_layers": [
+    "continuous restrained exhaust texture",
+    "independent low/high road-horn voices"
+  ]
+}

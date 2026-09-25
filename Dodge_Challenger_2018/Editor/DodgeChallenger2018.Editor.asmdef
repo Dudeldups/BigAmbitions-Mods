@@ -1,0 +1,17 @@
+{
+  "name": "DodgeChallenger2018.Editor",
+  "rootNamespace": "",
+  "references": [
+    "DodgeChallenger2018",
+    "ModBuilder.Editor"
+  ],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

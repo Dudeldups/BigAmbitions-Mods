@@ -1,0 +1,54 @@
+{
+  "engine": "6.5 litre naturally aspirated V12",
+  "firing_frequency": "six combustion events per crankshaft revolution",
+  "recorded_samples": false,
+  "layers": [
+    {
+      "name": "EngineLow.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.2120533947812716,
+      "method": "deterministic additive V12 synthesis"
+    },
+    {
+      "name": "EngineLowLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.1612376825276591,
+      "method": "deterministic additive V12 synthesis"
+    },
+    {
+      "name": "EngineMid.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.23443394163254055,
+      "method": "deterministic additive V12 synthesis"
+    },
+    {
+      "name": "EngineMidLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.16836980669234286,
+      "method": "deterministic additive V12 synthesis"
+    },
+    {
+      "name": "EngineHigh.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.2151198836408391,
+      "method": "deterministic additive V12 synthesis"
+    },
+    {
+      "name": "EngineHighLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.17406440669751505,
+      "method": "deterministic additive V12 synthesis"
+    }
+  ],
+  "transients": [],
+  "runtime_layers": [
+    "very-low-gain procedural continuous exhaust crackle",
+    "independent 320 Hz and 400 Hz road-horn reeds"
+  ]
+}

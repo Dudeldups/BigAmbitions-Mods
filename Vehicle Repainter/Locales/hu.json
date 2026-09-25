@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "FÉNYEZÉS",
+  "vehicle-repainter:finish_factory": "Gyári",
+  "vehicle-repainter:finish_matte": "Matt",
+  "vehicle-repainter:finish_satin": "Szatén",
+  "vehicle-repainter:finish_gloss": "Fényes",
+  "vehicle-repainter:finish_high_gloss": "Magasfényű",
+  "vehicle-repainter:finish_unavailable": "Ez a fényezés nem érhető el ehhez a járműhöz",
+  "vehicle-repainter:update_notice_title": "Vehicle Repainter-frissítés",
+  "vehicle-repainter:update_notice_body": "- Új fényezési módok: Gyári, Matt, Szatén, Fényes és Magasfényű. A fényezést a színtől függetlenül választhatod ki.\n- Vásárlás előtt nézd meg a szín és a fényezés előnézetét az autón.\n- A választott fényezést a játék járművenként menti, és a mentés betöltésekor visszaállítja.\n- Az újrafényezés ára a fényezéstől függ: 800–1 800 $.",
+  "vehicle-repainter:update_notice_got_it": "Értem"
+}

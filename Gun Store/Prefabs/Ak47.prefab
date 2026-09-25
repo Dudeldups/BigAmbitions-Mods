@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7094189101463537744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3161281415822017113}
+  - component: {fileID: 3639401439829560494}
+  - component: {fileID: 1561650027320408920}
+  m_Layer: 0
+  m_Name: Assault Rifle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3161281415822017113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7094189101463537744}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5603026102915100714}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!33 &3639401439829560494
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7094189101463537744}
+  m_Mesh: {fileID: -8220924148389359724, guid: 71cdf40d6a0ea48438d1aa97eec14045, type: 3}
+--- !u!23 &1561650027320408920
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7094189101463537744}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 6845632003549785264, guid: 71cdf40d6a0ea48438d1aa97eec14045, type: 3}
+  - {fileID: 610840403294677167, guid: 71cdf40d6a0ea48438d1aa97eec14045, type: 3}
+  - {fileID: 1849777994106740056, guid: 71cdf40d6a0ea48438d1aa97eec14045, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8245697657799220993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5603026102915100714}
+  - component: {fileID: -7326124084955581373}
+  m_Layer: 0
+  m_Name: Ak47
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5603026102915100714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8245697657799220993}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3161281415822017113}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7326124084955581373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8245697657799220993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -194827119, guid: 8886001327901f6fdbae60e8ea6c53fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryInteractionEnabled: 1
+  simpleOverlayType: 0
+  detailedOverlayType: 0
+  customOverlayHeaderKey: 
+  itemWarningIconOffset: {x: 0, y: 0, z: 0}
+  alwaysShowWarningIcon: 0
+  employeeNavMeshTargets: []
+  renderers:
+  - {fileID: 1561650027320408920}
+  navMeshTargets: []
+  blockOutline: 0
+  itemName: gunstore-businesstype:itemname_ak47
+  alignmentTransform: {fileID: 0}
+  playerItemPurchaserSettings:
+    name: 
+    enabled: 0
+    itemName: 
+    itemQuantity: 1
+  collidersToDisableForOverlapping: []
+  extraVisualsParentObjects: []
+  applyAudioMixerGroup: 0
+  audioSourcesToApplyMixerGroup: []
+  allowResting: 0
+  ignoreSittingAngle: 0
+  sittingPositions: []
+  seatSpots: []
+  lHandIKAttachmentPoint: {fileID: 0}
+  rHandIKAttachmentPoint: {fileID: 0}
+  headIKAttachmentPoint: {fileID: 0}
+  colliders: []
+  navMeshObstacles: []
+  groundIndicators: []
+  directionIndicators: []
+  attachmentPoints: []
+  screenVideoController: {fileID: 0}
+  checkRenderersInChildren: 1
+  checkRenderersDepth: -1
+  shadowCasterRenderingLayerMask: 16
+  initialized: 0
+  onItemInitialized:
+    m_PersistentCalls:
+      m_Calls: []
+  childItemControllers: []
+  parentItemController: {fileID: 0}
+  parentAttachmentPoint: {fileID: 0}
+  customPositions: []
+  customColors: []
+  highlightChildrenOnHover: 0
+  customValue: 
+  blockDropdown: 0

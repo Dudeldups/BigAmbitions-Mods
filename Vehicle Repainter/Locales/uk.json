@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "ПОКРИТТЯ",
+  "vehicle-repainter:finish_factory": "Заводське",
+  "vehicle-repainter:finish_matte": "Матовий",
+  "vehicle-repainter:finish_satin": "Сатиновий",
+  "vehicle-repainter:finish_gloss": "Глянцевий",
+  "vehicle-repainter:finish_high_gloss": "Сильний блиск",
+  "vehicle-repainter:finish_unavailable": "Покриття недоступне для цього автомобіля",
+  "vehicle-repainter:update_notice_title": "Оновлення Vehicle Repainter",
+  "vehicle-repainter:update_notice_body": "- Нові типи покриття: Заводське, Матовий, Сатиновий, Глянцевий і Сильний блиск. Тип покриття можна вибрати незалежно від кольору.\n- Переглянь колір і покриття на автомобілі перед підтвердженням.\n- Вибране покриття зберігається окремо для кожного автомобіля та відновлюється після завантаження збереження.\n- Вартість перефарбування залежить від покриття: від 800 $ до 1 800 $.",
+  "vehicle-repainter:update_notice_got_it": "Зрозуміло"
+}

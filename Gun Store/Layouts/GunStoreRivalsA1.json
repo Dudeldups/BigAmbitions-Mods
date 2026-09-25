@@ -1,0 +1,3834 @@
+{
+  "Items": [
+    {
+      "id": "+hANJzN2rkm+T7Rsomqyg==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.0,
+        "y": 4.5,
+        "z": -2.5
+      },
+      "itemName": "ba:itemname_ceilinglampsquare",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        7,
+        12
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "0uoCnZNKv0WWwO0nHiWqKQ==",
+      "rotation": {
+        "w": -0.7071071,
+        "x": 0.0,
+        "y": 0.7071065,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1001.42,
+        "y": 3.0,
+        "z": -1.5
+      },
+      "itemName": "ba:itemname_pictureframe3",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        13,
+        17,
+        18,
+        74
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "1CJ0DKH3yUS5KaWMTZU2xg==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 996.75,
+        "y": 0.0,
+        "z": 5.25
+      },
+      "itemName": "ba:itemname_groundplant01",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        38,
+        39,
+        43,
+        44,
+        48,
+        49
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 4,
+          "color": {
+            "color": 1327694079
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "1cM34hKVv0KNYsNHP8sgcA==",
+      "rotation": {
+        "w": 0.7071072,
+        "x": 0.0,
+        "y": 0.7071065,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.58,
+        "y": 1.0,
+        "z": 6.0
+      },
+      "itemName": "ba:itemname_handdryer",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        65
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 2,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "34ePvaNwEepcsvgho0KQ==",
+      "rotation": {
+        "w": 0.7071069,
+        "x": 0.0,
+        "y": 0.70710665,
+        "z": 0.0
+      },
+      "position": {
+        "x": 996.58,
+        "y": 4.0,
+        "z": -4.0
+      },
+      "itemName": "ba:itemname_classicloudspeakermedium",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        0
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": 255
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "4tC0E5neW0yYOKtkXQ8g5Q==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 997.0,
+        "y": 4.5,
+        "z": 2.5
+      },
+      "itemName": "ba:itemname_ceilinglampsquare",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        29,
+        30,
+        33,
+        34
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "6s2XxFZ+pk+agQ+7ZMD9fg==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1000.5,
+        "y": 0.0,
+        "z": -4.0
+      },
+      "itemName": "ba:itemname_groundplant03",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 8,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "780f159ukSPGEPthfW+Mg==",
+      "rotation": {
+        "w": -0.7071071,
+        "x": 0.0,
+        "y": 0.7071065,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1001.42,
+        "y": 4.0,
+        "z": 5.0
+      },
+      "itemName": "ba:itemname_classicloudspeakermedium",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        47
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": 255
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "8J5tr1be0K0ABOcsG3+w==",
+      "rotation": {
+        "w": -4.371139E-08,
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.25,
+        "y": 1.1920929E-07,
+        "z": 5.25
+      },
+      "itemName": "ba:itemname_groundplant02",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        40,
+        41,
+        44,
+        45,
+        46,
+        50,
+        53
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 2,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "ajNL70nogkaTAT5rhGb1uQ==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.0,
+        "y": 4.5,
+        "z": 0.0
+      },
+      "itemName": "ba:itemname_ceilinglampsquare",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        19,
+        20
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "BKRkhmns3kCJuLA5fegrfw==",
+      "rotation": {
+        "w": -4.371139E-08,
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1001.0,
+        "y": 0.0,
+        "z": -3.75
+      },
+      "itemName": "ba:itemname_groundplant01",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 4,
+          "color": {
+            "color": 1327694079
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "bqxsnuKTk0GBQHgufu7XSg==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1000.0,
+        "y": 0.0,
+        "z": 8.0
+      },
+      "itemName": "ba:itemname_toiletstall",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        62,
+        63,
+        64,
+        68,
+        69,
+        70
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 2,
+          "color": {
+            "color": 1040220927
+          }
+        },
+        {
+          "channel": 4,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 8,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "bSD4mQgs0CYrHRcPJWESA==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 996.75,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "itemName": "ba:itemname_productpanel",
+      "playerItemPurchaserSettings": {
+        "name": null,
+        "enabled": true,
+        "itemName": "gunstore-businesstype:itemname_rpg",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        19,
+        20,
+        24,
+        25
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 4,
+          "color": {
+            "color": 1040220927
+          }
+        },
+        {
+          "channel": 8,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "CLAhYYAkUuM79cJI4yBg==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1001.0,
+        "y": 1.1920929E-07,
+        "z": 2.5
+      },
+      "itemName": "ba:itemname_roundedshelf",
+      "playerItemPurchaserSettings": {
+        "name": null,
+        "enabled": true,
+        "itemName": "gunstore-businesstype:itemname_wincheatersxp",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        21,
+        22,
+        23,
+        26,
+        27,
+        28,
+        31,
+        32,
+        35,
+        36,
+        37,
+        40,
+        41,
+        42,
+        45,
+        46,
+        47,
+        73
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 8,
+          "color": {
+            "color": 1327694079
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "DA0JJ0NcR0yozkdizsZDWg==",
+      "rotation": {
+        "w": -0.7071071,
+        "x": 0.0,
+        "y": 0.7071065,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1001.42,
+        "y": 3.0,
+        "z": 1.5
+      },
+      "itemName": "ba:itemname_pictureframe2",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        13,
+        17,
+        18,
+        74
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "DFGEGzzHwEiDByFB3S17rQ==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.0,
+        "y": 4.5,
+        "z": 2.5
+      },
+      "itemName": "ba:itemname_ceilinglampsquare",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        29,
+        30,
+        33,
+        34
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "FXAKDEShEUOrwP3KkYhtAw==",
+      "rotation": {
+        "w": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.25,
+        "y": 0.0,
+        "z": 5.75
+      },
+      "itemName": "ba:itemname_uniformlocker",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        50,
+        53
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 2,
+          "color": {
+            "color": 1040220927
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "FZdaJQfzdkq5ZKTYmOlf5A==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 998.0,
+        "y": 1.1920929E-07,
+        "z": -4.0
+      },
+      "itemName": "ba:itemname_securitypanel",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        0,
+        1,
+        2
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 2,
+          "color": {
+            "color": 1327694079
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "GcxZlbR9PU6v+S+epatfQ==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1000.0,
+        "y": 1.1920929E-07,
+        "z": -4.0
+      },
+      "itemName": "ba:itemname_securitypanel",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        2,
+        3
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 2,
+          "color": {
+            "color": 1327694079
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "gO5b487bTk+MGr5Ahy5CYg==",
+      "rotation": {
+        "w": 0.707107067,
+        "x": 0.0,
+        "y": 0.707106531,
+        "z": 0.0
+      },
+      "position": {
+        "x": 998.0,
+        "y": 4.5,
+        "z": 8.5
+      },
+      "itemName": "ba:itemname_ceilinglamptube",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        54,
+        55,
+        57,
+        58
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "H8rBSfcovU60vlRMr42bZw==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 997.0,
+        "y": 4.5,
+        "z": 0.0
+      },
+      "itemName": "ba:itemname_ceilinglampsquare",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        19,
+        20
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "HCRaJDz1gUilW1lQJwKtpg==",
+      "rotation": {
+        "w": 0.7071069,
+        "x": 0.0,
+        "y": 0.70710665,
+        "z": 0.0
+      },
+      "position": {
+        "x": 996.58,
+        "y": 3.0,
+        "z": -3.0
+      },
+      "itemName": "ba:itemname_securitysign",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        5
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "I3+JEpF33USQReTRl0xZtw==",
+      "rotation": {
+        "w": 0.7071069,
+        "x": 0.0,
+        "y": 0.70710665,
+        "z": 0.0
+      },
+      "position": {
+        "x": 996.58,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "itemName": "ba:itemname_pictureframe6",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        19,
+        20
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "iAENMwybpkChSws0gXdJuQ==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1000.0,
+        "y": 1.1920929E-07,
+        "z": -3.5
+      },
+      "itemName": "ba:itemname_stackofshoppingbaskets",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        2,
+        3,
+        7,
+        8
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 4,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 8,
+          "color": {
+            "color": 1040220927
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "IFSfK2wyRU+I7JuEeTwHhA==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1001.25,
+        "y": 0.0,
+        "z": 5.0
+      },
+      "itemName": "ba:itemname_groundplant01",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        42,
+        46,
+        47
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 4,
+          "color": {
+            "color": 1327694079
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "K3iF2yXHDU6xELYv0wLfAw==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 996.75,
+        "y": 0.0,
+        "z": -0.5
+      },
+      "itemName": "ba:itemname_productpanel",
+      "playerItemPurchaserSettings": {
+        "name": null,
+        "enabled": true,
+        "itemName": "gunstore-businesstype:itemname_rpg",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        14,
+        15,
+        19,
+        20
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 4,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 8,
+          "color": {
+            "color": 1040220927
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "ksVXtgRiqky3x3aZyczyUw==",
+      "rotation": {
+        "w": 7.90753631E-07,
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "position": {
+        "x": 998.0,
+        "y": 4.0,
+        "z": 5.424
+      },
+      "itemName": "ba:itemname_largewallclock",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        43,
+        44
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "L3PCFyivVUGzumFSVvwXPA==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.75,
+        "y": 0.0,
+        "z": 7.0
+      },
+      "itemName": "ba:itemname_sink",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        64,
+        70
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 2,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "Ln65eE1vZkWsEueLPD8A8w==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1001.25,
+        "y": 1.1920929E-07,
+        "z": 0.0
+      },
+      "itemName": "ba:itemname_productpanel",
+      "playerItemPurchaserSettings": {
+        "name": null,
+        "enabled": true,
+        "itemName": "gunstore-businesstype:itemname_ammosmall",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        17,
+        22,
+        23,
+        27,
+        28,
+        74
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 4,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 8,
+          "color": {
+            "color": 1040220927
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "mLSdEifB3EW29P6Axj8NIA==",
+      "rotation": {
+        "w": -4.371139E-08,
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.0,
+        "y": 2.5,
+        "z": 5.424
+      },
+      "itemName": "ba:itemname_pictureframe5",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        45,
+        46
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "NeC1KnBUUEafpfqhohA4Bw==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1001.25,
+        "y": 1.1920929E-07,
+        "z": -2.0
+      },
+      "itemName": "ba:itemname_productpanel",
+      "playerItemPurchaserSettings": {
+        "name": null,
+        "enabled": true,
+        "itemName": "gunstore-businesstype:itemname_ammolarge",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        8,
+        9,
+        13,
+        17,
+        18,
+        74
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 4,
+          "color": {
+            "color": 1040220927
+          }
+        },
+        {
+          "channel": 8,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "NgOy2ZDkAkaaYtAtTfhDDg==",
+      "rotation": {
+        "w": 0.7071062,
+        "x": 0.0,
+        "y": 0.707107365,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.58,
+        "y": 1.5,
+        "z": 7.0
+      },
+      "itemName": "ba:itemname_mirrorwallmounted",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        64,
+        70
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "NYnZ0JedJEuF5Mf2I4Hbjg==",
+      "rotation": {
+        "w": 1.0,
+        "x": 0.0,
+        "y": -6.80340065E-07,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1000.5,
+        "y": 3.0,
+        "z": 5.58
+      },
+      "itemName": "ba:itemname_exitsign",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        65,
+        71
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "peoXI6NNHk2lQwwzKAZXrA==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 997.5,
+        "y": 1.1920929E-07,
+        "z": -4.0
+      },
+      "itemName": "ba:itemname_groundplant03",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 8,
+          "color": {
+            "color": 1040220927
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "qzAgadBIkeXdubM2QO0iA==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.0,
+        "y": 1.1920929E-07,
+        "z": 1.5
+      },
+      "itemName": "ba:itemname_roundedshelf",
+      "playerItemPurchaserSettings": {
+        "name": null,
+        "enabled": true,
+        "itemName": "gunstore-businesstype:itemname_berettam9",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        73,
+        74
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 8,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "RhJEZSxJs0uLA5IlLqMGbQ==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 996.75,
+        "y": 0.0,
+        "z": 8.5
+      },
+      "itemName": "ba:itemname_storageshelf",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        66,
+        72
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 2,
+          "color": {
+            "color": 1040220927
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "RIeg7ODQ0SSXG0xKUeq0w==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 998.0,
+        "y": 0.0,
+        "z": 8.5
+      },
+      "itemName": "ba:itemname_storageshelf",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        66,
+        72
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 2,
+          "color": {
+            "color": 1040220927
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "sjvZo48W5USF+TZ+Iy1vOw==",
+      "rotation": {
+        "w": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.0,
+        "y": 4.5,
+        "z": 3.0
+      },
+      "itemName": "ba:itemname_securitycameraroof",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        33,
+        34
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "SrsGPYN9fkKnYht0wNQJLA==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.25,
+        "y": 0.0,
+        "z": 8.5
+      },
+      "itemName": "ba:itemname_storageshelf",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        66,
+        67,
+        68,
+        69,
+        70,
+        72
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 2,
+          "color": {
+            "color": 1040220927
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "SRV+XANLPkOyXe1BO2nNag==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1000.5,
+        "y": 4.5,
+        "z": 7.0
+      },
+      "itemName": "ba:itemname_ceilinglampsquare",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        64,
+        70
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "T2+nxEAA0ODt20VfcC+Ug==",
+      "rotation": {
+        "w": -4.371139E-08,
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "position": {
+        "x": 998.0,
+        "y": 0.0,
+        "z": 10.25
+      },
+      "itemName": "ba:itemname_storageshelf",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        63,
+        66,
+        67,
+        72
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 2,
+          "color": {
+            "color": 1040220927
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "Y7syZj5lSEurXsZ6hJ103Q==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 998.0,
+        "y": 0.8810001,
+        "z": -2.0
+      },
+      "itemName": "ba:itemname_cashregister",
+      "playerItemPurchaserSettings": {
+        "name": null,
+        "enabled": false,
+        "itemName": "ba:itemname_paperbag",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        10,
+        11,
+        12
+      ],
+      "customPositions": [
+        {
+          "x": 998.75,
+          "y": 1.1920929E-07,
+          "z": -1.99999988
+        },
+        {
+          "x": 999.0,
+          "y": 4.80388138E-08,
+          "z": -3.33099985
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        {
+          "x": 998.75,
+          "y": 1.1920929E-07,
+          "z": -1.99999988
+        },
+        {
+          "x": 999.0,
+          "y": 0.0136554241,
+          "z": -3.33099985
+        }
+      ],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "TiN4PasRmkOAGpVIB3uKGg==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 998.0,
+        "y": 1.1920929E-07,
+        "z": -2.0
+      },
+      "itemName": "ba:itemname_counter1",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [
+        {
+          "childId": "Y7syZj5lSEurXsZ6hJ103Q==",
+          "childItemName": "ba:itemname_cashregister",
+          "attachmentIndex": 0
+        }
+      ],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        10,
+        11
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": 774778623
+          }
+        },
+        {
+          "channel": 2,
+          "color": {
+            "color": 1040220927
+          }
+        },
+        {
+          "channel": 4,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 8,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "TNMkQl9uBkGC49pdNI7izw==",
+      "rotation": {
+        "w": -4.371139E-08,
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1000.5,
+        "y": 1.1920929E-07,
+        "z": 10.25
+      },
+      "itemName": "ba:itemname_securityguardlocker",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        61,
+        63,
+        67,
+        69
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": null,
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "U2jNbN5sCEKHODynbcL6OA==",
+      "rotation": {
+        "w": 7.90753631E-07,
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1000.5,
+        "y": 2.75,
+        "z": 5.42399931
+      },
+      "itemName": "ba:itemname_bathroomsignwallmounted",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        46,
+        47
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "UaV0djRQ02EbgxgF9W5FQ==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1001.25,
+        "y": 1.1920929E-07,
+        "z": -3.0
+      },
+      "itemName": "ba:itemname_productpanel",
+      "playerItemPurchaserSettings": {
+        "name": null,
+        "enabled": true,
+        "itemName": "gunstore-businesstype:itemname_ammolarge",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        3,
+        4,
+        8,
+        9,
+        13,
+        18
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 4,
+          "color": {
+            "color": -1
+          }
+        },
+        {
+          "channel": 8,
+          "color": {
+            "color": 1040220927
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "vNCd7DBSA0Kp5rYDTE4LyA==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 997.0,
+        "y": 1.1920929E-07,
+        "z": 3.0
+      },
+      "itemName": "ba:itemname_roundedshelf",
+      "playerItemPurchaserSettings": {
+        "name": null,
+        "enabled": true,
+        "itemName": "gunstore-businesstype:itemname_ak47",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        24,
+        25,
+        26,
+        29,
+        30,
+        31,
+        38,
+        39,
+        40,
+        43,
+        44,
+        45
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 8,
+          "color": {
+            "color": 1327694079
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "vRZZn6PfUUGQa4Vf6lIIIQ==",
+      "rotation": {
+        "w": 1.0,
+        "x": 0.0,
+        "y": -8.429369E-08,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.0,
+        "y": 4.25,
+        "z": -4.42
+      },
+      "itemName": "ba:itemname_exitsign",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        1,
+        2,
+        3
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "vXUvvyAdpE250I7qyYoQwQ==",
+      "rotation": {
+        "w": 0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.0,
+        "y": 4.5,
+        "z": 5.0
+      },
+      "itemName": "ba:itemname_ceilinglampsquare",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        45,
+        46
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "W0+iJWBgxkeVhZRjYDMvw==",
+      "rotation": {
+        "w": -0.7071068,
+        "x": 0.0,
+        "y": 0.7071068,
+        "z": 0.0
+      },
+      "position": {
+        "x": 1001.25,
+        "y": 1.1920929E-07,
+        "z": -1.0
+      },
+      "itemName": "ba:itemname_productpanel",
+      "playerItemPurchaserSettings": {
+        "name": null,
+        "enabled": true,
+        "itemName": "gunstore-businesstype:itemname_ammosmall",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        13,
+        17,
+        18,
+        22,
+        23,
+        74
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 4,
+          "color": {
+            "color": 1040220927
+          }
+        },
+        {
+          "channel": 8,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "zaSeLMH6HU6DM8gaifJIUQ==",
+      "rotation": {
+        "w": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "position": {
+        "x": 997.0,
+        "y": 0.0,
+        "z": 6.0
+      },
+      "itemName": "ba:itemname_cleaningstation",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        43,
+        44,
+        48,
+        49,
+        51,
+        52
+      ],
+      "customPositions": [],
+      "customColors": [
+        {
+          "channel": 1,
+          "color": {
+            "color": -1
+          }
+        }
+      ],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "ZSxlkGX5lUmGbpENdpW4gA==",
+      "rotation": {
+        "w": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "position": {
+        "x": 999.0,
+        "y": 4.5,
+        "z": -2.0
+      },
+      "itemName": "ba:itemname_securitycameraroof",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        12,
+        13
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "id": "zUcNOShMEUKOeXvxuxkWWA==",
+      "rotation": {
+        "w": 0.7071069,
+        "x": 0.0,
+        "y": 0.70710665,
+        "z": 0.0
+      },
+      "position": {
+        "x": 996.58,
+        "y": 3.0,
+        "z": 2.5
+      },
+      "itemName": "ba:itemname_pictureframe4",
+      "playerItemPurchaserSettings": {
+        "name": "",
+        "enabled": false,
+        "itemName": "",
+        "itemQuantity": 1,
+        "isQuantityItem": false
+      },
+      "stackedItems": [],
+      "parentId": null,
+      "dirtSpotsThatAffects": [
+        29,
+        30,
+        33,
+        34
+      ],
+      "customPositions": [],
+      "customColors": [],
+      "customValue": "",
+      "worldSpaceTextValue": "",
+      "linkedItemName": null,
+      "dirtAffectedCells": null,
+      "type": "BusinessLayoutSets.Item, BigAmbitions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  ],
+  "interiorDesigns": [
+    {
+      "UUID": "/Fc9ARmfIUalPV9pznmL+w==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "+iGoVTGAukaM9MhaREK0Cg==",
+      "materials": [
+        {
+          "MaterialID": "o+K8mtAleU65jM8B9Z63ZA==",
+          "MaterialIndex": 0,
+          "ColorIndex": 3,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "0dGeRzTKoU+ZmFGO8f53lw==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "0jJIEZQyTkSS1ZKfeOWvlg==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "18NkECSlj0utRwY/W6TjGQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "1uA7yUtpI0qJ7tCm8EPJuA==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 2,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "2k5xyUToEUK0MxxjROOrGQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 2,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "2KdBS4fs00qJ/ypz3UOzeA==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "2oNcYgbX+UCF/zmkdQz5DA==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "3DCH05TULUWnJ4LvUHgY1Q==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "3igdMl1JiEaUFWRGJAOU6A==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "3qAJV6ELI0eKfEzZRx+3/w==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "5DT5zIfg+kCwEwgb2sHzQw==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "7g1H4zN/IESwBSk1+hQWyw==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "7v0ReznwFku3Qho+ZbpYQw==",
+      "materials": [
+        {
+          "MaterialID": "o+K8mtAleU65jM8B9Z63ZA==",
+          "MaterialIndex": 0,
+          "ColorIndex": 3,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "7vvRBFXhMEuSVk1SfYCJYQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "8+pEBuG4wkeHFnjg0fWl3g==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "a9ChMzx8LECkPgcrWjzCtg==",
+      "materials": [
+        {
+          "MaterialID": "o+K8mtAleU65jM8B9Z63ZA==",
+          "MaterialIndex": 0,
+          "ColorIndex": 3,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "A9yF5vyn50aqNFMWQTji2Q==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "A9z3WPqXYEeCagjCNZhHng==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "B//XBkBPuUqjzqBZqbydUw==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "B+SyqOHpIky+9445bEIzfg==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "bIEtjLrUQUqTwLIr9mShkQ==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "BUq7sqoMvkuBRP1RiJkczA==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "bvnUHEsp9kmhZXxusnp3bg==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "CbGxIBWb3k6+uoGXMt0UBg==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "CtLq6ZQToEyhMX76dF+cgw==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "cwtYVH/w1EiAabn7mFtgNQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "CZug+aVSkkaDF/B0VuZeWg==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "D87idKJn7E24AQuGvyij8Q==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "defby9dz0kO4hwDBueyeJg==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "dha6E0GNNUiSBoYcM+hO0w==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 2,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "dIgnXwGANkGIZ1SuS0hF9Q==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "Dn0Z3wNkq0q5otfBilJxXw==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "E2tTDNFJvEiPbnlgDsWKVA==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "E52sSxUQN06E9aKTP6n9qQ==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "ecf+Tz0XTEef0IXu3SynFQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "ELkgDwPB1Eus87fjMBZEDQ==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "EuXTr13uJkO71PkYApxfkQ==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "exRJsKa/DEe36Io4A0bnTg==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "f00xHIMRPkq+gEVwQBGyvQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "FDDTeTcs3kKdJLogsL+gIw==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "Ftx49mFV40m7URXmmWV4g==",
+      "materials": [
+        {
+          "MaterialID": "o+K8mtAleU65jM8B9Z63ZA==",
+          "MaterialIndex": 0,
+          "ColorIndex": 3,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "fw3T+jrfQ0GYkmymnTgv1w==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "gGYlHdPgxEap9Q5+sFx8OA==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 2,
+          "ColorIndex": 6,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 3,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "H+9VOTwr9E20IT3utQbhsg==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "h6IkzlpONE+tFrTnfj+mBQ==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "h6YawAAF1EetWL7ZwULTpw==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        },
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 2,
+          "ColorIndex": 0,
+          "ignore": false
+        },
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 3,
+          "ColorIndex": 0,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 4,
+          "ColorIndex": 6,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 5,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "h8XeYXwD6kGfCddteETt1Q==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 2,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "HAQtZ6Gwc0Wb+G4AHM2MiQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "HCFjEezNWEymfxiVVNjGuQ==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "hdyoUSiAT02xIzRvZVYueA==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 2,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "hKR8dhwCpUWqw75d5yrMlQ==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "HzHkGvZvUE27Zd6jTgAFg==",
+      "materials": [
+        {
+          "MaterialID": "o+K8mtAleU65jM8B9Z63ZA==",
+          "MaterialIndex": 0,
+          "ColorIndex": 3,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "hzQydlWlk+xZ9mNv1juA==",
+      "materials": [
+        {
+          "MaterialID": "o+K8mtAleU65jM8B9Z63ZA==",
+          "MaterialIndex": 0,
+          "ColorIndex": 3,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "I7113ROIaUCbJEx5TOym1A==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "i7uh6IDgRE6kJ4HpoqUc2w==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "iR5BJ5WF1ke9tA5JklDdRA==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "iYG8JdETi0q6BdTTmj46Fw==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "j23UKm20jE+eeanuSjjLiQ==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "jEv1wiJGK0uOVkt3/n2Emw==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "jIl5ztQTFUy0RCp04kbHEA==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "jJ7gWxfVzkWilpnzPPFsKg==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "JL4TdP/3kUatEP4cB2WyNg==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "jNPdei+5ikWtJXUD3s85Ig==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "jWlfCpXrY0+gqofc9yMFJg==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "jXvjVwlxv0ycm3T09tx2SQ==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "KIWgRv+Pt02GORiJjG256Q==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "KUCoUv3av0WMBXXZTcf/3w==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "l6kYQ0aPVUuYBnNLmA3REA==",
+      "materials": [
+        {
+          "MaterialID": "o+K8mtAleU65jM8B9Z63ZA==",
+          "MaterialIndex": 0,
+          "ColorIndex": 3,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "lIQsPvk0Tk6skXpAG9SWUQ==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "LJvfBUPefkihSMEYNVZ+qg==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "M+KWURrMe0+cwtozyBRUow==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "mbG4ymdwlEOqaS2VkJ3CKA==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "mhNQJN4x7EyyJkvdjrATKA==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "MRGmusTZ20WSCAdODLGe6w==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "mvshCdWOREi4uarB9oe3JQ==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 2,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "N7D3SdlmXkOrvPCZAmdqPA==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "NgrkjZSgvUOjXwUtLI88VQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "o6LfnQp41EGL+VFBpaAZOQ==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "OaEJwDOx5kaDNbNuamorqA==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "ocmtKN+7WE+xhc7svcReDw==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "olfsczb85UWwGhC95m95zA==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "PDGQ/S4jhkCXY4fEFTzZIQ==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "pN+vA0roQkmPawXucrDq2g==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "QEtTTlGqTEiLQfpH/CzHiw==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "qLtow65ApkGY0gPa5PEIAA==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "Ra/sz8I0lkOPEOOnrmhgXA==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "rj+zvnrlgkOHXhkLQ0ivpg==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 2,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "rQROLlGRwEeApFFMobLAYQ==",
+      "materials": [
+        {
+          "MaterialID": "o+K8mtAleU65jM8B9Z63ZA==",
+          "MaterialIndex": 0,
+          "ColorIndex": 3,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "rT8X7W3bEUOMnEYJfSrPIg==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "Sqqh/wYyCUyEWJqEzrXnlQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "tSpTPJnNREKW0j/JTljItA==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "TTT+p2yjy06AHuHwz2GyGw==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "tV2RJ8UNrUaaQwE6tFZ+KQ==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "txQGY15gE2qLM2GvtUdNA==",
+      "materials": [
+        {
+          "MaterialID": "o+K8mtAleU65jM8B9Z63ZA==",
+          "MaterialIndex": 0,
+          "ColorIndex": 3,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "USXT78PWKEiwPhjXfgTwA==",
+      "materials": [
+        {
+          "MaterialID": "o+K8mtAleU65jM8B9Z63ZA==",
+          "MaterialIndex": 0,
+          "ColorIndex": 3,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "v6JG8kjJi0yobK6WHF+CBw==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "v7xN6VeMMkWHVIugolc8Bg==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 2,
+          "ColorIndex": 6,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 3,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "Va6XIFddQEGWAluqxSAmwg==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "VFj+NPtnhk6prqD0qpWFOg==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "vFuQK5GVwkKkrjMzFrP3Sw==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "VtnwhTcHmUSnvjGffENZTQ==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "W5XC2+OfQ0+42yKmKICh1w==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "wEcuQoexC06PCqVY+GeUDw==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        },
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 2,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "wIxysVMP90mpaAXRpa+Y/w==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "XabOB+96X06IQrYOYpcSMQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "xfmV3pafCECPbhtaUy99zg==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "XLQT8SuRAkKuL9MhKbWgQA==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "Xv09bbMeIkKJims+3WH0gw==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "XwuSVrfMhkmAaHBkquy0Fg==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "XYNkQ2hA9U+huaTs4zDVlQ==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "yE4MT8w2ikeHRZ/QxW/PGA==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "YFe2ShMGXk2f6MrEN7pzbQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "YhKeyNuwE024ZwmQbTKMig==",
+      "materials": [
+        {
+          "MaterialID": "j0SIMtidukqYA1xRzvpPLw==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "YyY6otCVw0SOrjXeMxPDIQ==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "zabTIQRIZkOOFBQrq5jO7g==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "ZEnp7It3jEmD3jUMApazZA==",
+      "materials": [
+        {
+          "MaterialID": "OCOcj0oCf0m77C4wlMdjwA==",
+          "MaterialIndex": 1,
+          "ColorIndex": 0,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "ZH2dedbTMEuHvVB6VEtHjQ==",
+      "materials": [
+        {
+          "MaterialID": "t7Z9gwH5vkqpPuhXUkzWw==",
+          "MaterialIndex": 1,
+          "ColorIndex": 6,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "ZqlgtWPNn0WQsuR6vYJKiw==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    },
+    {
+      "UUID": "zSse1Zo/D0uhA/b5RY0j3Q==",
+      "materials": [
+        {
+          "MaterialID": "wC6/5IBlFk6ndaBgbNm+sQ==",
+          "MaterialIndex": 0,
+          "ColorIndex": 2,
+          "ignore": false
+        }
+      ]
+    }
+  ],
+  "BusinessType": "gunstore-businesstype:businesstype_gunstore",
+  "BuildingSize": "ba:buildingsize_a",
+  "BuildingVersion": 1,
+  "LayoutName": "Gun Store A1",
+  "buildNumber": 3523,
+  "requiredModIds": [
+    "unknown"
+  ]
+}

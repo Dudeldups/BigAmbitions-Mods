@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "ACABADO",
+  "vehicle-repainter:finish_factory": "Original",
+  "vehicle-repainter:finish_matte": "Mate",
+  "vehicle-repainter:finish_satin": "Satinado",
+  "vehicle-repainter:finish_gloss": "Brillante",
+  "vehicle-repainter:finish_high_gloss": "Alto brillo",
+  "vehicle-repainter:finish_unavailable": "Acabado no disponible para este vehículo",
+  "vehicle-repainter:update_notice_title": "Actualización de Vehicle Repainter",
+  "vehicle-repainter:update_notice_body": "- Nuevos acabados: Original, Mate, Satinado, Brillante y Alto brillo. Elige el acabado independientemente del color.\n- Previsualiza el color y el acabado en el vehículo antes de confirmar.\n- El acabado se guarda por vehículo y se restaura al cargar la partida.\n- El precio del repintado depende del acabado: de 800 $ a 1.800 $.",
+  "vehicle-repainter:update_notice_got_it": "Entendido"
+}

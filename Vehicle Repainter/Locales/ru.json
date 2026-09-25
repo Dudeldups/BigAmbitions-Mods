@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "ПОКРЫТИЕ",
+  "vehicle-repainter:finish_factory": "Заводское",
+  "vehicle-repainter:finish_matte": "Матовый",
+  "vehicle-repainter:finish_satin": "Сатиновый",
+  "vehicle-repainter:finish_gloss": "Глянцевый",
+  "vehicle-repainter:finish_high_gloss": "Суперглянец",
+  "vehicle-repainter:finish_unavailable": "Покрытие недоступно для этого автомобиля",
+  "vehicle-repainter:update_notice_title": "Обновление Vehicle Repainter",
+  "vehicle-repainter:update_notice_body": "- Новые варианты покрытия: Заводское, Матовый, Сатиновый, Глянцевый и Суперглянец. Покрытие выбирается отдельно от цвета.\n- Перед подтверждением можно посмотреть цвет и покрытие на автомобиле.\n- Выбранное покрытие сохраняется для каждого автомобиля и восстанавливается при загрузке сохранения.\n- Стоимость перекраски зависит от покрытия: от 800 $ до 1 800 $.",
+  "vehicle-repainter:update_notice_got_it": "Понятно"
+}

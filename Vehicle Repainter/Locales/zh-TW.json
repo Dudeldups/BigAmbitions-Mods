@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "漆面",
+  "vehicle-repainter:finish_factory": "原廠",
+  "vehicle-repainter:finish_matte": "霧面",
+  "vehicle-repainter:finish_satin": "緞面",
+  "vehicle-repainter:finish_gloss": "亮面",
+  "vehicle-repainter:finish_high_gloss": "高亮面",
+  "vehicle-repainter:finish_unavailable": "此車輛不支援選擇漆面",
+  "vehicle-repainter:update_notice_title": "Vehicle Repainter 更新",
+  "vehicle-repainter:update_notice_body": "- 新增漆面：原廠、霧面、緞面、亮面及高亮面。漆面可獨立於顏色選擇。\n- 確認前可在車輛上預覽顏色與漆面。\n- 漆面會依車輛分別儲存，讀取存檔後恢復。\n- 重新烤漆的價格依漆面而定，介於 800 至 1,800 美元。",
+  "vehicle-repainter:update_notice_got_it": "知道了"
+}

@@ -1,0 +1,20 @@
+{
+  "mobileveterinarian:contact_name": "Mobile Veterinarian",
+  "mobileveterinarian:contact_description": "On-site care for registered rideable animals",
+  "mobileveterinarian:not_mounted": "You must be riding an animal before calling the mobile veterinarian.",
+  "mobileveterinarian:unsupported_animal": "The animal or vehicle you are riding is not registered for veterinary treatment.",
+  "mobileveterinarian:not_damaged": "{animal} does not need treatment.",
+  "mobileveterinarian:must_be_stationary": "Bring {animal} to a stop before calling the veterinarian.",
+  "mobileveterinarian:already_active": "A veterinarian visit is already in progress.",
+  "mobileveterinarian:insufficient_funds": "Treatment costs {price}, but you do not have enough money.",
+  "mobileveterinarian:cannot_reach": "The veterinarian cannot find a safe place beside {animal}. Try stopping in a more open area.",
+  "mobileveterinarian:visit_cancelled": "The veterinarian visit was cancelled. You were not charged.",
+  "mobileveterinarian:treatment_completed": "Treatment complete! {animal} is fully restored. You paid {price}.",
+  "mobileveterinarian:treatment_price": "{animal} has {damage}% damage. Mobile treatment will cost {price}.",
+  "mobileveterinarian:request_treatment": "Treat for {price}",
+  "mobileveterinarian:visit_dispatched": "Close your phone, stay mounted, and keep {animal} still. The veterinarian is on the way.",
+  "mobileveterinarian:transaction": "Mobile veterinarian treatment",
+  "mobileveterinarian:animal_generic": "your animal",
+  "mobileveterinarian:animal_cow": "your cow",
+  "mobileveterinarian:service_unavailable": "The mobile veterinarian service is currently unavailable."
+}

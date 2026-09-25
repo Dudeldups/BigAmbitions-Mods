@@ -1,0 +1,8 @@
+"2021 Cadillac Escalade Premium" (https://skfb.ly/pst8D) by Ddiaz Design is
+licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+(https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+The model is redistributed and adapted for this Big Ambitions vehicle mod.
+Modifications include Unity import normalization, physical scale and orientation,
+separated rolling wheel assemblies, generated brake hardware, HDRP material
+conversion, paint/glass/light behavior, colliders, and visual-damage integration.

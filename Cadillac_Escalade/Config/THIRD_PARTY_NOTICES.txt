@@ -1,0 +1,23 @@
+# Third-party notices
+
+## Cadillac Escalade 3D model
+
+- Creator: Ddiaz Design (https://sketchfab.com/ddiaz-design)
+- Source: https://skfb.ly/pst8D
+- Canonical model page: https://sketchfab.com/3d-models/2021-cadillac-escalade-premium-54a2bdd83bb048fb8ef5b539c1b82346
+- License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+- License text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+The supplied model is redistributed and adapted for this Big Ambitions mod
+under CC BY-NC-SA 4.0. Its embedded glTF metadata identifies the same creator,
+source, and license. Adapted model content is distributed under the same license
+and may only be used for non-commercial purposes.
+
+## Generated audio
+
+The engine and horn WAV files are deterministic mathematical synthesis created
+for this mod. They contain no recorded or third-party audio samples.
+
+Cadillac and Escalade are trademarks of General Motors. This is an unofficial,
+fan-made game modification and is not affiliated with or endorsed by General
+Motors or Hovgaard Games.

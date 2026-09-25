@@ -1,0 +1,5 @@
+The supplied vehicle model is third-party content by Ddiaz Design and is used
+under CC BY 4.0. See ATTRIBUTION.txt and the model’s embedded glTF metadata.
+
+The Config/Audio WAV files are deterministic synthesized adaptations used as
+placeholder vehicle audio; they are not redistributed third-party recordings.

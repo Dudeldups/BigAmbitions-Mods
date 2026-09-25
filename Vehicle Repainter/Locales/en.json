@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "FINISH",
+  "vehicle-repainter:finish_factory": "Factory",
+  "vehicle-repainter:finish_matte": "Matte",
+  "vehicle-repainter:finish_satin": "Satin",
+  "vehicle-repainter:finish_gloss": "Gloss",
+  "vehicle-repainter:finish_high_gloss": "High Gloss",
+  "vehicle-repainter:finish_unavailable": "Finish unavailable for this vehicle",
+  "vehicle-repainter:update_notice_title": "Vehicle Repainter Update",
+  "vehicle-repainter:update_notice_body": "- Choose Factory, Matte, Satin, Gloss, or High Gloss independently of the paint color.\n- Preview the selected color and finish before repainting.\n- Paint finishes are saved per vehicle and restored when loading a save.\n- Repaint prices now depend on the finish, from $800 to $1,800.",
+  "vehicle-repainter:update_notice_got_it": "Got it"
+}

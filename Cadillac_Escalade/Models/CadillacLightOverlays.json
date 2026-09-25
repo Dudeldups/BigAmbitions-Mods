@@ -1,0 +1,445 @@
+{
+  "production": "cadillac_escalade.glb",
+  "overlays": [
+    {
+      "sourceObject": "E:common_etches_light_etchings_common_001_common_etches_light_etchings_common_001_alpha_badges_002_E:alpha_badges_002_0",
+      "sourceVertexCount": 94,
+      "group": "DRL_Indicator_FL",
+      "overlay": "VehicleLightRef_DRL_Indicator_FL",
+      "selectedVertexCount": 43,
+      "usedVertexCount": 43,
+      "faceCount": 62,
+      "localBounds": {
+        "min": [
+          -0.906169,
+          -0.958056,
+          2.464882
+        ],
+        "max": [
+          -0.85923,
+          -0.543216,
+          2.580893
+        ],
+        "center": [
+          -0.882699,
+          -0.750636,
+          2.522887
+        ]
+      },
+      "worldBounds": {
+        "min": [
+          0.008592,
+          -0.025809,
+          0.005432
+        ],
+        "max": [
+          0.009062,
+          -0.024649,
+          0.009581
+        ],
+        "center": [
+          0.008827,
+          -0.025229,
+          0.007506
+        ]
+      },
+      "productionVertexCount": 94
+    },
+    {
+      "sourceObject": "E:common_etches_light_etchings_common_001_common_etches_light_etchings_common_001_alpha_badges_002_E:alpha_badges_002_0",
+      "sourceVertexCount": 94,
+      "group": "DRL_Indicator_FR",
+      "overlay": "VehicleLightRef_DRL_Indicator_FR",
+      "selectedVertexCount": 44,
+      "usedVertexCount": 44,
+      "faceCount": 63,
+      "localBounds": {
+        "min": [
+          0.85923,
+          -0.958056,
+          2.464882
+        ],
+        "max": [
+          0.906168,
+          -0.543217,
+          2.580893
+        ],
+        "center": [
+          0.882699,
+          -0.750636,
+          2.522887
+        ]
+      },
+      "worldBounds": {
+        "min": [
+          -0.009062,
+          -0.025809,
+          0.005432
+        ],
+        "max": [
+          -0.008592,
+          -0.024649,
+          0.009581
+        ],
+        "center": [
+          -0.008827,
+          -0.025229,
+          0.007506
+        ]
+      },
+      "productionVertexCount": 94
+    },
+    {
+      "sourceObject": "E:common_headlights_etched_headlights_etched_common_001_common_headlights_etched_headlights_etched_common_001_front_lamps_etched_0_E:alpha_badges_002_0",
+      "sourceVertexCount": 397,
+      "group": "Indicator_FR",
+      "overlay": "VehicleLightRef_Indicator_FR",
+      "selectedVertexCount": 125,
+      "usedVertexCount": 125,
+      "faceCount": 192,
+      "localBounds": {
+        "min": [
+          0.792992,
+          -1.109328,
+          2.371772
+        ],
+        "max": [
+          0.891794,
+          -1.077417,
+          2.611924
+        ],
+        "center": [
+          0.842393,
+          -1.093373,
+          2.491848
+        ]
+      },
+      "worldBounds": {
+        "min": [
+          -0.008918,
+          -0.026119,
+          0.010774
+        ],
+        "max": [
+          -0.00793,
+          -0.023718,
+          0.011093
+        ],
+        "center": [
+          -0.008424,
+          -0.024918,
+          0.010934
+        ]
+      },
+      "productionVertexCount": 397
+    },
+    {
+      "sourceObject": "E:common_headlights_etched_headlights_etched_common_001_common_headlights_etched_headlights_etched_common_001_front_lamps_etched_0_E:alpha_badges_002_0",
+      "sourceVertexCount": 397,
+      "group": "Indicator_FL",
+      "overlay": "VehicleLightRef_Indicator_FL",
+      "selectedVertexCount": 125,
+      "usedVertexCount": 125,
+      "faceCount": 191,
+      "localBounds": {
+        "min": [
+          -0.891795,
+          -1.109327,
+          2.371772
+        ],
+        "max": [
+          -0.792993,
+          -1.077417,
+          2.611924
+        ],
+        "center": [
+          -0.842394,
+          -1.093372,
+          2.491848
+        ]
+      },
+      "worldBounds": {
+        "min": [
+          0.00793,
+          -0.026119,
+          0.010774
+        ],
+        "max": [
+          0.008918,
+          -0.023718,
+          0.011093
+        ],
+        "center": [
+          0.008424,
+          -0.024918,
+          0.010934
+        ]
+      },
+      "productionVertexCount": 397
+    },
+    {
+      "sourceObject": "E:common_high_beams_high_beam_common_001_common_high_beams_high_beam_common_001_lights_001_E:alpha_badges_002_0",
+      "sourceVertexCount": 237,
+      "group": "Front_lights",
+      "overlay": "VehicleLightRef_Front_lights",
+      "selectedVertexCount": 158,
+      "usedVertexCount": 158,
+      "faceCount": 140,
+      "localBounds": {
+        "min": [
+          -0.742849,
+          -1.144205,
+          2.558624
+        ],
+        "max": [
+          0.742848,
+          -1.116349,
+          2.577389
+        ],
+        "center": [
+          -1e-06,
+          -1.130277,
+          2.568007
+        ]
+      },
+      "worldBounds": {
+        "min": [
+          -0.007428,
+          -0.025774,
+          0.011163
+        ],
+        "max": [
+          0.007428,
+          -0.025586,
+          0.011442
+        ],
+        "center": [
+          0.0,
+          -0.02568,
+          0.011303
+        ]
+      },
+      "productionVertexCount": 237
+    },
+    {
+      "sourceObject": "E:swb_bright_chrome_bright_chrome_swb_swb_bright_chrome_bright_chrome_swb_Chrome_Bright_003_SILVER_CHROME_0",
+      "sourceVertexCount": 79,
+      "group": "Reverse_light",
+      "overlay": "VehicleLightRef_Reverse_light",
+      "selectedVertexCount": 76,
+      "usedVertexCount": 76,
+      "faceCount": 97,
+      "localBounds": {
+        "min": [
+          -0.86167,
+          -1.023085,
+          -2.26343
+        ],
+        "max": [
+          0.861669,
+          -0.999766,
+          -2.201522
+        ],
+        "center": [
+          -1e-06,
+          -1.011425,
+          -2.232476
+        ]
+      },
+      "worldBounds": {
+        "min": [
+          -0.008617,
+          0.022015,
+          0.009998
+        ],
+        "max": [
+          0.008617,
+          0.022634,
+          0.010231
+        ],
+        "center": [
+          0.0,
+          0.022325,
+          0.010114
+        ]
+      },
+      "productionVertexCount": 79
+    },
+    {
+      "sourceObject": "E:swb_chml_red_chml_red_swb_swb_chml_red_chml_red_swb_Glass_Red_Tint_E:Glass_Red_Tint_002_0",
+      "sourceVertexCount": 167,
+      "group": "3rd_brake_light",
+      "overlay": "VehicleLightRef_3rd_brake_light",
+      "selectedVertexCount": 167,
+      "usedVertexCount": 167,
+      "faceCount": 100,
+      "localBounds": {
+        "min": [
+          -0.155334,
+          -1.857069,
+          -2.190068
+        ],
+        "max": [
+          0.155333,
+          -1.835371,
+          -2.181514
+        ],
+        "center": [
+          -0.0,
+          -1.84622,
+          -2.185791
+        ]
+      },
+      "worldBounds": {
+        "min": [
+          -0.001553,
+          0.021815,
+          0.018354
+        ],
+        "max": [
+          0.001553,
+          0.021901,
+          0.018571
+        ],
+        "center": [
+          0.0,
+          0.021858,
+          0.018462
+        ]
+      },
+      "productionVertexCount": 167
+    },
+    {
+      "sourceObject": "E:swb_rear_etchings_rear_etchings_swb_swb_rear_etchings_rear_etchings_swb_light_etchings_E:alpha_badges_002_0",
+      "sourceVertexCount": 3698,
+      "group": "Brake_lights",
+      "overlay": "VehicleLightRef_Brake_lights",
+      "selectedVertexCount": 1012,
+      "usedVertexCount": 1012,
+      "faceCount": 851,
+      "localBounds": {
+        "min": [
+          -0.810124,
+          -1.8032,
+          -2.267571
+        ],
+        "max": [
+          0.810752,
+          -1.035543,
+          -1.990303
+        ],
+        "center": [
+          0.000314,
+          -1.419371,
+          -2.128937
+        ]
+      },
+      "worldBounds": {
+        "min": [
+          -0.008108,
+          0.019903,
+          0.010355
+        ],
+        "max": [
+          0.008101,
+          0.022676,
+          0.018032
+        ],
+        "center": [
+          -3e-06,
+          0.021289,
+          0.014194
+        ]
+      },
+      "productionVertexCount": 3698
+    },
+    {
+      "sourceObject": "E:swb_rear_etchings_rear_etchings_swb_swb_rear_etchings_rear_etchings_swb_light_etchings_E:alpha_badges_002_0",
+      "sourceVertexCount": 3698,
+      "group": "Indicator_RR",
+      "overlay": "VehicleLightRef_Indicator_RR",
+      "selectedVertexCount": 96,
+      "usedVertexCount": 96,
+      "faceCount": 54,
+      "localBounds": {
+        "min": [
+          0.826457,
+          -1.347637,
+          -2.245329
+        ],
+        "max": [
+          0.849373,
+          -1.033896,
+          -2.232102
+        ],
+        "center": [
+          0.837915,
+          -1.190767,
+          -2.238715
+        ]
+      },
+      "worldBounds": {
+        "min": [
+          -0.008494,
+          0.022321,
+          0.010339
+        ],
+        "max": [
+          -0.008265,
+          0.022453,
+          0.013476
+        ],
+        "center": [
+          -0.008379,
+          0.022387,
+          0.011908
+        ]
+      },
+      "productionVertexCount": 3698
+    },
+    {
+      "sourceObject": "E:swb_rear_etchings_rear_etchings_swb_swb_rear_etchings_rear_etchings_swb_light_etchings_E:alpha_badges_002_0",
+      "sourceVertexCount": 3698,
+      "group": "Indicator_RL",
+      "overlay": "VehicleLightRef_Indicator_RL",
+      "selectedVertexCount": 92,
+      "usedVertexCount": 92,
+      "faceCount": 52,
+      "localBounds": {
+        "min": [
+          -0.848718,
+          -1.35553,
+          -2.245329
+        ],
+        "max": [
+          -0.824188,
+          -1.039212,
+          -2.231726
+        ],
+        "center": [
+          -0.836453,
+          -1.197371,
+          -2.238527
+        ]
+      },
+      "worldBounds": {
+        "min": [
+          0.008242,
+          0.022317,
+          0.010392
+        ],
+        "max": [
+          0.008487,
+          0.022453,
+          0.013555
+        ],
+        "center": [
+          0.008365,
+          0.022385,
+          0.011974
+        ]
+      },
+      "productionVertexCount": 3698
+    }
+  ]
+}

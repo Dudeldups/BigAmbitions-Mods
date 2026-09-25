@@ -1,0 +1,5 @@
+- Added five independently selectable paint finishes: Factory, Matte, Satin, Gloss, and High Gloss.
+- Preview color and finish together before repainting; the selected finish is saved per vehicle and restored when loading a save.
+- Repaint prices now depend on the finish, from $800 to $1,800.
+- Added a localized, one-time update notice for the new paint features.
+- Improved custom-color restoration for saved vehicles, including parked and modded vehicles.

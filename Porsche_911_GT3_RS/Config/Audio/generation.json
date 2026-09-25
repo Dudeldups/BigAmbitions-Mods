@@ -1,0 +1,53 @@
+{
+  "engine": "4.0 litre naturally aspirated flat-six",
+  "firing_frequency": "three combustion events per crankshaft revolution",
+  "recorded_samples": false,
+  "layers": [
+    {
+      "name": "EngineLow.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.21482462777596867,
+      "method": "deterministic additive naturally aspirated flat-six synthesis"
+    },
+    {
+      "name": "EngineLowLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.16138250203196788,
+      "method": "deterministic additive naturally aspirated flat-six synthesis"
+    },
+    {
+      "name": "EngineMid.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.23963672468105868,
+      "method": "deterministic additive naturally aspirated flat-six synthesis"
+    },
+    {
+      "name": "EngineMidLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.16831367878828157,
+      "method": "deterministic additive naturally aspirated flat-six synthesis"
+    },
+    {
+      "name": "EngineHigh.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.22027140581962668,
+      "method": "deterministic additive naturally aspirated flat-six synthesis"
+    },
+    {
+      "name": "EngineHighLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.17395409633720332,
+      "method": "deterministic additive naturally aspirated flat-six synthesis"
+    }
+  ],
+  "transients": [],
+  "runtime_layers": [
+    "very-low-gain procedural continuous exhaust crackle"
+  ]
+}

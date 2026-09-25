@@ -1,0 +1,5 @@
+- Added Steam and Discord feedback links.
+- Added an HR manager capacity slider (50–10,000).
+- Added an option to disable import limits.
+- Changed training and capacity options to preset steps; active vehicle capacity is now a 1000 toggle.
+- Fixed the update notice when LIB BA Unified UI is active.

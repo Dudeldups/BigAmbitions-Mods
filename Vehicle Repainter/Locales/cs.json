@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "LAK",
+  "vehicle-repainter:finish_factory": "Tovární",
+  "vehicle-repainter:finish_matte": "Matný",
+  "vehicle-repainter:finish_satin": "Saténový",
+  "vehicle-repainter:finish_gloss": "Lesklý",
+  "vehicle-repainter:finish_high_gloss": "Vysoký lesk",
+  "vehicle-repainter:finish_unavailable": "Lak není pro toto vozidlo dostupný",
+  "vehicle-repainter:update_notice_title": "Novinky ve Vehicle Repainter",
+  "vehicle-repainter:update_notice_body": "- Nové typy laku: Tovární, Matný, Saténový, Lesklý a Vysoký lesk. Typ laku lze zvolit nezávisle na barvě.\n- Před potvrzením si prohlédni barvu i typ laku přímo na vozidle.\n- Zvolený typ laku se ukládá pro každé vozidlo zvlášť a po načtení hry se obnoví.\n- Cena přelakování závisí na typu laku: od 800 $ do 1 800 $.",
+  "vehicle-repainter:update_notice_got_it": "Rozumím"
+}

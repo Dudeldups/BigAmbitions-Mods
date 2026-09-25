@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "FINISAJ",
+  "vehicle-repainter:finish_factory": "Din fabrică",
+  "vehicle-repainter:finish_matte": "Mat",
+  "vehicle-repainter:finish_satin": "Satinat",
+  "vehicle-repainter:finish_gloss": "Lucios",
+  "vehicle-repainter:finish_high_gloss": "Luciu intens",
+  "vehicle-repainter:finish_unavailable": "Finisajul nu este disponibil pentru acest vehicul",
+  "vehicle-repainter:update_notice_title": "Actualizare Vehicle Repainter",
+  "vehicle-repainter:update_notice_body": "- Finisaje noi: Din fabrică, Mat, Satinat, Lucios și Luciu intens. Alege finisajul independent de culoare.\n- Previzualizează culoarea și finisajul pe vehicul înainte de confirmare.\n- Finisajul este salvat separat pentru fiecare vehicul și restaurat la încărcarea jocului.\n- Prețul revopsirii depinde de finisaj: între 800 $ și 1.800 $.",
+  "vehicle-repainter:update_notice_got_it": "Am înțeles"
+}

@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "KAPLAMA",
+  "vehicle-repainter:finish_factory": "Orijinal",
+  "vehicle-repainter:finish_matte": "Mat",
+  "vehicle-repainter:finish_satin": "Saten",
+  "vehicle-repainter:finish_gloss": "Parlak",
+  "vehicle-repainter:finish_high_gloss": "Çok parlak",
+  "vehicle-repainter:finish_unavailable": "Kaplama bu araç için kullanılamıyor",
+  "vehicle-repainter:update_notice_title": "Vehicle Repainter Güncellemesi",
+  "vehicle-repainter:update_notice_body": "- Yeni boya türleri: Orijinal, Mat, Saten, Parlak ve Çok parlak. Boya türünü renkten bağımsız seçebilirsiniz.\n- Onaylamadan önce rengi ve boya türünü araç üzerinde önizleyin.\n- Seçilen boya türü her araç için ayrı kaydedilir ve kayıt yüklenince geri yüklenir.\n- Yeniden boyama ücreti boya türüne göre 800 $ ile 1.800 $ arasında değişir.",
+  "vehicle-repainter:update_notice_got_it": "Anladım"
+}

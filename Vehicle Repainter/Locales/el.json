@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "ΦΙΝΙΡΙΣΜΑ",
+  "vehicle-repainter:finish_factory": "Εργοστασιακό",
+  "vehicle-repainter:finish_matte": "Ματ",
+  "vehicle-repainter:finish_satin": "Σατινέ",
+  "vehicle-repainter:finish_gloss": "Γυαλιστερό",
+  "vehicle-repainter:finish_high_gloss": "Υψηλή λάμψη",
+  "vehicle-repainter:finish_unavailable": "Το φινίρισμα δεν είναι διαθέσιμο για αυτό το όχημα",
+  "vehicle-repainter:update_notice_title": "Ενημέρωση Vehicle Repainter",
+  "vehicle-repainter:update_notice_body": "- Νέα φινιρίσματα: Εργοστασιακό, Ματ, Σατινέ, Γυαλιστερό και Υψηλή λάμψη. Επίλεξε φινίρισμα ανεξάρτητα από το χρώμα.\n- Δες προεπισκόπηση του χρώματος και του φινιρίσματος στο όχημα πριν από την επιβεβαίωση.\n- Το φινίρισμα αποθηκεύεται ξεχωριστά για κάθε όχημα και επαναφέρεται όταν φορτώνεις μια αποθηκευμένη παρτίδα.\n- Η τιμή της βαφής εξαρτάται από το φινίρισμα: από 800 $ έως 1.800 $.",
+  "vehicle-repainter:update_notice_got_it": "Κατάλαβα"
+}

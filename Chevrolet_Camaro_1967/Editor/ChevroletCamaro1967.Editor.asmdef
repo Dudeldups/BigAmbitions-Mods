@@ -1,0 +1,17 @@
+{
+  "name": "ChevroletCamaro1967.Editor",
+  "rootNamespace": "",
+  "references": [
+    "ChevroletCamaro1967",
+    "ModBuilder.Editor"
+  ],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

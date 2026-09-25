@@ -1,0 +1,54 @@
+{
+  "engine": "6.2 litre naturally aspirated OHV V8",
+  "firing_frequency": "four combustion events per crankshaft revolution",
+  "recorded_samples": false,
+  "layers": [
+    {
+      "name": "EngineLow.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.1874535752470281,
+      "method": "deterministic additive OHV V8 synthesis"
+    },
+    {
+      "name": "EngineLowLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.31257803441279003,
+      "method": "phase-aligned OHV V8 combustion-pulse synthesis"
+    },
+    {
+      "name": "EngineMid.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.18733056846203183,
+      "method": "deterministic additive OHV V8 synthesis"
+    },
+    {
+      "name": "EngineMidLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.31510262304451625,
+      "method": "phase-aligned OHV V8 combustion-pulse synthesis"
+    },
+    {
+      "name": "EngineHigh.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.18789345250581596,
+      "method": "deterministic additive OHV V8 synthesis"
+    },
+    {
+      "name": "EngineHighLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.3149777734837545,
+      "method": "phase-aligned OHV V8 combustion-pulse synthesis"
+    }
+  ],
+  "transients": [],
+  "load_texture": "phase-aligned eight-pulse OHV V8 combustion cycle used as each loaded engine waveform",
+  "runtime_layers": [
+    "independent 320 Hz and 400 Hz road-horn reeds"
+  ]
+}

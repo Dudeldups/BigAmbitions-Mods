@@ -1,0 +1,22 @@
+{
+  "engine": "Ferrari SF90 Spider 4.0L twin-turbo flat-plane V8 inspired synthetic voice",
+  "recorded_samples": false,
+  "revision": "V24 single-engine-source runtime architecture",
+  "runtime": {
+    "engine_sources": 1,
+    "engine_file": "EngineCore.wav",
+    "horn_files": [
+      "HornLow.wav",
+      "HornHigh.wav"
+    ],
+    "turbo_loop": false,
+    "crackle_loop": false,
+    "native_engine_exhaust_suppressed": true,
+    "rpm_load_shaping": "runtime pitch/filter/distortion"
+  },
+  "notes": [
+    "Mathematical synthesis only; no Ferrari or third-party recordings.",
+    "Runtime volume, pitch and filtering are calibrated in FerrariSF90SpiderAudioModel.",
+    "The previous low/mid/high coast/load layer architecture is obsolete and not used by V24."
+  ]
+}

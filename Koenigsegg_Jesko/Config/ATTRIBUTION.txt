@@ -1,0 +1,8 @@
+“2020 Koenigsegg Jesko” by Ddiaz Design
+Source: https://sketchfab.com/3d-models/2020-koenigsegg-jesko-c657f51fb0db43e38fea172dfa385287
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+License text: https://creativecommons.org/licenses/by/4.0/
+
+The model is redistributed and adapted for use in this Big Ambitions mod under
+the terms of CC BY 4.0. The supplied GLB’s embedded metadata identifies the
+same creator, source, and license.

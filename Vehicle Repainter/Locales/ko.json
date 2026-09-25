@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "마감",
+  "vehicle-repainter:finish_factory": "기본",
+  "vehicle-repainter:finish_matte": "무광",
+  "vehicle-repainter:finish_satin": "새틴",
+  "vehicle-repainter:finish_gloss": "유광",
+  "vehicle-repainter:finish_high_gloss": "고광택",
+  "vehicle-repainter:finish_unavailable": "이 차량에서는 마감을 선택할 수 없습니다",
+  "vehicle-repainter:update_notice_title": "Vehicle Repainter 업데이트",
+  "vehicle-repainter:update_notice_body": "- 새로운 도장 마감: 기본, 무광, 새틴, 유광, 고광택. 색상과 별도로 마감을 선택할 수 있습니다.\n- 확정하기 전에 차량에서 색상과 마감을 미리 볼 수 있습니다.\n- 선택한 마감은 차량별로 저장되며 저장 파일을 불러올 때 복원됩니다.\n- 재도색 가격은 마감에 따라 800~1,800달러입니다.",
+  "vehicle-repainter:update_notice_got_it": "확인"
+}

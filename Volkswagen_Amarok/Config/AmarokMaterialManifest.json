@@ -1,0 +1,668 @@
+{
+  "materials": [
+    {
+      "index": 0,
+      "name": "phong5",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.7,
+      "roughnessFactor": 0.5,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_00.png"
+    },
+    {
+      "index": 1,
+      "name": "PLASTIC_BLACK",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "metallicFactor": 0.6140971096292864,
+      "roughnessFactor": 0.11428606258609549,
+      "baseColorTexturePath": ""
+    },
+    {
+      "index": 2,
+      "name": "CHROME",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        0.7241664348743744,
+        0.7241664348743744,
+        0.7241664348743744,
+        1.0
+      ],
+      "metallicFactor": 0.9615267398910168,
+      "roughnessFactor": 0.1386670892711292,
+      "baseColorTexturePath": ""
+    },
+    {
+      "index": 3,
+      "name": "plastic",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        0.0384615,
+        0.0384615,
+        0.0384615,
+        1.0
+      ],
+      "metallicFactor": 0.650668649656837,
+      "roughnessFactor": 0.5287635162316685,
+      "baseColorTexturePath": ""
+    },
+    {
+      "index": 4,
+      "name": "phong15",
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        0.10209554924357864
+      ],
+      "metallicFactor": 0.3459058160939157,
+      "roughnessFactor": 0.1386670892711292,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_01.png"
+    },
+    {
+      "index": 5,
+      "name": "int_2",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.7055259596981628,
+      "roughnessFactor": 0.6323828796430617,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_02.png"
+    },
+    {
+      "index": 6,
+      "name": "mirror",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "metallicFactor": 1.0,
+      "roughnessFactor": 0.0,
+      "baseColorTexturePath": ""
+    },
+    {
+      "index": 7,
+      "name": "interior",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.42514415282027523,
+      "roughnessFactor": 0.26666747936755614,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_03.png"
+    },
+    {
+      "index": 8,
+      "name": "engine",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.7238117297119381,
+      "roughnessFactor": 0.5409540295741854,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_04.png"
+    },
+    {
+      "index": 9,
+      "name": "ENGINE",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.650668649656837,
+      "roughnessFactor": 0.4373346661627921,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_05.png"
+    },
+    {
+      "index": 10,
+      "name": "engine_2",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.6201923663005449,
+      "roughnessFactor": 0.6994307030269045,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_05.png"
+    },
+    {
+      "index": 11,
+      "name": "grille",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.821335836452073,
+      "roughnessFactor": 0.7542880130682302,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_06.png"
+    },
+    {
+      "index": 12,
+      "name": "standardSurface1",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        0.3520010727651741,
+        0.3520010727651741,
+        0.3520010727651741,
+        1.0
+      ],
+      "metallicFactor": 0.7055259596981628,
+      "roughnessFactor": 0.8152405797808145,
+      "baseColorTexturePath": ""
+    },
+    {
+      "index": 13,
+      "name": "plate",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.35809632943643255,
+      "roughnessFactor": 0.5348587729029269,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_07.png"
+    },
+    {
+      "index": 14,
+      "name": "dorr_R",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.7,
+      "roughnessFactor": 0.5,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_08.png"
+    },
+    {
+      "index": 15,
+      "name": "RUBBER",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        0.0408890181760554,
+        0.0408890181760554,
+        0.0408890181760554,
+        1.0
+      ],
+      "metallicFactor": 0.6811449330131292,
+      "roughnessFactor": 0.6994307030269045,
+      "baseColorTexturePath": ""
+    },
+    {
+      "index": 16,
+      "name": "glass",
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "baseColorFactor": [
+        0.0,
+        0.0,
+        0.0,
+        0.25
+      ],
+      "metallicFactor": 0.0,
+      "roughnessFactor": 0.0,
+      "baseColorTexturePath": ""
+    },
+    {
+      "index": 17,
+      "name": "METAL_BLACK",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        0.0192308,
+        0.0192308,
+        0.0192308,
+        1.0
+      ],
+      "metallicFactor": 0.9188599431922078,
+      "roughnessFactor": 0.3702868427789494,
+      "baseColorTexturePath": ""
+    },
+    {
+      "index": 18,
+      "name": "EXT_GLASS",
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "metallicFactor": 0.6872401896843876,
+      "roughnessFactor": 0.0,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_09.png"
+    },
+    {
+      "index": 19,
+      "name": "tyre",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.6201923663005449,
+      "roughnessFactor": 0.3276200460801404,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_11.png"
+    },
+    {
+      "index": 20,
+      "name": "phong18",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.6019065962867696,
+      "roughnessFactor": 0.20571491265497188,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_12.png"
+    },
+    {
+      "index": 21,
+      "name": "phong19",
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "baseColorFactor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallicFactor": 0.8396216064658483,
+      "roughnessFactor": 0.33981055942265725,
+      "baseColorTexturePath": "Assets/Mods/Volkswagen_Amarok/Models/ExtractedTextures/AmarokTexture_13.png"
+    }
+  ],
+  "meshes": [
+    {
+      "rendererName": "vw_amorak_2018:body_phong5_0",
+      "materialName": "phong5"
+    },
+    {
+      "rendererName": "vw_amorak_2018:body_PLASTIC_BLACK_0",
+      "materialName": "PLASTIC_BLACK"
+    },
+    {
+      "rendererName": "vw_amorak_2018:body_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "vw_amorak_2018:body_plastic_0",
+      "materialName": "plastic"
+    },
+    {
+      "rendererName": "vw_amorak_2018:far_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "vw_amorak_2018:led_phong15_0",
+      "materialName": "phong15"
+    },
+    {
+      "rendererName": "vw_amorak_2018:interior_int_2_0",
+      "materialName": "int_2"
+    },
+    {
+      "rendererName": "vw_amorak_2018:interior_mirror_0",
+      "materialName": "mirror"
+    },
+    {
+      "rendererName": "vw_amorak_2018:interior_interior_0",
+      "materialName": "interior"
+    },
+    {
+      "rendererName": "vw_amorak_2018:steering_ok_interior_0",
+      "materialName": "interior"
+    },
+    {
+      "rendererName": "vw_amorak_2018:steering_ok_int_2_0",
+      "materialName": "int_2"
+    },
+    {
+      "rendererName": "vw_amorak_2018:v6tdi_engine_0",
+      "materialName": "engine"
+    },
+    {
+      "rendererName": "vw_amorak_2018:v6tdi_plastic_0",
+      "materialName": "plastic"
+    },
+    {
+      "rendererName": "vw_amorak_2018:v6tdi_ENGINE_0",
+      "materialName": "ENGINE"
+    },
+    {
+      "rendererName": "vw_amorak_2018:v6tdi_engine_2_0",
+      "materialName": "engine_2"
+    },
+    {
+      "rendererName": "vw_amorak_2018:v6tdi_grille_0",
+      "materialName": "grille"
+    },
+    {
+      "rendererName": "vw_amorak_2018:motionstock_standardSurface1_0",
+      "materialName": "standardSurface1"
+    },
+    {
+      "rendererName": "vw_amorak_2018:aventuramodular_phong5_0",
+      "materialName": "phong5"
+    },
+    {
+      "rendererName": "vw_amorak_2018:aventuramodular_plate_0",
+      "materialName": "plate"
+    },
+    {
+      "rendererName": "vw_amorak_2018:aventuramodular_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "vw_amorak_2018:extra1_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "vw_amorak_2018:extra1_interior_0",
+      "materialName": "interior"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_rr_ok_dorr_R_0",
+      "materialName": "dorr_R"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_rr_ok_RUBBER_0",
+      "materialName": "RUBBER"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_rr_ok_PLASTIC_BLACK_0",
+      "materialName": "PLASTIC_BLACK"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_rr_ok_glass_0",
+      "materialName": "glass"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_rf_ok_RUBBER_0",
+      "materialName": "RUBBER"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_rf_ok_PLASTIC_BLACK_0",
+      "materialName": "PLASTIC_BLACK"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_rf_ok_phong5_0",
+      "materialName": "phong5"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_rf_ok_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_rf_ok_mirror_0",
+      "materialName": "mirror"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_rf_ok_glass_0",
+      "materialName": "glass"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_lr_ok_dorr_R_0",
+      "materialName": "dorr_R"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_lr_ok_RUBBER_0",
+      "materialName": "RUBBER"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_lr_ok_PLASTIC_BLACK_0",
+      "materialName": "PLASTIC_BLACK"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_lr_ok_glass_0",
+      "materialName": "glass"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_lf_ok_PLASTIC_BLACK_0",
+      "materialName": "PLASTIC_BLACK"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_lf_ok_phong5_0",
+      "materialName": "phong5"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_lf_ok_RUBBER_0",
+      "materialName": "RUBBER"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_lf_ok_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_lf_ok_mirror_0",
+      "materialName": "mirror"
+    },
+    {
+      "rendererName": "vw_amorak_2018:door_lf_ok_glass_0",
+      "materialName": "glass"
+    },
+    {
+      "rendererName": "vw_amorak_2018:bump_rear_ok_phong5_0",
+      "materialName": "phong5"
+    },
+    {
+      "rendererName": "vw_amorak_2018:bump_rear_ok_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "vw_amorak_2018:bump_rear_ok_plate_0",
+      "materialName": "plate"
+    },
+    {
+      "rendererName": "vw_amorak_2018:boot_ok_PLASTIC_BLACK_0",
+      "materialName": "PLASTIC_BLACK"
+    },
+    {
+      "rendererName": "vw_amorak_2018:boot_ok_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "vw_amorak_2018:boot_ok_standardSurface1_0",
+      "materialName": "standardSurface1"
+    },
+    {
+      "rendererName": "vw_amorak_2018:boot_ok_phong5_0",
+      "materialName": "phong5"
+    },
+    {
+      "rendererName": "vw_amorak_2018:boot_ok_interior_0",
+      "materialName": "interior"
+    },
+    {
+      "rendererName": "vw_amorak_2018:bump_front_ok_phong5_0",
+      "materialName": "phong5"
+    },
+    {
+      "rendererName": "vw_amorak_2018:bump_front_ok_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "vw_amorak_2018:bump_front_ok_plate_0",
+      "materialName": "plate"
+    },
+    {
+      "rendererName": "vw_amorak_2018:bump_front_ok_glass_0",
+      "materialName": "glass"
+    },
+    {
+      "rendererName": "vw_amorak_2018:bonnet_ok_phong5_0",
+      "materialName": "phong5"
+    },
+    {
+      "rendererName": "vw_amorak_2018:bonnet_ok_ENGINE_0",
+      "materialName": "ENGINE"
+    },
+    {
+      "rendererName": "vw_amorak_2018:bonnet_ok_METAL_BLACK_0",
+      "materialName": "METAL_BLACK"
+    },
+    {
+      "rendererName": "vw_amorak_2018:cam_EXT_GLASS_0",
+      "materialName": "EXT_GLASS"
+    },
+    {
+      "rendererName": "vw_amorak_2018:cam_glass_0",
+      "materialName": "glass"
+    },
+    {
+      "rendererName": "vw_amorak_2018:wheel_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "vw_amorak_2018:wheel_PLASTIC_BLACK_0",
+      "materialName": "PLASTIC_BLACK"
+    },
+    {
+      "rendererName": "vw_amorak_2018:wheel_tyre_0",
+      "materialName": "tyre"
+    },
+    {
+      "rendererName": "vw_amorak_2018:wheel_phong18_0",
+      "materialName": "phong18"
+    },
+    {
+      "rendererName": "vw_amorak_2018:wheel_phong19_0",
+      "materialName": "phong19"
+    },
+    {
+      "rendererName": "vw_amorak_2018:hub_rf_dorr_R_0",
+      "materialName": "dorr_R"
+    },
+    {
+      "rendererName": "vw_amorak_2018:hub_rb_dorr_R_0",
+      "materialName": "dorr_R"
+    },
+    {
+      "rendererName": "vw_amorak_2018:hub_lf_dorr_R_0",
+      "materialName": "dorr_R"
+    },
+    {
+      "rendererName": "vw_amorak_2018:hub_lb_dorr_R_0",
+      "materialName": "dorr_R"
+    },
+    {
+      "rendererName": "wheel_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "wheel_PLASTIC_BLACK_0",
+      "materialName": "PLASTIC_BLACK"
+    },
+    {
+      "rendererName": "wheel_tyre_0",
+      "materialName": "tyre"
+    },
+    {
+      "rendererName": "wheel_phong18_0",
+      "materialName": "phong18"
+    },
+    {
+      "rendererName": "wheel_phong19_0",
+      "materialName": "phong19"
+    },
+    {
+      "rendererName": "wheel1_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "wheel1_PLASTIC_BLACK_0",
+      "materialName": "PLASTIC_BLACK"
+    },
+    {
+      "rendererName": "wheel1_tyre_0",
+      "materialName": "tyre"
+    },
+    {
+      "rendererName": "wheel1_phong18_0",
+      "materialName": "phong18"
+    },
+    {
+      "rendererName": "wheel1_phong19_0",
+      "materialName": "phong19"
+    },
+    {
+      "rendererName": "wheel2_CHROME_0",
+      "materialName": "CHROME"
+    },
+    {
+      "rendererName": "wheel2_PLASTIC_BLACK_0",
+      "materialName": "PLASTIC_BLACK"
+    },
+    {
+      "rendererName": "wheel2_tyre_0",
+      "materialName": "tyre"
+    },
+    {
+      "rendererName": "wheel2_phong18_0",
+      "materialName": "phong18"
+    },
+    {
+      "rendererName": "wheel2_phong19_0",
+      "materialName": "phong19"
+    }
+  ]
+}

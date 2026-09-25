@@ -1,0 +1,16 @@
+{
+  "vehicle-repainter:repaint": "Repaint ({price}+)",
+  "vehicle-repainter:title": "Vehicle Repaint",
+  "vehicle-repainter:confirm": "Repaint",
+  "vehicle-repainter:transaction": "Vehicle repaint",
+  "vehicle-repainter:finish": "DAŽŲ TIPAS",
+  "vehicle-repainter:finish_factory": "Gamyklinis",
+  "vehicle-repainter:finish_matte": "Matinis",
+  "vehicle-repainter:finish_satin": "Satininis",
+  "vehicle-repainter:finish_gloss": "Blizgus",
+  "vehicle-repainter:finish_high_gloss": "Itin blizgus",
+  "vehicle-repainter:finish_unavailable": "Šiam automobiliui dažų tipo pasirinkti negalima",
+  "vehicle-repainter:update_notice_title": "Vehicle Repainter atnaujinimas",
+  "vehicle-repainter:update_notice_body": "- Nauji dažų tipai: Gamyklinis, Matinis, Satininis, Blizgus ir Itin blizgus. Dažų tipą galima rinktis atskirai nuo spalvos.\n- Prieš patvirtindami apžiūrėkite spalvą ir dažų tipą ant automobilio.\n- Pasirinktas dažų tipas išsaugomas kiekvienam automobiliui atskirai ir atkuriamas įkėlus išsaugotą žaidimą.\n- Perdažymo kaina priklauso nuo dažų tipo: nuo 800 $ iki 1 800 $.",
+  "vehicle-repainter:update_notice_got_it": "Supratau"
+}

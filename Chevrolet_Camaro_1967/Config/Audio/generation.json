@@ -1,0 +1,16 @@
+{
+  "vehicle": "1967 Chevrolet Camaro RS/SS Hidden Jewel",
+  "engine": "Chevrolet 350 small-block V8 (L48 baseline)",
+  "method": "deterministic additive four-stroke V8 synthesis; no sampled recording redistributed",
+  "sampleRate": 44100,
+  "files": [
+    {"file":"EngineLow.wav","referenceHz":70.0,"loaded":false},
+    {"file":"EngineLowLoad.wav","referenceHz":70.0,"loaded":true},
+    {"file":"EngineMid.wav","referenceHz":220.0,"loaded":false},
+    {"file":"EngineMidLoad.wav","referenceHz":220.0,"loaded":true},
+    {"file":"EngineHigh.wav","referenceHz":420.0,"loaded":false},
+    {"file":"EngineHighLoad.wav","referenceHz":420.0,"loaded":true},
+    {"file":"HornLow.wav","referenceHz":340.0},
+    {"file":"HornHigh.wav","referenceHz":410.0}
+  ]
+}

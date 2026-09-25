@@ -1,0 +1,7 @@
+{
+  "engine": "3.0 V6 TDI",
+  "idle_rpm": 725,
+  "upper_rpm": 4500,
+  "turbo_whistle": "subtle load-layer component",
+  "pops_crackles": false
+}
