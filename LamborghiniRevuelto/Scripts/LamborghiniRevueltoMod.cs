@@ -26,6 +26,14 @@ internal static class LamborghiniRevueltoDiagnostics
     }
 
     internal static bool DebugEnabled { get; set; } = false;
+    internal static bool WarehouseExitDebugEnabled { get; set; } = false;
+
+    internal static void WarehouseExitInfo(ModContext? context, string message)
+    {
+        if (DebugEnabled && WarehouseExitDebugEnabled)
+            context?.Logger.Info(message);
+    }
+
     internal static bool AutoParkingDebugEnabled { get; set; } = false;
 
     internal static void AutoParkingInfo(ModContext? context, string message)
@@ -67,6 +75,7 @@ public sealed class LamborghiniRevueltoMod : IModBigAmbitions
     private const string VehiclePrefabPath =
         "Assets/Mods/LamborghiniRevuelto/LamborghiniRevuelto.prefab";
 
+    private LamborghiniRevueltoWarehouseBoundsController? prefabBounds;
     private VehicleType? vehicleType;
     private LamborghiniRevueltoRuntime? runtime;
     private LamborghiniRevueltoAutoParkingGuard? autoParkingGuard;
@@ -98,6 +107,10 @@ public sealed class LamborghiniRevueltoMod : IModBigAmbitions
             return Task.CompletedTask;
         }
 
+        prefabBounds = vehiclePrefab.GetComponent<LamborghiniRevueltoWarehouseBoundsController>() ??
+                     vehiclePrefab.AddComponent<LamborghiniRevueltoWarehouseBoundsController>();
+        prefabBounds.Initialize();
+        LamborghiniRevueltoPlayerPrefabCache.Install(vehiclePrefab, context);
         ModdingAPI.RegisterModVehicleType(vehicleType);
         runtime = LamborghiniRevueltoRuntime.Initialize(
             context,
@@ -114,6 +127,10 @@ public sealed class LamborghiniRevueltoMod : IModBigAmbitions
         autoParkingGuard = null;
         runtime?.Shutdown();
         runtime = null;
+        if (prefabBounds != null)
+            UnityEngine.Object.Destroy(prefabBounds);
+        prefabBounds = null;
+        LamborghiniRevueltoPlayerPrefabCache.Remove();
 
         if (vehicleType != null)
         {

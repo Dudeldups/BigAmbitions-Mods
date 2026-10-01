@@ -16,6 +16,8 @@ using PhysicsVehicle = NWH.VehiclePhysics2.VehicleController;
 
 public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
 {
+    private const float WarehouseExitGuardDuration = 8f;
+    private const float WarehouseExitGuardClearDistance = 4f;
     private const int InitializationRetryCount = 20;
     private const int RequiredStablePasses = 5;
     private const float InitializationRetryDelay = 0.25f;
@@ -73,6 +75,9 @@ public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
             new Keyframe(1f, 0.88f));
 
     private readonly HashSet<int> configuredVehicleIds = new HashSet<int>();
+    private Coroutine? warehouseExitGuardCoroutine;
+    private readonly List<Collider> warehouseExitGuardColliders = new List<Collider>();
+    private LamborghiniRevueltoWarehouseEntryController? warehouseExitGuardEntryController;
     private Coroutine? initializationCoroutine;
     private Coroutine? enteredVehicleActivationCoroutine;
     private int enteredVehicleActivationInstanceId;
@@ -113,6 +118,14 @@ public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
             LamborghiniRevueltoDiagnostics.DealerEntryDebugEnabled = true;
             context.Logger.Info("LamborghiniRevuelto dealer-entry diagnostics enabled.");
         }
+        var warehouseMarker = Path.Combine(Application.persistentDataPath,
+            "ModsLocal", "LamborghiniRevuelto", "Config", "warehouse-diagnostics.enabled");
+        if (File.Exists(warehouseMarker))
+        {
+            LamborghiniRevueltoDiagnostics.DebugEnabled = true;
+            LamborghiniRevueltoDiagnostics.WarehouseExitDebugEnabled = true;
+            context.Logger.Info("LamborghiniRevuelto warehouse diagnostics enabled.");
+        }
         runtime.vehicleTypeName = vehicleTypeName ?? string.Empty;
         runtime.playerVehiclePrefab = playerVehiclePrefab;
         LamborghiniRevueltoPrivateDriverSupport.SetContext(context);
@@ -127,6 +140,7 @@ public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
 
     public void Shutdown()
     {
+        StopWarehouseExitGuard();
         StopEnteredVehicleActivation();
         if (initializationCoroutine != null)
             StopCoroutine(initializationCoroutine);
@@ -184,6 +198,7 @@ public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
 
     private void OnDisable()
     {
+        StopWarehouseExitGuard();
         StopEnteredVehicleActivation();
         SceneManager.sceneLoaded -= HandleSceneLoaded;
         UnsubscribeEvents();
@@ -191,12 +206,15 @@ public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
 
     private void SubscribeEvents()
     {
+        LamborghiniRevueltoPlayerPrefabCache.Ensure("lifecycle");
         GameEvent.onGameEventTriggered -= HandleGameEvent;
         GameEvent.onGameEventTriggered += HandleGameEvent;
         GlobalEvents.onEnterVehicle -= HandleVehicleEntered;
         GlobalEvents.onEnterVehicle += HandleVehicleEntered;
         GlobalEvents.onEnterBuilding -= HandleBuildingEntered;
         GlobalEvents.onEnterBuilding += HandleBuildingEntered;
+        GlobalEvents.onExitBuilding -= HandleBuildingExited;
+        GlobalEvents.onExitBuilding += HandleBuildingExited;
         GlobalEvents.onFullMenuToggle -= HandleFullMenuToggle;
         GlobalEvents.onFullMenuToggle += HandleFullMenuToggle;
         GlobalEvents.onVehicleVariablesChanged -= HandleVehicleVariablesChanged;
@@ -210,6 +228,7 @@ public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
         GameEvent.onGameEventTriggered -= HandleGameEvent;
         GlobalEvents.onEnterVehicle -= HandleVehicleEntered;
         GlobalEvents.onEnterBuilding -= HandleBuildingEntered;
+        GlobalEvents.onExitBuilding -= HandleBuildingExited;
         GlobalEvents.onFullMenuToggle -= HandleFullMenuToggle;
         GlobalEvents.onVehicleVariablesChanged -= HandleVehicleVariablesChanged;
         GlobalEvents.onGameUnloaded -= HandleGameUnloaded;
@@ -239,6 +258,7 @@ public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
 
     private void HandleGameUnloaded()
     {
+        StopWarehouseExitGuard();
         StopEnteredVehicleActivation();
         if (initializationCoroutine != null)
             StopCoroutine(initializationCoroutine);
@@ -424,6 +444,7 @@ public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
 
     private void HandleBuildingEntered(Address address)
     {
+        LamborghiniRevueltoPlayerPrefabCache.Ensure("building-entered");
         if (address == null)
             return;
         var registration = BuildingHelper.GetBuildingRegistration(address);
@@ -433,6 +454,184 @@ public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
         {
             EnsureDealerStock("dealer-entered");
         }
+    }
+
+    private void HandleBuildingExited(Address address)
+    {
+        if (address == null ||
+            !string.Equals(
+                BuildingHelper.GetBuilding(address)?.BuildingType,
+                "ba:buildingtype_warehouse",
+                StringComparison.Ordinal))
+        {
+            return;
+        }
+
+        var vehicle = VehicleHelper.GetCurrentVehicleBase();
+        if (vehicle == null || !vehicle.controlledByPlayer || !IsTargetVehicle(vehicle))
+        {
+            LamborghiniRevueltoDiagnostics.WarehouseExitInfo(
+                context,
+                $"LamborghiniRevuelto warehouse-exit: guard skipped; current vehicle is not " +
+                $"a controlled Revuelto ({(vehicle == null ? "missing" : $"vehicle={vehicle.GetInstanceID()}, controlled={vehicle.controlledByPlayer}")}).");
+            return;
+        }
+
+        var entrance = FindClosestDriveInEntrance(vehicle.transform.position);
+        if (entrance == null)
+        {
+            context?.Logger.Warn(
+                $"LamborghiniRevuelto warehouse-exit: no entrance within 12m; " +
+                $"vehicle={vehicle.GetInstanceID()}, controlled={vehicle.controlledByPlayer}.");
+            return;
+        }
+
+        var nativeMeshCollider = vehicle.GetComponentInChildren<MeshCollider>(true);
+        LamborghiniRevueltoDiagnostics.WarehouseExitInfo(
+            context,
+            $"LamborghiniRevuelto warehouse-exit: native exit completed, vehicle={vehicle.GetInstanceID()}, controlled={vehicle.controlledByPlayer} " +
+            $"entrance='{entrance.name}' entrancePosition={entrance.transform.position}, " +
+            $"nativeMesh='{nativeMeshCollider?.name ?? "missing"}', " +
+            $"nativeMeshLength={nativeMeshCollider?.sharedMesh?.bounds.size.z:0.000}.");
+
+        StopWarehouseExitGuard();
+        warehouseExitGuardEntryController =
+            vehicle.GetComponent<LamborghiniRevueltoWarehouseEntryController>();
+        warehouseExitGuardEntryController?.SuppressEntrance(entrance, "warehouse-exit-guard");
+        foreach (var enterTrigger in entrance.GetComponentsInChildren<DriveInEntranceEnterTrigger>(true))
+        foreach (var collider in enterTrigger.GetComponents<Collider>())
+        {
+            if (collider == null || !collider.enabled || !collider.isTrigger)
+                continue;
+
+            warehouseExitGuardColliders.Add(collider);
+            LamborghiniRevueltoDiagnostics.WarehouseExitInfo(
+                context,
+                $"LamborghiniRevuelto warehouse-exit: disabling entry trigger " +
+                $"'{collider.name}' bounds={collider.bounds}.");
+            collider.enabled = false;
+        }
+
+        if (warehouseExitGuardColliders.Count == 0)
+        {
+            warehouseExitGuardEntryController?.ClearSuppressedEntrance(
+                entrance,
+                "no-native-entry-trigger");
+            warehouseExitGuardEntryController = null;
+            LamborghiniRevueltoDiagnostics.WarehouseExitInfo(
+                context,
+                "LamborghiniRevuelto warehouse-exit: guard skipped; matching entrance had no enabled trigger colliders.");
+            return;
+        }
+
+        var outward = Vector3.ProjectOnPlane(
+            vehicle.transform.position - entrance.transform.position,
+            Vector3.up);
+        if (outward.sqrMagnitude < .0001f)
+            outward = Vector3.ProjectOnPlane(entrance.transform.forward, Vector3.up);
+        if (outward.sqrMagnitude < .0001f)
+        {
+            LamborghiniRevueltoDiagnostics.WarehouseExitInfo(
+                context,
+                "LamborghiniRevuelto warehouse-exit: guard aborted; outward direction was zero.");
+            StopWarehouseExitGuard();
+            return;
+        }
+
+        outward.Normalize();
+        var startingDistance = Vector3.Dot(vehicle.transform.position, outward);
+        Physics.SyncTransforms();
+        LamborghiniRevueltoDiagnostics.WarehouseExitInfo(
+            context,
+            $"LamborghiniRevuelto warehouse-exit: guard started triggerCount={warehouseExitGuardColliders.Count}, " +
+            $"outward={outward}, startProjection={startingDistance:0.000}, " +
+            $"clearDistance={WarehouseExitGuardClearDistance:0.00}, " +
+            $"timeout={WarehouseExitGuardDuration:0.0}s.");
+        warehouseExitGuardCoroutine = StartCoroutine(GuardWarehouseExit(
+            vehicle,
+            outward,
+            startingDistance));
+    }
+
+    private IEnumerator GuardWarehouseExit(
+        VehicleController vehicle,
+        Vector3 outward,
+        float startingDistance)
+    {
+        var expiresAt = Time.unscaledTime + WarehouseExitGuardDuration;
+        var reason = "timeout";
+        while (vehicle != null && vehicle.controlledByPlayer &&
+               Time.unscaledTime < expiresAt)
+        {
+            if (Vector3.Dot(vehicle.transform.position, outward) >=
+                startingDistance + WarehouseExitGuardClearDistance)
+            {
+                reason = "moved-away";
+                break;
+            }
+
+            yield return new WaitForFixedUpdate();
+        }
+
+        if (vehicle == null)
+            reason = "vehicle-destroyed";
+        else if (!vehicle.controlledByPlayer)
+            reason = "player-left-vehicle";
+        LamborghiniRevueltoDiagnostics.WarehouseExitInfo(
+            context,
+            $"LamborghiniRevuelto warehouse-exit: guard ending reason={reason}, " +
+            $"projection={(vehicle == null ? float.NaN : Vector3.Dot(vehicle.transform.position, outward)):0.000}, " +
+            $"startProjection={startingDistance:0.000}.");
+        RestoreWarehouseExitTriggers(reason);
+    }
+
+    private void StopWarehouseExitGuard()
+    {
+        if (warehouseExitGuardCoroutine != null)
+            StopCoroutine(warehouseExitGuardCoroutine);
+        RestoreWarehouseExitTriggers("cancelled-or-reset");
+    }
+
+    private void RestoreWarehouseExitTriggers(string reason)
+    {
+        if (warehouseExitGuardColliders.Count > 0)
+        {
+            LamborghiniRevueltoDiagnostics.WarehouseExitInfo(
+                context,
+                $"LamborghiniRevuelto warehouse-exit: restoring triggerCount={warehouseExitGuardColliders.Count}, " +
+                $"reason={reason}.");
+        }
+        foreach (var collider in warehouseExitGuardColliders)
+        {
+            if (collider != null)
+                collider.enabled = true;
+        }
+
+        warehouseExitGuardColliders.Clear();
+        warehouseExitGuardEntryController?.ClearSuppressedEntrance(null, reason);
+        warehouseExitGuardEntryController = null;
+        warehouseExitGuardCoroutine = null;
+        Physics.SyncTransforms();
+    }
+
+    private static DriveInEntrance? FindClosestDriveInEntrance(Vector3 vehiclePosition)
+    {
+        DriveInEntrance? nearest = null;
+        var nearestDistanceSquared = 12f * 12f;
+        foreach (var entrance in FindObjectsOfType<DriveInEntrance>(true))
+        {
+            if (entrance == null)
+                continue;
+
+            var distanceSquared = (entrance.transform.position - vehiclePosition).sqrMagnitude;
+            if (distanceSquared >= nearestDistanceSquared)
+                continue;
+
+            nearest = entrance;
+            nearestDistanceSquared = distanceSquared;
+        }
+
+        return nearest;
     }
 
     private void HandleFullMenuToggle(bool isOpen)
@@ -553,7 +752,7 @@ public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
             {
                 privateDriverReady = LamborghiniRevueltoPrivateDriverSupport.EnsureVehicleAvailable(
                     vehicleTypeName);
-                if (privateDriverReady)
+                if (privateDriverReady && LamborghiniRevueltoDiagnostics.DebugEnabled)
                 {
                     context?.Logger.Info(
                         $"LamborghiniRevuelto: private-driver support registered source='{source}'.");
@@ -690,6 +889,14 @@ public sealed class LamborghiniRevueltoRuntime : MonoBehaviour
             ConfigureBodyColliders(
                 vehicle.gameObject,
                 contactMaterialOwner.GetOrCreateMaterial());
+            var warehouseBounds = vehicle.GetComponent<LamborghiniRevueltoWarehouseBoundsController>() ??
+                                  vehicle.gameObject.AddComponent<LamborghiniRevueltoWarehouseBoundsController>();
+            warehouseBounds.Initialize();
+            var warehouseEntry = vehicle.GetComponent<LamborghiniRevueltoWarehouseEntryController>() ??
+                                 vehicle.gameObject.AddComponent<LamborghiniRevueltoWarehouseEntryController>();
+            warehouseEntry.Initialize(vehicle, context);
+            LamborghiniRevueltoDiagnostics.WarehouseExitInfo(context,
+                $"LamborghiniRevuelto warehouse setup: vehicle={instanceId}, placementLength=7.42m, entryFallback=ready.");
             ConfigureNavMeshObstacles(vehicle.gameObject);
             ConfigureVisualDamage(vehicle);
             ConfigurePowertrain(vehicle.gameObject);

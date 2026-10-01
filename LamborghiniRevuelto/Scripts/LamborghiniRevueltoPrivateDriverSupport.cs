@@ -162,10 +162,11 @@ internal static class LamborghiniRevueltoPrivateDriverSupport
         var message =
             $"LamborghiniRevuelto: chauffeur appearance color='{colorName ?? "<none>"}', " +
             $"paintApplied={paintApplied}.";
-        if (paintApplied)
-            context?.Logger.Info(message);
-        else
+        if (!paintApplied)
             context?.Logger.Warn(message);
+        else if (LamborghiniRevueltoDiagnostics.DebugEnabled &&
+                 LamborghiniRevueltoDiagnostics.NpcDriverDebugEnabled)
+            context?.Logger.Info(message);
     }
 
     internal static void ReportDeparturePaintResult(
@@ -175,10 +176,11 @@ internal static class LamborghiniRevueltoPrivateDriverSupport
         var message =
             $"LamborghiniRevuelto: chauffeur departure paint color='{colorName ?? "<none>"}' " +
             $"paintApplied={paintApplied}.";
-        if (paintApplied)
-            context?.Logger.Info(message);
-        else
+        if (!paintApplied)
             context?.Logger.Warn(message);
+        else if (LamborghiniRevueltoDiagnostics.DebugEnabled &&
+                 LamborghiniRevueltoDiagnostics.NpcDriverDebugEnabled)
+            context?.Logger.Info(message);
     }
 
     internal static bool TryResolveDriverColor(
