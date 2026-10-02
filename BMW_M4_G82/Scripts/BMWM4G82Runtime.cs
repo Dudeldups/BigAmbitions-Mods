@@ -221,12 +221,16 @@ public sealed class BMWM4G82Runtime : MonoBehaviour
     private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         SubscribeEvents();
+        if (context != null)
+            BMWM4G82PlayerPrefabRegistration.Bind(context, playerVehiclePrefab, "scene-loaded");
         ScheduleInitialization($"scene-loaded:{scene.name}");
     }
 
     private void HandleGameLoadedLate()
     {
         SubscribeEvents();
+        if (context != null)
+            BMWM4G82PlayerPrefabRegistration.Bind(context, playerVehiclePrefab, "game-loaded-late");
         if (BMWM4G82LoadRecovery.CompleteInterruptedLoad(context))
             StartCoroutine(ReportLoadedInputState());
         privateDriverRegistrationAllowed = true;
@@ -711,6 +715,7 @@ public sealed class BMWM4G82Runtime : MonoBehaviour
             return false;
 
         var targetVehicle = vehicle!;
+        BMWM4G82NativeActivities.Configure(targetVehicle);
         var instanceId = targetVehicle.GetInstanceID();
         if (!configuredVehicleIds.Add(instanceId))
         {

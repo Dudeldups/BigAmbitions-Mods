@@ -1,6 +1,8 @@
 #nullable enable
 using System;
 using System.Collections.Generic;
+using System.Collections;
+using System.Reflection;
 using System.Threading.Tasks;
 using BAModAPI;
 using BAModAPI.Services;
@@ -12,6 +14,8 @@ using UnityEngine;
 using Vehicles.VehicleTypes;
 
 [assembly: RegisterModClass(typeof(BMWM4G82Mod))]
+[assembly: RegisterModClass(typeof(BMWM4G82MainMenuPrefabRegistration))]
+[assembly: RegisterModClass(typeof(BMWM4G82CityPrefabRegistration))]
 
 internal static class BMWM4G82Diagnostics
 {
@@ -28,6 +32,7 @@ internal static class BMWM4G82Diagnostics
     }
 
     internal static bool DebugEnabled { get; set; } = false;
+    internal static bool NativeActivitiesDebugEnabled { get; set; } = false;
     internal static bool AutoParkingDebugEnabled { get; set; } = false;
 
     internal static void AutoParkingInfo(ModContext? context, string message)
@@ -54,10 +59,10 @@ public sealed class BMWM4G82Mod : IModBigAmbitions
     internal const string VehicleTypeName =
         "bmwm4g82-vehicle:vehicletype_bmwm4g82";
 
-    private const string BundleKey = "AssetBundles/bmw_m4_g82.unity3d";
+    internal const string BundleKey = "AssetBundles/bmw_m4_g82.unity3d";
     private const string VehicleAssetPath =
         "Assets/Mods/BMW_M4_G82/BMWM4G82.asset";
-    private const string VehiclePrefabAssetPath =
+    internal const string VehiclePrefabAssetPath =
         "Assets/Mods/BMW_M4_G82/BMWM4G82.prefab";
     private const string PurchasePrefabName = "bmwm4g82";
     // This is a finished premium widebody/aero build, not a base M4. Apply the
@@ -74,6 +79,7 @@ public sealed class BMWM4G82Mod : IModBigAmbitions
     public Task OnLoadAsync(ModContext context)
     {
         BMWM4G82PrivateDriverSupport.Context = context;
+        BMWM4G82NativeActivities.Initialize(context);
         var bundle = AssetService.GetBundle(context.ModId, BundleKey);
         if (bundle == null)
         {
@@ -108,6 +114,26 @@ public sealed class BMWM4G82Mod : IModBigAmbitions
             return Task.CompletedTask;
         }
 
+        var physicsVehicle = vehiclePrefab.GetComponent<NWH.VehiclePhysics2.VehicleController>();
+        if (physicsVehicle == null || physicsVehicle.stateSettings == null)
+        {
+            context.Logger.Warn(
+                "BMWM4G82: bundled prefab has no usable NWH StateSettings. " +
+                "Vehicle registration was skipped; rebuild the bundle for this platform.");
+            vehicleType = null;
+            return Task.CompletedTask;
+        }
+
+        var nativeVehicle = vehiclePrefab.GetComponent<VehicleController>();
+        if (nativeVehicle != null)
+            BMWM4G82NativeActivities.Configure(nativeVehicle, preparePrefab: true);
+
+        if (!BMWM4G82PlayerPrefabRegistration.Bind(context, vehiclePrefab, "initialization-load"))
+        {
+            vehicleType = null;
+            return Task.CompletedTask;
+        }
+
         vehicleType.price = PremiumBuildPrice;
         ModdingAPI.RegisterModVehicleType(vehicleType);
         context.Logger.Info(
@@ -130,6 +156,8 @@ public sealed class BMWM4G82Mod : IModBigAmbitions
         autoParkingGuard = null;
         runtime?.Shutdown();
         runtime = null;
+        BMWM4G82NativeActivities.Shutdown();
+        BMWM4G82PlayerPrefabRegistration.Release();
 
         if (vehicleType != null)
         {
@@ -139,6 +167,107 @@ public sealed class BMWM4G82Mod : IModBigAmbitions
         }
 
         return Task.CompletedTask;
+    }
+}
+
+// PrefabHelper clears its cache when a game unloads. Rebind before city Awake,
+// so purchases and saved cars never need the global bundle filename fallback.
+[ModEntryMainMenu]
+public sealed class BMWM4G82MainMenuPrefabRegistration : IModBigAmbitions
+{
+    private ModContext? context;
+    public string[] RelativeAssetBundlePaths => Array.Empty<string>();
+
+    public Task OnLoadAsync(ModContext modContext)
+    {
+        context = modContext;
+        BMWM4G82PlayerPrefabRegistration.LoadAndBind(modContext, "main-menu-load");
+        return Task.CompletedTask;
+    }
+
+    public Task OnUnloadAsync()
+    {
+        if (context != null)
+            BMWM4G82PlayerPrefabRegistration.LoadAndBind(context, "main-menu-unload");
+        context = null;
+        return Task.CompletedTask;
+    }
+}
+
+[ModEntryOnCityLoad]
+public sealed class BMWM4G82CityPrefabRegistration : IModBigAmbitions
+{
+    public string[] RelativeAssetBundlePaths => Array.Empty<string>();
+    public Task OnLoadAsync(ModContext context)
+    {
+        BMWM4G82PlayerPrefabRegistration.LoadAndBind(context, "city-load");
+        return Task.CompletedTask;
+    }
+    public Task OnUnloadAsync() => Task.CompletedTask;
+}
+
+internal static class BMWM4G82PlayerPrefabRegistration
+{
+    private const string CacheKey = "Prefabs/Vehicles/PlayerVehicles/bmwm4g82.prefab";
+    private static readonly FieldInfo? CacheField = typeof(Helpers.PrefabHelper).GetField(
+        "PrefabCache", BindingFlags.Static | BindingFlags.NonPublic);
+    private static GameObject? ownedPrefab;
+    private static object? previousPrefab;
+    private static bool capturedPrevious;
+
+    internal static bool LoadAndBind(ModContext context, string source)
+    {
+        var bundle = AssetService.GetBundle(context.ModId, BMWM4G82Mod.BundleKey);
+        var prefab = bundle?.LoadAsset<GameObject>(BMWM4G82Mod.VehiclePrefabAssetPath);
+        return Bind(context, prefab, source);
+    }
+
+    internal static bool Bind(ModContext context, GameObject? prefab, string source)
+    {
+        try
+        {
+            var cache = CacheField?.GetValue(null) as IDictionary;
+            if (prefab == null || cache == null)
+                throw new InvalidOperationException("BMW player prefab or native cache is unavailable.");
+
+            if (!capturedPrevious)
+            {
+                previousPrefab = cache.Contains(CacheKey) ? cache[CacheKey] : null;
+                capturedPrevious = true;
+            }
+            var changed = !ReferenceEquals(cache[CacheKey], prefab);
+            cache[CacheKey] = prefab;
+            ownedPrefab = prefab;
+            // Exercise the exact purchase lookup after binding, without spawning
+            // or touching a dealer contract, money, inventory or save data.
+            if (!ReferenceEquals(Helpers.PrefabHelper.LoadPrefabAssetByName(
+                "Vehicles/PlayerVehicles/bmwm4g82"), prefab))
+                throw new InvalidOperationException("Native purchase lookup did not resolve the BMW prefab.");
+            if (changed && BMWM4G82Diagnostics.DebugEnabled)
+                context.Logger.Info($"BMWM4G82: player prefab bound key='{CacheKey}' source='{source}'.");
+            return true;
+        }
+        catch (Exception exception)
+        {
+            context.Logger.Warn($"BMWM4G82: player prefab binding failed source='{source}': " +
+                $"{exception.GetType().Name}: {exception.Message}");
+            return false;
+        }
+    }
+
+    internal static void Release()
+    {
+        var cache = CacheField?.GetValue(null) as IDictionary;
+        if (cache != null && ownedPrefab != null && ReferenceEquals(cache[CacheKey], ownedPrefab))
+        {
+            if (previousPrefab != null)
+                cache[CacheKey] = previousPrefab;
+            else
+                cache.Remove(CacheKey);
+        }
+        ownedPrefab = null;
+        previousPrefab = null;
+        capturedPrevious = false;
     }
 }
 

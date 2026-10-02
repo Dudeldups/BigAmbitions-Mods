@@ -3,6 +3,13 @@ using UnityEngine;
 
 public sealed class BMWM4G82SpawnConfigurator : MonoBehaviour
 {
+    private void Awake()
+    {
+        var vehicle = GetComponent<VehicleController>();
+        if (vehicle != null)
+            BMWM4G82NativeActivities.Configure(vehicle);
+    }
+
     private void Start()
     {
         var vehicle = GetComponent<VehicleController>();
