@@ -1,0 +1,31 @@
+{
+  "displayName": "Deutsch",
+  "maleFirstNames": [
+    "Erik", "Sebastian", "Lukas", "Jonas", "Maximilian", "Leon", "Felix", "Niklas", "Paul", "Tobias",
+    "Daniel", "Moritz", "Alexander", "Benjamin", "Christian", "David", "Elias", "Fabian", "Florian", "Jan",
+    "Julian", "Kevin", "Lennard", "Lennart", "Liam", "Linus", "Louis", "Malte", "Marcel", "Marco",
+    "Markus", "Martin", "Matthias", "Michael", "Nico", "Noah", "Oliver", "Patrick", "Philipp", "Raphael",
+    "Robin", "Samuel", "Simon", "Stefan", "Tim", "Tom", "Valentin", "Vincent", "Yannik", "Benedikt",
+    "Hans-Peter", "Karl-Heinz", "Jan-Luca", "Jan-Peter", "Klaus-Dieter", "Peter-Paul"
+  ],
+  "femaleFirstNames": [
+    "Katharina", "Anna", "Lena", "Sophie", "Laura", "Marie", "Lisa", "Lea", "Sarah", "Julia",
+    "Hannah", "Johanna", "Alina", "Amelie", "Antonia", "Carla", "Charlotte", "Clara", "Elena", "Elisa",
+    "Elisabeth", "Emily", "Emma", "Eva", "Franziska", "Frieda", "Ida", "Isabel", "Jana", "Jasmin",
+    "Josephine", "Klara", "Lara", "Lilli", "Lina", "Luisa", "Maja", "Mara", "Marlene", "Mia",
+    "Nele", "Nina", "Paula", "Pia", "Rosa", "Sabrina", "Theresa", "Vanessa", "Victoria", "Zoe",
+    "Anna-Maria", "Lisa-Marie", "Marie-Luise", "Lea-Sofie", "Anna-Lena", "Eva-Maria", "Anne-Kathrin"
+  ],
+  "lastNames": [
+    "Kaufmann", "Müller", "Baumann", "Schneider", "Fischer", "Weber", "Meyer", "Wagner", "Becker", "Hoffmann",
+    "Schulz", "Koch", "Richter", "Wolf", "Neumann", "Schwarz", "Bauer", "Schmidt", "Schmitt", "Schulze",
+    "Hofmann", "Zimmermann", "Braun", "Krüger", "Hartmann", "Lange", "Werner", "Schmitz", "Krause", "Meier",
+    "Lehmann", "Schmid", "Maier", "Köhler", "Herrmann", "König", "Walter", "Mayer", "Huber", "Kaiser",
+    "Fuchs", "Peters", "Lang", "Scholz", "Möller", "Weiß", "Jung", "Hahn", "Schubert", "Vogel",
+    "Friedrich", "Keller", "Günther", "Frank", "Berger", "Winkler", "Roth", "Beck", "Lorenz", "Ludwig",
+    "Schuster", "Böhm", "Albrecht", "Simon", "Lenz", "Busch", "Brandt", "Seidel", "Kuhn", "Seifert",
+    "Klein", "Schäfer", "Schröder", "Pfeiffer", "Neubert", "Haas", "Winter", "Sommer", "Graf", "Voigt",
+    "Dietrich", "Pohl", "Engel", "Horn", "Bergmann", "Wolff", "Bock", "Jäger", "Otto", "Ritter",
+    "Bachmann", "Schreiber", "Kruse", "Reuter", "Lindner", "Kramer", "Kraus", "Ulrich", "Böttcher", "Ziegler"
+  ]
+}

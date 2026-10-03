@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "nameGeneration": false,
+  "rivalNames": false,
+  "employeeUi": false,
+  "renaming": false,
+  "vehicleNames": false,
+  "productNames": false
+}
