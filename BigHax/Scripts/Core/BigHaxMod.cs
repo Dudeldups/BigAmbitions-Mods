@@ -22,7 +22,7 @@ namespace BigHax
             if (activeModId == context.ModId && activeRuntime != null)
                 return Task.CompletedTask;
 
-            BigHaxLogger.StartDiagnosticSession();
+            BigHaxLogger.StartDiagnosticSession(context);
 
             if (activeModId != null)
                 SharedOptions.Shutdown();

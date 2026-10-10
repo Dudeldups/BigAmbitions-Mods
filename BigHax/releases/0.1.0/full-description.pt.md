@@ -44,6 +44,7 @@ Sugestões de outros Hax que você gostaria de ter são muito bem-vindas.
 [*] Desativar limites de importação
 [*] Taxa da empresa de instalação (0–100%)
 [*] Multiplicador de clientes do negócio do jogador (1x–10x)
+[*] Sujidade máxima nas empresas do jogador
 [/list]
 
 [b]Truques de veículos[/b]
@@ -53,6 +54,7 @@ Sugestões de outros Hax que você gostaria de ter são muito bem-vindas.
 [*] Combustível infinito do veículo
 [*] Veículos nunca ficam sujos
 [*] Locais de entrega de Delivery Truck (8–160)
+[*] Multiplicador do trânsito de veículos IA
 [/list]
 
 [b]Truques de capacidade[/b]

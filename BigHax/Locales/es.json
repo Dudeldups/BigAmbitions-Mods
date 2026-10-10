@@ -9,7 +9,7 @@
   "bighax_feedback_prompt": "¿Tienes comentarios o sugerencias? ¿Has encontrado un error?",
   "bighax_ui_fallback_notice": "Suscríbete a LIB BA Unified UI en Steam Workshop para disfrutar de una mejor experiencia.",
   "bighax_update_notice_title": "Big Hax Update",
-  "bighax_update_notification": "- Se añadió un multiplicador de capacidad de clientes del edificio.\n- Se añadieron opciones para desactivar el tráfico de vehículos IA y los coches aparcados.\n- Se corrigió el truco de puntos de reclutamiento del headhunter.",
+  "bighax_update_notification": "- Se añadieron controles para la limpieza de los negocios y el tráfico de la IA.\n- Se corrigió el truco de Felicidad para mantenerla siempre al 100 %.\n- Se corrigieron la eliminación de demandas y la satisfacción máxima de los empleados, conservando los demás mensajes.\n- Se mejoró la compatibilidad con Big Ambitions Build 3682, incluidos los contactos de empleados y el menú de ajustes.\n- Se mejoró el sueño prolongado al cambiar de escena y en los menús de actividades.",
   "bighax_update_notice_got_it": "Entendido",
   "bighax_customer_traffic_multiplier_label": "Multiplicador de clientes del negocio del jugador",
   "bighax_disable_casino_bet_limit_label": "Aumentar el límite de apuestas del casino",

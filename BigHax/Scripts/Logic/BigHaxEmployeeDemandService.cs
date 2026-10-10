@@ -19,6 +19,13 @@ namespace BigHax
         private static readonly FieldInfo? ContactsToSendNotificationField =
             typeof(ContactsHelper).GetField("ContactsToSendNotification", BindingFlags.Static | BindingFlags.NonPublic);
 
+        // Build 3682 removed the optional category/notification parameters.
+        // Resolve once, so the DLL has no hard binding to either game signature.
+        private static readonly MethodInfo? EmployeeGetContactMethod =
+            typeof(EmployeeInstance).GetMethod("GetContact", Type.EmptyTypes) ??
+            typeof(EmployeeInstance).GetMethod("GetContact", new[] { typeof(ContactCategoryName), typeof(bool) });
+        private static readonly object?[]? EmployeeGetContactArguments = CreateContactArguments();
+        private bool contactApiLogged;
         private ModContext? context;
         private bool demandRemovalEnabled;
         private bool maximumSatisfactionEnabled;
@@ -38,6 +45,12 @@ namespace BigHax
         public void ApplyConfiguredBehavior(ModContext context, BigHaxSettings settings)
         {
             this.context = context;
+            if (settings.RemoveEmployeeDemands && !contactApiLogged)
+            {
+                contactApiLogged = true;
+                BigHaxLogger.EmployeeDiagnostic(context, "Employee contact API: " +
+                    (EmployeeGetContactMethod?.ToString() ?? "<unsupported>") + ".");
+            }
             demandRemovalEnabled = settings.RemoveEmployeeDemands;
             maximumSatisfactionEnabled = settings.EnableMaximumEmployeeSatisfaction;
             BigHaxLogger.EmployeeDiagnostic(context,
@@ -261,6 +274,9 @@ namespace BigHax
             if (!demandRemovalEnabled && !maximumSatisfactionEnabled)
                 return;
 
+            if (eventId == NewDayEvent || eventId == EmployeeHiredEvent || eventId == CandidateReceivedEvent)
+                BigHaxLogger.EmployeeDiagnostic(context, "Employee hax event entered: " + eventId + ".");
+
             if (eventId == NewDayEvent)
             {
                 if (TryScheduleDailyCleanup())
@@ -291,6 +307,7 @@ namespace BigHax
                 var candidate = candidates[candidates.Count - 1];
                 var removedDemandCount = ClearDemands(candidate);
                 MarkSaveChangedIfNeeded(removedDemandCount > 0);
+                BigHaxLogger.EmployeeDiagnostic(context, "Employee hax candidate cleanup: demandsRemoved=" + removedDemandCount + ".");
             }
             catch (Exception exception)
             {
@@ -399,12 +416,30 @@ namespace BigHax
                    ", at100=" + maximumSatisfactionCount + "/" + employeeCount;
         }
 
-        private static int RemoveDemandMessages(EmployeeInstance? employee)
+        private int RemoveDemandMessages(EmployeeInstance? employee)
         {
             if (employee == null)
                 return 0;
 
-            var contact = employee.GetContact();
+            if (EmployeeGetContactMethod == null || EmployeeGetContactArguments == null)
+            {
+                BigHaxLogger.WarnOnce(context, "employee-contact-api",
+                    "BigHax: employee contact API is unsupported. Demands can still be removed, but demand messages cannot be cleaned up.");
+                return 0;
+            }
+
+            Contact? contact;
+            try
+            {
+                contact = EmployeeGetContactMethod.Invoke(employee, EmployeeGetContactArguments) as Contact;
+            }
+            catch (Exception exception)
+            {
+                BigHaxLogger.WarnOnce(context, "employee-contact-call",
+                    "BigHax: employee demand-message cleanup failed via " + EmployeeGetContactMethod +
+                    ": " + exception.GetBaseException().Message);
+                return 0;
+            }
             if (contact?.messagesQueue == null || contact.messagesQueue.Count == 0)
                 return 0;
 
@@ -429,6 +464,21 @@ namespace BigHax
                 RemovePendingContactNotification(contact);
 
             return removedMessageCount;
+        }
+
+        private static object?[]? CreateContactArguments()
+        {
+            var parameters = EmployeeGetContactMethod?.GetParameters();
+            if (parameters == null)
+                return null;
+            var arguments = new object?[parameters.Length];
+            for (var index = 0; index < parameters.Length; index++)
+            {
+                if (!parameters[index].HasDefaultValue)
+                    return null;
+                arguments[index] = parameters[index].DefaultValue;
+            }
+            return arguments;
         }
 
         private static void RemovePendingContactNotification(Contact contact)

@@ -44,6 +44,7 @@ Jeśli potrzebujesz innych Hax, śmiało podrzucaj propozycje.
 [*] Wyłącz limity importowe
 [*] Opłata firmy instalacyjnej (0–100%)
 [*] Mnożnik klientów firmy gracza (1x–10x)
+[*] Maksymalne zabrudzenie własnych firm
 [/list]
 
 [b]Haki pojazdów[/b]
@@ -53,6 +54,7 @@ Jeśli potrzebujesz innych Hax, śmiało podrzucaj propozycje.
 [*] Nieskończone paliwo pojazdu
 [*] Pojazdy nigdy się nie brudzą
 [*] Miejsca dostaw dla Delivery Truck (8–160)
+[*] Mnożnik ruchu pojazdów AI
 [/list]
 
 [b]Haki pojemności[/b]

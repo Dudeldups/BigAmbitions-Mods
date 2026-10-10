@@ -44,6 +44,7 @@ You're welcome to make suggestions about what other Hax you need.
 [*] Disable import limits
 [*] Installation firm fee (0–100%)
 [*] Player Business Customer Multiplier (1x–10x)
+[*] Maximum dirtiness in player businesses
 [/list]
 
 [b]Vehicle Hax[/b]
@@ -53,6 +54,7 @@ You're welcome to make suggestions about what other Hax you need.
 [*] Infinite vehicle fuel
 [*] Never dirty vehicles
 [*] Delivery Truck delivery places (8–160)
+[*] AI vehicle traffic multiplier
 [/list]
 
 [b]Capacity Hax[/b]

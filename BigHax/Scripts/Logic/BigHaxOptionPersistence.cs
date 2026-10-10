@@ -19,6 +19,17 @@ namespace BigHax
                 BigHaxOptionIds.DisableIllegalParkingPenalties,
                 BigHaxSettings.DefaultDisableIllegalParkingPenalties);
             settings.CustomerTrafficMultiplierIndex = LoadCustomerTrafficMultiplierIndex(modId);
+            settings.AiTrafficMultiplierIndex = UnityEngine.Mathf.Clamp(
+                LoadInt(modId, BigHaxOptionIds.AiTrafficMultiplier, BigHaxSettings.DefaultAiTrafficMultiplierIndex),
+                0,
+                BigHaxSettings.AiTrafficMultiplierValues.Length - 1);
+            settings.BusinessDirtLimitPercentage = LoadSteppedInt(
+                modId,
+                BigHaxOptionIds.BusinessDirtLimitPercentage,
+                BigHaxSettings.DefaultBusinessDirtLimitPercentage,
+                BigHaxSettings.BusinessDirtLimitPercentageValues,
+                roundTowardLowerValue: true,
+                ref migratedStepValues);
             settings.BuildingCustomerCapacityMultiplierIndex = LoadInt(
                 modId,
                 BigHaxOptionIds.BuildingCustomerCapacityMultiplier,
@@ -144,6 +155,14 @@ namespace BigHax
         {
             SaveInt(modId, BigHaxOptionIds.CustomerTrafficMultiplier, value);
         }
+
+        public static void SaveAiTrafficMultiplierIndex(string modId, int value) =>
+            SaveInt(modId, BigHaxOptionIds.AiTrafficMultiplier,
+                UnityEngine.Mathf.Clamp(value, 0, BigHaxSettings.AiTrafficMultiplierValues.Length - 1));
+
+        public static void SaveBusinessDirtLimitPercentage(string modId, int value) =>
+            SaveInt(modId, BigHaxOptionIds.BusinessDirtLimitPercentage,
+                UnityEngine.Mathf.Clamp(value, 0, 100));
 
         public static void SaveBuildingCustomerCapacityMultiplierIndex(string modId, int value)
         {

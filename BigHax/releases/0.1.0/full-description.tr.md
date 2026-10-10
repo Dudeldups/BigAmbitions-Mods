@@ -44,6 +44,7 @@ Dürüst olalım: Bazen bir iş dünyası patronunun hayatında gereğinden fazl
 [*] İthalat limitlerini devre dışı bırak
 [*] Kurulum şirketi ücreti (%0–100)
 [*] Oyuncu işletmesi müşteri çarpanı (1x–10x)
+[*] Oyuncunun işletmelerindeki maksimum kirlilik
 [/list]
 
 [b]Araç hileleri[/b]
@@ -53,6 +54,7 @@ Dürüst olalım: Bazen bir iş dünyası patronunun hayatında gereğinden fazl
 [*] Sonsuz araç yakıtı
 [*] Araçlar hiç kirlenmez
 [*] Delivery Truck teslimat yerleri (8–160)
+[*] Yapay zekâ araç trafiği çarpanı
 [/list]
 
 [b]Kapasite hileleri[/b]

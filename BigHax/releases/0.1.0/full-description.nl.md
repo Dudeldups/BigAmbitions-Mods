@@ -44,6 +44,7 @@ Suggesties voor andere Hax die je nodig hebt zijn altijd welkom.
 [*] Importlimieten uitschakelen
 [*] Kosten installatiebedrijf (0–100%)
 [*] Klantvermenigvuldiger voor spelersbedrijf (1x–10x)
+[*] Maximale vervuiling in eigen bedrijven
 [/list]
 
 [b]Voertuighacks[/b]
@@ -53,6 +54,7 @@ Suggesties voor andere Hax die je nodig hebt zijn altijd welkom.
 [*] Oneindige voertuigbrandstof
 [*] Voertuigen worden nooit vies
 [*] Bezorglocaties van Delivery Truck (8–160)
+[*] AI-verkeersmultiplier
 [/list]
 
 [b]Capaciteitshacks[/b]

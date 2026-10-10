@@ -11,6 +11,8 @@ namespace BigHax
         private readonly BigHaxNativeOptionsUi nativeUi;
         private BigHaxBaUnifiedOptionsUi? baUnifiedUi;
         private bool uiSelectionResolved;
+        private ModContext? context;
+        private BigHaxSettings? settings;
         private const int WindowId = 348721;
         private static readonly string[] CustomerTrafficLabels = { "1x", "1.5x", "2x", "3x", "5x", "10x" };
         private const float WindowWidth = 720f;
@@ -50,6 +52,12 @@ namespace BigHax
 
         public bool IsVisible => isVisible;
 
+        public void Configure(ModContext modContext, BigHaxSettings modSettings)
+        {
+            context = modContext;
+            settings = modSettings;
+        }
+
         public void ConfigureUnlockActions(System.Action unlockAllContacts, System.Action unlockAllCourses)
         {
             confirmUnlockAllContacts = unlockAllContacts;
@@ -68,7 +76,11 @@ namespace BigHax
         {
             var closing = isVisible;
             isVisible = !isVisible;
-            SetSelectedUiVisible(isVisible);
+            BigHaxLogger.UiDiagnostic(context, "Settings hotkey: visible=" + isVisible + ", resolved=" + uiSelectionResolved + ".");
+            if (isVisible)
+                EnsureSelectedUi();
+            else
+                SetSelectedUiVisible(false);
             if (closing)
                 BigHaxRuntime.RequestImmediateApply();
         }
@@ -92,31 +104,38 @@ namespace BigHax
 
         public bool Prewarm(ModContext context, BigHaxSettings settings)
         {
+            Configure(context, settings);
             if (!uiSelectionResolved && !ResolveUi(context, settings, waitForNativeOptions: true))
                 return false;
-
-            if (baUnifiedUi != null)
-                baUnifiedUi.EnsureCreated(context, settings, visible: false);
-            else
-                nativeUi.EnsureCreated(context, settings, visible: false);
-
-            return true;
+            EnsureSelectedUi();
+            return uiSelectionResolved;
         }
 
-        public void OnGui(ModContext context, BigHaxSettings settings)
+        private void EnsureSelectedUi()
         {
-            // Prewarm normally resolves the implementation after all mods load. Keep
-            // this lazy path for unusual lifecycles where that callback did not run.
-            if (!uiSelectionResolved && isVisible)
-                ResolveUi(context, settings, waitForNativeOptions: false);
-
-            if (!uiSelectionResolved)
+            if (context == null || settings == null)
                 return;
-
-            if (baUnifiedUi != null)
-                baUnifiedUi.EnsureCreated(context, settings, isVisible);
-            else
-                nativeUi.EnsureCreated(context, settings, isVisible);
+            try
+            {
+                if (!uiSelectionResolved)
+                    ResolveUi(context, settings, waitForNativeOptions: false);
+                if (baUnifiedUi != null)
+                    baUnifiedUi.EnsureCreated(context, settings, isVisible);
+                else
+                    nativeUi.EnsureCreated(context, settings, isVisible);
+                BigHaxLogger.UiDiagnostic(context, "Settings panel ready: implementation=" +
+                    (baUnifiedUi != null ? "BAUnifiedUI" : "native fallback") + ", visible=" + isVisible + ".");
+            }
+            catch (System.Exception exception)
+            {
+                BigHaxLogger.WarnOnce(context, "settings-panel-build", "BigHax: settings panel creation failed: " + exception.GetBaseException().Message);
+                BigHaxLogger.UiDiagnostic(context, "Settings panel failure: " + exception);
+                baUnifiedUi?.Destroy();
+                baUnifiedUi = null;
+                nativeUi.Destroy();
+                uiSelectionResolved = false;
+                isVisible = false;
+            }
         }
 
         public void Shutdown()
@@ -126,6 +145,8 @@ namespace BigHax
             nativeUi.Destroy();
             uiSelectionResolved = false;
             isVisible = false;
+            context = null;
+            settings = null;
         }
 
         private bool ResolveUi(ModContext context, BigHaxSettings settings, bool waitForNativeOptions)
@@ -144,6 +165,7 @@ namespace BigHax
             {
                 uiSelectionResolved = true;
                 nativeUi.Destroy();
+                BigHaxLogger.UiDiagnostic(context, "Settings UI selected: BAUnifiedUI " + baUnifiedUi!.LibraryVersion + " (" + baUnifiedUi.AssemblyName + ").");
                 return true;
             }
 
@@ -152,8 +174,14 @@ namespace BigHax
             if (waitForNativeOptions &&
                 (BigHaxBaUnifiedOptionsUi.IsWaitingForNativeOptions(reason) ||
                  BigHaxBaUnifiedOptionsUi.IsWaitingForLibrary(reason)))
+            {
+                BigHaxLogger.UiDiagnostic(context, "Settings prewarm deferred until next UI/lifecycle action: " + reason);
                 return false;
+            }
 
+            BigHaxLogger.UiDiagnostic(context, "Settings UI selected: native fallback; reason=" + reason + ".");
+            if (!BigHaxBaUnifiedOptionsUi.IsWaitingForLibrary(reason) && !BigHaxBaUnifiedOptionsUi.IsWaitingForNativeOptions(reason))
+                BigHaxLogger.WarnOnce(context, "settings-library-compatibility", "BigHax: using fallback settings UI: " + reason);
             uiSelectionResolved = true;
             nativeUi.EnsureCreated(context, settings, isVisible);
             return true;
@@ -321,6 +349,31 @@ namespace BigHax
                     });
                 DrawCustomerMultiplier(context, settings);
                 DrawBuildingCustomerCapacityMultiplier(context, settings);
+                DrawIntSlider(
+                    context,
+                    settings,
+                    Localize("bighax_ai_traffic_multiplier_label"),
+                    settings.AiTrafficMultiplierIndex,
+                    0,
+                    BigHaxSettings.AiTrafficMultiplierValues.Length - 1,
+                    value => CustomerTrafficLabels[value],
+                    value =>
+                    {
+                        settings.AiTrafficMultiplierIndex = value;
+                        BigHaxOptionPersistence.SaveAiTrafficMultiplierIndex(context.ModId, value);
+                    });
+                DrawSteppedIntSlider(
+                    context,
+                    settings,
+                    Localize("bighax_business_dirt_limit_label"),
+                    settings.BusinessDirtLimitPercentage,
+                    BigHaxSettings.BusinessDirtLimitPercentageValues,
+                    value => value + "%",
+                    value =>
+                    {
+                        settings.BusinessDirtLimitPercentage = value;
+                        BigHaxOptionPersistence.SaveBusinessDirtLimitPercentage(context.ModId, value);
+                    });
                 DrawSteppedIntSlider(
                     context,
                     settings,

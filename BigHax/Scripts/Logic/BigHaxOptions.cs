@@ -11,6 +11,8 @@ namespace BigHax
         public const string UpdateNoticeSeenVersion = "big_hax_update_notice_seen_version";
         public const string UiToggleHotkey = "big_hax_ui_toggle_hotkey";
         public const string CustomerTrafficMultiplier = "big_hax_customer_traffic_multiplier_v2";
+        public const string AiTrafficMultiplier = "big_hax_ai_traffic_multiplier";
+        public const string BusinessDirtLimitPercentage = "big_hax_business_dirt_limit_percentage";
         public const string BuildingCustomerCapacityMultiplier = "big_hax_building_customer_capacity_multiplier";
         public const string LegacyCustomerTrafficMultiplier = "big_hax_customer_traffic_multiplier";
         public const string DisableInvestmentLimit = "big_hax_disable_investment_limit";
@@ -73,7 +75,7 @@ namespace BigHax
 
             OptionsService.Register(modContext.ModId, options);
             registeredModId = modContext.ModId;
-            BigHaxLogger.Info(modContext, "BigHax: options registered.");
+            BigHaxLogger.UiDiagnostic(modContext, "Options registered: modId=" + modContext.ModId + ", settingsHotkey=" + settings.UiHotkey + ".");
         }
 
         public void Shutdown()

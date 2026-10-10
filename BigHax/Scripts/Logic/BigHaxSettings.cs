@@ -11,6 +11,8 @@ namespace BigHax
         public const int VantanderMaximumLoanOverrideAmount = 99_999_999;
         public const int DefaultUiHotkeyIndex = 1;
         public const int DefaultCustomerTrafficMultiplierIndex = 0;
+        public const int DefaultAiTrafficMultiplierIndex = 0;
+        public const int DefaultBusinessDirtLimitPercentage = 100;
         public const int DefaultBuildingCustomerCapacityMultiplierIndex = 0;
         public const int DefaultFreightTruckT1DeliveryPlaces = 8;
         public const int DefaultStandardFridgeCapacity = 50;
@@ -38,6 +40,8 @@ namespace BigHax
         public const int RecruitmentCandidateMaximumSkillOverride = 100;
 
         public static readonly float[] CustomerTrafficMultiplierValues = { 1f, 1.5f, 2f, 3f, 5f, 10f };
+        public static readonly float[] AiTrafficMultiplierValues = { 1f, 1.5f, 2f, 3f, 5f, 10f };
+        public static readonly int[] BusinessDirtLimitPercentageValues = { 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
         public static readonly float[] BuildingCustomerCapacityMultiplierValues = { 1f, 1.5f, 2f, 3f, 5f, 10f };
         public static readonly int[] HrManagerCapacityValues = { 50, 100, 500, 1000, 10000 };
         public static readonly int[] EmployeeTrainingSkillIncreaseValues = { 10, 20, 30, 50, 100 };
@@ -60,6 +64,8 @@ namespace BigHax
         public int UiHotkeyIndex { get; set; } = DefaultUiHotkeyIndex;
 
         public int CustomerTrafficMultiplierIndex { get; set; } = DefaultCustomerTrafficMultiplierIndex;
+        public int AiTrafficMultiplierIndex { get; set; } = DefaultAiTrafficMultiplierIndex;
+        public int BusinessDirtLimitPercentage { get; set; } = DefaultBusinessDirtLimitPercentage;
 
         public int BuildingCustomerCapacityMultiplierIndex { get; set; } = DefaultBuildingCustomerCapacityMultiplierIndex;
 
@@ -126,6 +132,18 @@ namespace BigHax
                     index = DefaultCustomerTrafficMultiplierIndex;
 
                 return CustomerTrafficMultiplierValues[index];
+            }
+        }
+
+        public float AiTrafficMultiplier
+        {
+            get
+            {
+                var index = AiTrafficMultiplierIndex;
+                if (index < 0 || index >= AiTrafficMultiplierValues.Length)
+                    index = DefaultAiTrafficMultiplierIndex;
+
+                return AiTrafficMultiplierValues[index];
             }
         }
 

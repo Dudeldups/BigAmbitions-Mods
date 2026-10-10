@@ -1,5 +1,5 @@
-- Added Steam and Discord feedback links.
-- Added an HR manager capacity slider (50–10,000).
-- Added an option to disable import limits.
-- Changed training and capacity options to preset steps; active vehicle capacity is now a 1000 toggle.
-- Fixed the update notice when LIB BA Unified UI is active.
+- Added controls for business cleanliness and AI traffic.
+- Fixed the Happiness cheat so it reliably keeps Happiness at 100%.
+- Fixed employee-demand removal and maximum satisfaction, while preserving unrelated employee messages.
+- Improved compatibility with Big Ambitions Build 3682, including employee contact handling and the settings menu.
+- Improved extended sleep behavior across scene changes and activity menus.

@@ -44,6 +44,7 @@ Du er meget velkommen til at foreslå, hvilke andre Hax du har brug for.
 [*] Deaktiver importgrænser
 [*] Installationsfirmaets gebyr (0–100 %)
 [*] Kundemultiplikator for spillerens virksomhed (1x–10x)
+[*] Maksimal snavs i egne virksomheder
 [/list]
 
 [b]Køretøjs-hax[/b]
@@ -53,6 +54,7 @@ Du er meget velkommen til at foreslå, hvilke andre Hax du har brug for.
 [*] Uendeligt køretøjsbrændstof
 [*] Køretøjer bliver aldrig beskidte
 [*] Leveringspladser for Delivery Truck (8–160)
+[*] Multiplikator for AI-trafik
 [/list]
 
 [b]Kapacitets-hax[/b]

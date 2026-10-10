@@ -44,6 +44,7 @@ N’hésitez pas à proposer les autres Hax dont vous auriez besoin.
 [*] Désactiver les limites d’importation
 [*] Frais de l’entreprise d’installation (0–100 %)
 [*] Multiplicateur de clients pour l’entreprise du joueur (1x–10x)
+[*] Saleté maximale des commerces du joueur
 [/list]
 
 [b]Hacks de véhicules[/b]
@@ -53,6 +54,7 @@ N’hésitez pas à proposer les autres Hax dont vous auriez besoin.
 [*] Carburant de véhicule illimité
 [*] Véhicules toujours propres
 [*] Lieux de livraison de Delivery Truck (8–160)
+[*] Multiplicateur du trafic des véhicules IA
 [/list]
 
 [b]Hacks de capacité[/b]

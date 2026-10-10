@@ -44,6 +44,7 @@ Sugestiile pentru alte Hax de care ai nevoie sunt binevenite.
 [*] Dezactivează limitele de import
 [*] Taxa firmei de instalare (0–100%)
 [*] Multiplicator de clienți pentru afacerea jucătorului (1x–10x)
+[*] Murdărie maximă în afacerile jucătorului
 [/list]
 
 [b]Trucuri pentru vehicule[/b]
@@ -53,6 +54,7 @@ Sugestiile pentru alte Hax de care ai nevoie sunt binevenite.
 [*] Combustibil infinit pentru vehicul
 [*] Vehiculele nu se murdăresc niciodată
 [*] Locuri de livrare pentru Delivery Truck (8–160)
+[*] Multiplicatorul traficului vehiculelor AI
 [/list]
 
 [b]Trucuri de capacitate[/b]

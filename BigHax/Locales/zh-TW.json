@@ -9,7 +9,7 @@
   "bighax_feedback_prompt": "有意見或建議嗎？發現錯誤了嗎？",
   "bighax_ui_fallback_notice": "請在 Steam 工作坊訂閱 LIB BA Unified UI，以獲得更好的體驗。",
   "bighax_update_notice_title": "Big Hax Update",
-  "bighax_update_notification": "- 新增建築顧客容量倍率。\n- 新增停用 AI 車輛交通和停放車輛的選項。\n- 修正獵頭招聘點數作弊。",
+  "bighax_update_notification": "- 新增企業清潔度與 AI 車流控制選項。\n- 修正幸福度作弊功能，讓幸福度穩定維持在 100%。\n- 修正員工需求移除與最高滿意度，同時保留其他員工訊息。\n- 改善與 Big Ambitions Build 3682 的相容性，包括員工聯絡處理與設定選單。\n- 改善場景切換及活動選單中的延長睡眠行為。",
   "bighax_update_notice_got_it": "知道了",
   "bighax_customer_traffic_multiplier_label": "玩家企業顧客倍率",
   "bighax_disable_casino_bet_limit_label": "提高賭場下注上限",

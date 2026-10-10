@@ -44,6 +44,7 @@ Návrhy na další Haxy, které potřebujete, jsou vítány.
 [*] Zakázat limity importu
 [*] Poplatek instalační firmy (0–100 %)
 [*] Násobitel zákazníků podniku hráče (1x–10x)
+[*] Maximální znečištění vlastních provozoven
 [/list]
 
 [b]Haxy na vozidla[/b]
@@ -53,6 +54,7 @@ Návrhy na další Haxy, které potřebujete, jsou vítány.
 [*] Nekonečné palivo vozidla
 [*] Vozidla se nikdy nezašpiní
 [*] Místa doručení pro Delivery Truck (8–160)
+[*] Násobitel dopravy AI
 [/list]
 
 [b]Haxy na kapacitu[/b]

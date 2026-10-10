@@ -11,7 +11,7 @@ namespace BigHax
     {
         private const string BaUnifiedUiWorkshopUrl = "https://steamcommunity.com/sharedfiles/filedetails/?id=3790426259";
         private const float RowHeight = 50f;
-        private const float ContentHeight = 2319f;
+        private const float ContentHeight = 2419f;
         private GameObject? root;
         private GameObject? panel;
         private Transform? content;
@@ -49,6 +49,7 @@ namespace BigHax
                 if (panel == null)
                 {
                     Build();
+                    BigHaxLogger.UiDiagnostic(context, "Native fallback settings panel built successfully.");
                     panel!.SetActive(visible);
                     if (visible)
                     {
@@ -61,7 +62,9 @@ namespace BigHax
             }
             catch (System.Exception exception)
             {
-                modContext.Logger.Error(exception);
+                DestroyVisuals();
+                BigHaxLogger.UiDiagnostic(context, "Native fallback settings build failed: " + exception);
+                throw;
             }
         }
         public void SetVisible(bool visible)
@@ -76,6 +79,7 @@ namespace BigHax
 
             if (panel == null || panel.activeSelf == visible) return;
 
+            BigHaxLogger.UiDiagnostic(context, "Native fallback settings visibility=" + visible + ".");
             panel.SetActive(visible);
             if (visible)
             {
@@ -147,6 +151,7 @@ namespace BigHax
             if (arePurchaseLimitsDisabled != null && setPurchaseLimitsDisabled != null)
                 Toggle(Localize("bighax_disable_purchase_limits_label"), arePurchaseLimitsDisabled, setPurchaseLimitsDisabled);
             SteppedSlider(Localize("bighax_installation_firm_fee_percentage_label"), () => settings!.InstallationFirmFeePercentage, BigHaxSettings.InstallationFirmFeePercentageValues, v => { settings!.InstallationFirmFeePercentage = v; BigHaxOptionPersistence.SaveInstallationFirmFeePercentage(context!.ModId, v); }, v => v + "%");
+            SteppedSlider(Localize("bighax_business_dirt_limit_label"), () => settings!.BusinessDirtLimitPercentage, BigHaxSettings.BusinessDirtLimitPercentageValues, v => { settings!.BusinessDirtLimitPercentage = v; BigHaxOptionPersistence.SaveBusinessDirtLimitPercentage(context!.ModId, v); }, v => v + "%");
             Slider(Localize("bighax_customer_traffic_multiplier_label"), () => settings!.CustomerTrafficMultiplierIndex, 0, 5, v => { settings!.CustomerTrafficMultiplierIndex = v; BigHaxOptionPersistence.SaveCustomerTrafficMultiplierIndex(context!.ModId, v); }, v => new[] { "1x", "1.5x", "2x", "3x", "5x", "10x" }[v]);
             Slider(Localize("bighax_building_customer_capacity_multiplier_label"), () => settings!.BuildingCustomerCapacityMultiplierIndex, 0, 5, v => { settings!.BuildingCustomerCapacityMultiplierIndex = v; BigHaxOptionPersistence.SaveBuildingCustomerCapacityMultiplierIndex(context!.ModId, v); }, v => new[] { "1x", "1.5x", "2x", "3x", "5x", "10x" }[v]);
             Separator();
@@ -156,6 +161,7 @@ namespace BigHax
             Toggle(Localize("bighax_infinite_vehicle_fuel_label"), () => settings!.EnableInfiniteVehicleFuel, v => { settings!.EnableInfiniteVehicleFuel = v; BigHaxOptionPersistence.SaveEnableInfiniteVehicleFuel(context!.ModId, v); });
             Toggle(Localize("bighax_never_dirty_vehicles_label"), () => settings!.EnableNeverDirtyVehicles, v => { settings!.EnableNeverDirtyVehicles = v; BigHaxOptionPersistence.SaveEnableNeverDirtyVehicles(context!.ModId, v); });
             Toggle(Localize("bighax_disable_traffic_label"), () => settings!.DisableTraffic, v => { settings!.DisableTraffic = v; BigHaxOptionPersistence.SaveDisableTraffic(context!.ModId, v); });
+            Slider(Localize("bighax_ai_traffic_multiplier_label"), () => settings!.AiTrafficMultiplierIndex, 0, BigHaxSettings.AiTrafficMultiplierValues.Length - 1, v => { settings!.AiTrafficMultiplierIndex = v; BigHaxOptionPersistence.SaveAiTrafficMultiplierIndex(context!.ModId, v); }, v => new[] { "1x", "1.5x", "2x", "3x", "5x", "10x" }[v]);
             Toggle(Localize("bighax_disable_parked_cars_label"), () => settings!.DisableParkedCars, v => { settings!.DisableParkedCars = v; BigHaxOptionPersistence.SaveDisableParkedCars(context!.ModId, v); });
             SteppedSlider(Localize("bighax_freight_truck_delivery_places_label", new Dictionary<string, string> { { "vehicleName", Localize("ba:vehicletype_freighttruckt1") } }), () => settings!.FreightTruckT1DeliveryPlaces, BigHaxSettings.FreightTruckT1DeliveryPlacesValues, v => { settings!.FreightTruckT1DeliveryPlaces = v; BigHaxOptionPersistence.SaveFreightTruckT1DeliveryPlaces(context!.ModId, v); }, v => v.ToString());
             Separator();

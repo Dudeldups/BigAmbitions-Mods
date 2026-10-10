@@ -44,6 +44,7 @@ Las sugerencias sobre qué otros Hax necesitas son más que bienvenidas.
 [*] Desactivar límites de importación
 [*] Tarifa de la empresa instaladora (0–100 %)
 [*] Multiplicador de clientes del negocio del jugador (1x–10x)
+[*] Suciedad máxima en negocios propios
 [/list]
 
 [b]Trucos de vehículos[/b]
@@ -53,6 +54,7 @@ Las sugerencias sobre qué otros Hax necesitas son más que bienvenidas.
 [*] Combustible infinito del vehículo
 [*] Vehículos nunca sucios
 [*] Lugares de entrega de Delivery Truck (8–160)
+[*] Multiplicador del tráfico de vehículos IA
 [/list]
 
 [b]Trucos de capacidad[/b]

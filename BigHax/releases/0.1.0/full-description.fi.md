@@ -44,6 +44,7 @@ Ehdotuksia muista tarvitsemistasi Hax-toiminnoista otetaan mielellään vastaan.
 [*] Poista tuontirajoitukset käytöstä
 [*] Asennusyrityksen maksu (0–100 %)
 [*] Pelaajan yrityksen asiakaskerroin (1x–10x)
+[*] Yritysten suurin likaisuus
 [/list]
 
 [b]Ajoneuvohuijaukset[/b]
@@ -53,6 +54,7 @@ Ehdotuksia muista tarvitsemistasi Hax-toiminnoista otetaan mielellään vastaan.
 [*] Rajaton ajoneuvon polttoaine
 [*] Ajoneuvot eivät koskaan likaannu
 [*] Ajoneuvon Delivery Truck toimituspaikat (8–160)
+[*] Tekoälyliikenteen kerroin
 [/list]
 
 [b]Kapasiteettihuijaukset[/b]

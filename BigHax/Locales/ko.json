@@ -9,7 +9,7 @@
   "bighax_feedback_prompt": "의견이나 제안이 있나요? 버그를 발견했나요?",
   "bighax_ui_fallback_notice": "더 나은 경험을 위해 Steam 창작마당에서 LIB BA Unified UI를 구독하세요.",
   "bighax_update_notice_title": "Big Hax Update",
-  "bighax_update_notification": "- 건물 고객 수용량 배율을 추가했습니다.\n- AI 차량 교통과 주차된 차량을 비활성화하는 옵션을 추가했습니다.\n- 헤드헌터 채용 포인트 치트를 수정했습니다.",
+  "bighax_update_notification": "- 사업장 청결도와 AI 교통량 설정을 추가했습니다.\n- 행복도 치트를 수정해 행복도가 안정적으로 100%를 유지합니다.\n- 직원 요구 제거와 최대 만족도를 수정했으며 다른 직원 메시지는 그대로 표시됩니다.\n- 직원 연락 처리와 설정 메뉴를 포함해 Build 3682 호환성을 개선했습니다.\n- 장면 전환 및 활동 메뉴에서 연장 수면 동작을 개선했습니다.",
   "bighax_update_notice_got_it": "알겠습니다",
   "bighax_customer_traffic_multiplier_label": "플레이어 사업 고객 배율",
   "bighax_disable_casino_bet_limit_label": "카지노 베팅 한도 올리기",

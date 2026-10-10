@@ -25,6 +25,7 @@ namespace BigHax
 
         private static BigHaxRuntime? instance;
         private readonly BigHaxBusinessCapacityService businessCapacityService = new BigHaxBusinessCapacityService();
+        private readonly BigHaxBusinessDirtService businessDirtService = new BigHaxBusinessDirtService();
         private readonly BigHaxCasinoBetLimitService casinoBetLimitService = new BigHaxCasinoBetLimitService();
         private readonly BigHaxBuildingCustomerCapacityService buildingCustomerCapacityService = new BigHaxBuildingCustomerCapacityService();
         private BigHaxCustomerTrafficService? customerTrafficService;
@@ -56,10 +57,10 @@ namespace BigHax
         private bool parkingVehicleEventsSubscribed;
         private Coroutine? employeeDemandCleanupCoroutine;
         private Coroutine? employeeDemandMessageCleanupCoroutine;
-        private Coroutine? optionsUiPrewarmCoroutine;
         private Coroutine? parkingExitCleanupCoroutine;
         private Coroutine? sleepDurationApplyCoroutine;
         private Coroutine? vehicleCollisionApplyCoroutine;
+        private Coroutine? trafficRefreshCoroutine;
         private FieldInfo? onEnterVehicleField;
         private FieldInfo? onExitVehicleField;
         private Delegate? onEnterVehicleHandler;
@@ -85,6 +86,7 @@ namespace BigHax
 
             runtime.context = context;
             runtime.settings = settings;
+            runtime.overlayUi.Configure(context, settings);
             runtime.applyRequested = true;
             runtime.sleepDurationApplyRequested = true;
             runtime.nextActiveVehiclePollAt = 0f;
@@ -93,6 +95,7 @@ namespace BigHax
             runtime.nextEmployeeTrainingPollAt = 0f;
             runtime.nextLoanLimitPollAt = 0f;
             runtime.customerTrafficService = CreateCustomerTrafficService(context);
+            runtime.trafficService.PrepareTrafficPoolCapacity(context, settings);
             runtime.employeeDemandService.SetDailyCleanupScheduler(runtime.ScheduleEmployeeDemandCleanup);
             runtime.installationFeeService.Initialize();
             runtime.headhunterRpService.Initialize();
@@ -130,12 +133,6 @@ namespace BigHax
                 employeeDemandMessageCleanupCoroutine = null;
             }
 
-            if (optionsUiPrewarmCoroutine != null)
-            {
-                StopCoroutine(optionsUiPrewarmCoroutine);
-                optionsUiPrewarmCoroutine = null;
-            }
-
             if (parkingExitCleanupCoroutine != null)
             {
                 StopCoroutine(parkingExitCleanupCoroutine);
@@ -154,10 +151,17 @@ namespace BigHax
                 vehicleCollisionApplyCoroutine = null;
             }
 
+            if (trafficRefreshCoroutine != null)
+            {
+                StopCoroutine(trafficRefreshCoroutine);
+                trafficRefreshCoroutine = null;
+            }
+
             TryRestoreCustomerTraffic();
             casinoBetLimitService.RestoreOriginalLimit();
             buildingCustomerCapacityService.RestoreOriginalCapacities();
             businessCapacityService.RestoreOriginalCapacities();
+            businessDirtService.Shutdown(context);
             illegalParkingService.RestoreOriginalState();
             installationFeeService.Shutdown();
             investmentLimitService.RestoreOriginalLimit();
@@ -185,6 +189,8 @@ namespace BigHax
         private void OnEnable()
         {
             SceneManager.sceneLoaded += HandleSceneLoaded;
+            GlobalEvents.onNewHour -= HandleNewHour;
+            GlobalEvents.onNewHour += HandleNewHour;
             GlobalEvents.onVehicleVariablesChanged += HandleVehicleVariablesChanged;
             GlobalEvents.onTimeMachineStarted += HandleTimeMachineStarted;
             GlobalEvents.onTimeMachineEnded += HandleTimeMachineEnded;
@@ -195,6 +201,7 @@ namespace BigHax
         private void OnDisable()
         {
             SceneManager.sceneLoaded -= HandleSceneLoaded;
+            GlobalEvents.onNewHour -= HandleNewHour;
             GlobalEvents.onVehicleVariablesChanged -= HandleVehicleVariablesChanged;
             GlobalEvents.onTimeMachineStarted -= HandleTimeMachineStarted;
             GlobalEvents.onTimeMachineEnded -= HandleTimeMachineEnded;
@@ -230,6 +237,7 @@ namespace BigHax
                 SafeApply("casino bet limit", () => casinoBetLimitService.ApplyConfiguredLimit(context, settings));
                 SafeApply("building customer capacities", () => buildingCustomerCapacityService.ApplyConfiguredCapacities(context, settings));
                 SafeApply("business capacities", () => businessCapacityService.ApplyConfiguredCapacities(context, settings));
+                SafeApply("business dirt limit", () => businessDirtService.ApplyConfiguredLimit(context, settings));
                 SafeApply("illegal parking", () => illegalParkingService.ApplyConfiguredBehavior(context, settings));
                 SafeApply("installation firm fee", () => installationFeeService.ApplyConfiguredPercentage(settings));
                 SafeApply("investment limit", () => investmentLimitService.ApplyConfiguredLimit(context, settings));
@@ -241,7 +249,7 @@ namespace BigHax
                 SafeApply("recruitment candidate maximum skill", () => recruitmentCandidateService.ApplyConfiguredMaximum(context, settings));
                 SafeApply("AI vehicle traffic", () => trafficService.ApplyConfiguredBehavior(context, settings));
                 SafeApply("employee demands", () => employeeDemandService.ApplyConfiguredBehavior(context, settings));
-                SafeApply("player hax", () => playerHaxService.ApplyConfiguredBehavior(settings));
+                SafeApply("player hax", () => playerHaxService.ApplyConfiguredBehavior(context, settings));
                 SafeApply("instant deliveries", () => instantDeliveryService.ApplyConfiguredBehavior(settings));
                 if (sleepDurationApplyRequested)
                 {
@@ -340,6 +348,10 @@ namespace BigHax
 
         private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
         {
+            GlobalEvents.onNewHour -= HandleNewHour;
+            GlobalEvents.onNewHour += HandleNewHour;
+            if (context != null && settings != null)
+                trafficService.PrepareTrafficPoolCapacity(context, settings);
             overlayUi.Hide();
             updateNoticeUi.HandleSceneLoaded();
             UnsubscribeParkingVehicleEvents();
@@ -369,7 +381,6 @@ namespace BigHax
             if (context == null || settings == null)
                 return;
 
-            overlayUi.OnGui(context, settings);
             updateNoticeUi.OnGui(context);
         }
 
@@ -392,7 +403,9 @@ namespace BigHax
                 SafeApply("employee events after game load", () => employeeDemandService.RebindAfterGameLoad(context, settings));
                 SafeApply("recruitment events after game load", () => recruitmentCandidateService.RebindAfterGameLoad(context, settings));
             }
-            playerHaxService.ApplyConfiguredBehavior(settings!);
+            playerHaxService.ApplyConfiguredBehavior(context!, settings!);
+            playerHaxService.AttachDiagnosticUiHooks();
+            businessDirtService.RefreshExistingDirtLimit();
             extendedBedSleepLabelService.Attach(settings!);
             // These callbacks are cleared while a save is loading and are required
             // by extended bed sleep once the loaded game is ready.
@@ -406,8 +419,21 @@ namespace BigHax
             ScheduleEmployeeDemandMessageCleanup();
             if (sleepDurationApplyCoroutine == null)
                 sleepDurationApplyCoroutine = StartCoroutine(ApplySleepDurationsAfterGameLoad());
-            if (optionsUiPrewarmCoroutine == null)
-                optionsUiPrewarmCoroutine = StartCoroutine(PrewarmOptionsUiWhenGameIsReady());
+            SafeApply("options UI prewarm after game load", () => overlayUi.Prewarm(context!, settings!));
+        }
+
+        private void HandleNewHour()
+        {
+            if (trafficRefreshCoroutine == null && context != null && settings != null)
+                trafficRefreshCoroutine = StartCoroutine(ReapplyTrafficAfterHour());
+        }
+
+        private IEnumerator ReapplyTrafficAfterHour()
+        {
+            yield return null;
+            trafficRefreshCoroutine = null;
+            if (context != null && settings != null)
+                trafficService.ReapplyAfterHourlyUpdate(context, settings);
         }
 
         private void StartInstantDeliveryOperation(IEnumerator operation)
@@ -435,24 +461,6 @@ namespace BigHax
             }
 
             sleepDurationApplyCoroutine = null;
-        }
-
-        private IEnumerator PrewarmOptionsUiWhenGameIsReady()
-        {
-            // The callback can run before City mods and the native Options
-            // controller finish initialization. Poll only for prefab readiness;
-            // Prewarm does not build anything until both vanilla rows exist.
-            while (context != null && settings != null)
-            {
-                var completed = false;
-                SafeApply("options UI prewarm", () => completed = overlayUi.Prewarm(context, settings));
-                if (completed)
-                    break;
-
-                yield return new WaitForSecondsRealtime(0.1f);
-            }
-
-            optionsUiPrewarmCoroutine = null;
         }
 
         private IEnumerator ClearEmployeeDemandsAfterDailyUpdate()
@@ -635,7 +643,8 @@ namespace BigHax
             }
             catch (System.Exception exception)
             {
-                context?.Logger.Error(exception);
+                BigHaxLogger.WarnOnce(context, "runtime-apply:" + scope, "BigHax: failed to apply " + scope + ": " + exception.GetBaseException().Message);
+                BigHaxLogger.UiDiagnostic(context, "Runtime apply failure in " + scope + ": " + exception);
             }
         }
 

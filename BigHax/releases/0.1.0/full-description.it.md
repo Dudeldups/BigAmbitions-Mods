@@ -44,6 +44,7 @@ I suggerimenti su quali altri Hax potrebbero servirti sono più che benvenuti.
 [*] Disattiva i limiti di importazione
 [*] Tariffa dell’azienda di installazione (0–100%)
 [*] Moltiplicatore clienti per l’attività del giocatore (1x–10x)
+[*] Sporcizia massima nelle attività del giocatore
 [/list]
 
 [b]Trucchi veicoli[/b]
@@ -53,6 +54,7 @@ I suggerimenti su quali altri Hax potrebbero servirti sono più che benvenuti.
 [*] Carburante veicolo infinito
 [*] Veicoli mai sporchi
 [*] Punti di consegna di Delivery Truck (8–160)
+[*] Moltiplicatore del traffico dei veicoli IA
 [/list]
 
 [b]Trucchi capacità[/b]

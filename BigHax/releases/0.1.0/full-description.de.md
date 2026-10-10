@@ -44,6 +44,7 @@ Vorschläge für weitere Hax, die du brauchst, sind jederzeit willkommen.
 [*] Importlimits deaktivieren
 [*] Gebühr der Installationsfirma (0–100 %)
 [*] Kundenmultiplikator für Spielerunternehmen (1x–10x)
+[*] Maximale Verschmutzung in eigenen Geschäften
 [/list]
 
 [b]Fahrzeug-Hax[/b]
@@ -53,6 +54,7 @@ Vorschläge für weitere Hax, die du brauchst, sind jederzeit willkommen.
 [*] Unendlicher Fahrzeugkraftstoff
 [*] Fahrzeuge werden nie schmutzig
 [*] Delivery Truck Lieferorte (8–160)
+[*] Multiplikator für KI-Fahrzeugverkehr
 [/list]
 
 [b]Kapazitäts-Hax[/b]

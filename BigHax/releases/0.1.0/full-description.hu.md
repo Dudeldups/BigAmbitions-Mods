@@ -44,6 +44,7 @@ Nyugodtan javasolj további Hax funkciókat, amelyekre szükséged lenne.
 [*] Importkorlátok kikapcsolása
 [*] Telepítőcég díja (0–100%)
 [*] Játékos vállalkozásának ügyfélszorzója (1x–10x)
+[*] Saját üzletek maximális szennyezettsége
 [/list]
 
 [b]Jármű trükkök[/b]
@@ -53,6 +54,7 @@ Nyugodtan javasolj további Hax funkciókat, amelyekre szükséged lenne.
 [*] Végtelen járműüzemanyag
 [*] A járművek sosem koszolódnak
 [*] Delivery Truck szállítási helyei (8–160)
+[*] MI-járműforgalom szorzója
 [/list]
 
 [b]Kapacitás trükkök[/b]
