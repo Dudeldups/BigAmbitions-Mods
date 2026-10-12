@@ -1,0 +1,1055 @@
+[
+  {
+    "name": "CalliperBadge Front L",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018_CallipersCalliperBadgeA_Material1"
+    ],
+    "bounds": {
+      "min": [
+        0.8993,
+        -1.0075,
+        0.2522
+      ],
+      "max": [
+        0.9014,
+        -0.9745,
+        0.3351
+      ],
+      "size": [
+        0.0022,
+        0.033,
+        0.0829
+      ],
+      "center": [
+        0.9003,
+        -0.991,
+        0.2937
+      ]
+    }
+  },
+  {
+    "name": "CalliperExotic6 Front L",
+    "children": 18,
+    "meshes": 18,
+    "materials": [
+      "mMcLaren_SennaLE_2018_CallipersCalliperGloss_Material1"
+    ],
+    "bounds": {
+      "min": [
+        0.7581,
+        -1.0467,
+        0.1439
+      ],
+      "max": [
+        0.9021,
+        -0.9291,
+        0.4461
+      ],
+      "size": [
+        0.1439,
+        0.1176,
+        0.3022
+      ],
+      "center": [
+        0.8301,
+        -0.9879,
+        0.295
+      ]
+    }
+  },
+  {
+    "name": "CalliperBadge Front R",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018_CallipersCalliperBadgeA_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9019,
+        -1.0075,
+        0.2527
+      ],
+      "max": [
+        -0.8997,
+        -0.9745,
+        0.3355
+      ],
+      "size": [
+        0.0022,
+        0.033,
+        0.0828
+      ],
+      "center": [
+        -0.9008,
+        -0.991,
+        0.2941
+      ]
+    }
+  },
+  {
+    "name": "CalliperExotic6 Front R",
+    "children": 18,
+    "meshes": 18,
+    "materials": [
+      "mMcLaren_SennaLE_2018_CallipersCalliperGloss_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9021,
+        -1.0467,
+        0.1439
+      ],
+      "max": [
+        -0.7581,
+        -0.9291,
+        0.4461
+      ],
+      "size": [
+        0.1439,
+        0.1176,
+        0.3022
+      ],
+      "center": [
+        -0.8301,
+        -0.9879,
+        0.295
+      ]
+    }
+  },
+  {
+    "name": "CalliperBadge Rear L",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018_CallipersCalliperBadgeA_Material1"
+    ],
+    "bounds": {
+      "min": [
+        0.8904,
+        1.3421,
+        0.2948
+      ],
+      "max": [
+        0.8955,
+        1.3656,
+        0.386
+      ],
+      "size": [
+        0.0051,
+        0.0235,
+        0.0913
+      ],
+      "center": [
+        0.893,
+        1.3538,
+        0.3404
+      ]
+    }
+  },
+  {
+    "name": "CalliperExotic4 Rear L",
+    "children": 29,
+    "meshes": 29,
+    "materials": [
+      "cal_2",
+      "mMcLaren_SennaLE_2018_CallipersCalliperGloss_Material1"
+    ],
+    "bounds": {
+      "min": [
+        0.7248,
+        1.3047,
+        0.1851
+      ],
+      "max": [
+        0.8987,
+        1.7222,
+        0.4979
+      ],
+      "size": [
+        0.174,
+        0.4175,
+        0.3128
+      ],
+      "center": [
+        0.8117,
+        1.5134,
+        0.3415
+      ]
+    }
+  },
+  {
+    "name": "CalliperBadge Rear R",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018_CallipersCalliperBadgeA_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.8954,
+        1.3422,
+        0.2948
+      ],
+      "max": [
+        -0.8902,
+        1.3658,
+        0.386
+      ],
+      "size": [
+        0.0052,
+        0.0235,
+        0.0912
+      ],
+      "center": [
+        -0.8928,
+        1.354,
+        0.3404
+      ]
+    }
+  },
+  {
+    "name": "CalliperExotic4 Rear R",
+    "children": 29,
+    "meshes": 29,
+    "materials": [
+      "cal_2",
+      "mMcLaren_SennaLE_2018_CallipersCalliperGloss_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.8987,
+        1.3047,
+        0.1851
+      ],
+      "max": [
+        -0.7248,
+        1.7222,
+        0.4979
+      ],
+      "size": [
+        0.174,
+        0.4175,
+        0.3128
+      ],
+      "center": [
+        -0.8117,
+        1.5134,
+        0.3415
+      ]
+    }
+  },
+  {
+    "name": "3DWheel Front L",
+    "children": 183,
+    "meshes": 183,
+    "materials": [
+      "mMcLaren_SennaLE_2018_Wheel1A_3D_3DWheel1B_Material1"
+    ],
+    "bounds": {
+      "min": [
+        0.6849,
+        -1.4716,
+        -0.0053
+      ],
+      "max": [
+        0.9601,
+        -0.8184,
+        0.6539
+      ],
+      "size": [
+        0.2752,
+        0.6533,
+        0.6593
+      ],
+      "center": [
+        0.8225,
+        -1.145,
+        0.3243
+      ]
+    }
+  },
+  {
+    "name": "3DWheel Front R",
+    "children": 183,
+    "meshes": 183,
+    "materials": [
+      "mMcLaren_SennaLE_2018_Wheel1A_3D_3DWheel1B_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9601,
+        -1.4716,
+        -0.0053
+      ],
+      "max": [
+        -0.6849,
+        -0.8184,
+        0.6539
+      ],
+      "size": [
+        0.2752,
+        0.6533,
+        0.6593
+      ],
+      "center": [
+        -0.8225,
+        -1.145,
+        0.3243
+      ]
+    }
+  },
+  {
+    "name": "3DWheel Rear L",
+    "children": 218,
+    "meshes": 218,
+    "materials": [
+      "mMcLaren_SennaLE_2018_Wheel1A_3D_3DWheel1B_Material1"
+    ],
+    "bounds": {
+      "min": [
+        0.6325,
+        1.1666,
+        -0.0069
+      ],
+      "max": [
+        0.9773,
+        1.8634,
+        0.6975
+      ],
+      "size": [
+        0.3448,
+        0.6967,
+        0.7044
+      ],
+      "center": [
+        0.8049,
+        1.515,
+        0.3453
+      ]
+    }
+  },
+  {
+    "name": "3DWheel Rear R",
+    "children": 218,
+    "meshes": 218,
+    "materials": [
+      "mMcLaren_SennaLE_2018_Wheel1A_3D_3DWheel1B_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9773,
+        1.1666,
+        -0.0069
+      ],
+      "max": [
+        -0.6325,
+        1.8634,
+        0.6975
+      ],
+      "size": [
+        0.3448,
+        0.6967,
+        0.7044
+      ],
+      "center": [
+        -0.8049,
+        1.515,
+        0.3453
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Badge_Geo_lodA_Kit2_Badge_Geo_lodA_McLaren_SennaLE_2018BadgeA_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018BadgeA_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9167,
+        -2.329,
+        0.1262
+      ],
+      "max": [
+        0.9167,
+        2.2759,
+        1.2132
+      ],
+      "size": [
+        1.8333,
+        4.6049,
+        1.0869
+      ],
+      "center": [
+        -0.0,
+        -0.0265,
+        0.6697
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Base_Geo_lodA_Kit2_Base_Geo_lodA_McLaren_SennaLE_2018Base_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Base_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9697,
+        -2.1213,
+        0.0802
+      ],
+      "max": [
+        0.9697,
+        2.2424,
+        1.1909
+      ],
+      "size": [
+        1.9394,
+        4.3637,
+        1.1108
+      ],
+      "center": [
+        0.0,
+        0.0606,
+        0.6356
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Carbon1M_Geo_lodA_Kit2_Carbon1M_Geo_lodA_McLaren_SennaLE_2018Carbon1M_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Carbon1M_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -1.0723,
+        -2.3798,
+        0.0786
+      ],
+      "max": [
+        1.0723,
+        2.3682,
+        1.2369
+      ],
+      "size": [
+        2.1447,
+        4.7479,
+        1.1583
+      ],
+      "center": [
+        0.0,
+        -0.0058,
+        0.6578
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Carbon1_Geo_lodA_Kit2_Carbon1_Geo_lodA_McLaren_SennaLE_2018Carbon1_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Carbon1M_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9746,
+        -2.3792,
+        0.0879
+      ],
+      "max": [
+        0.9746,
+        2.2885,
+        1.1467
+      ],
+      "size": [
+        1.9492,
+        4.6677,
+        1.0588
+      ],
+      "center": [
+        0.0,
+        -0.0454,
+        0.6173
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Coloured_Geo_lodA_Kit2_Coloured_Geo_lodA_McLaren_SennaLE_2018Coloured_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Coloured_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -1.0676,
+        -2.2162,
+        0.0815
+      ],
+      "max": [
+        1.0676,
+        2.3523,
+        1.2453
+      ],
+      "size": [
+        2.1352,
+        4.5685,
+        1.1638
+      ],
+      "center": [
+        0.0,
+        0.0681,
+        0.6634
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Engine_Geo_lodA_Kit2_Engine_Geo_lodA_McLaren_SennaLE_2018EngineA_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018EngineA_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9555,
+        -2.0253,
+        0.105
+      ],
+      "max": [
+        0.9555,
+        2.1656,
+        1.0537
+      ],
+      "size": [
+        1.911,
+        4.1909,
+        0.9488
+      ],
+      "center": [
+        0.0,
+        0.0701,
+        0.5794
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Grille1_Geo_lodA_Kit2_Grille1_Geo_lodA_McLaren_SennaLE_2018Grille1A_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Grille1A_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.7764,
+        2.0434,
+        0.5189
+      ],
+      "max": [
+        0.7764,
+        2.2681,
+        0.631
+      ],
+      "size": [
+        1.5527,
+        0.2247,
+        0.1121
+      ],
+      "center": [
+        0.0,
+        2.1557,
+        0.575
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Grille2_Geo_lodA_Kit2_Grille2_Geo_lodA_McLaren_SennaLE_2018Grille2A_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Grille2A_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9409,
+        -2.1975,
+        0.1445
+      ],
+      "max": [
+        0.9409,
+        0.7448,
+        0.8601
+      ],
+      "size": [
+        1.8818,
+        2.9424,
+        0.7155
+      ],
+      "center": [
+        0.0,
+        -0.7263,
+        0.5023
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Grille3_Geo_lodA_Kit2_Grille3_Geo_lodA_McLaren_SennaLE_2018Grille3A_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Grille3A_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9342,
+        -2.0037,
+        0.1258
+      ],
+      "max": [
+        0.9342,
+        1.1498,
+        0.8915
+      ],
+      "size": [
+        1.8685,
+        3.1534,
+        0.7658
+      ],
+      "center": [
+        0.0,
+        -0.427,
+        0.5087
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Grille4_Geo_lodA_Kit2_Grille4_Geo_lodA_McLaren_SennaLE_2018Grille4A_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Grille4A_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.7893,
+        -1.0478,
+        0.3451
+      ],
+      "max": [
+        0.7893,
+        0.7033,
+        0.7753
+      ],
+      "size": [
+        1.5787,
+        1.751,
+        0.4303
+      ],
+      "center": [
+        0.0,
+        -0.1722,
+        0.5602
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Grille5_Geo_lodA_Kit2_Grille5_Geo_lodA_McLaren_SennaLE_2018Grille5A_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Grille5A_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.7911,
+        -1.0505,
+        0.1048
+      ],
+      "max": [
+        0.7911,
+        0.4521,
+        1.1837
+      ],
+      "size": [
+        1.5823,
+        1.5025,
+        1.0789
+      ],
+      "center": [
+        0.0,
+        -0.2992,
+        0.6443
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Grille6_Geo_lodA_Kit2_Grille6_Geo_lodA_McLaren_SennaLE_2018Grille6A_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Grille6A_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.0751,
+        -0.6603,
+        0.2838
+      ],
+      "max": [
+        0.0751,
+        0.1604,
+        0.3107
+      ],
+      "size": [
+        0.1502,
+        0.8207,
+        0.0268
+      ],
+      "center": [
+        0.0,
+        -0.2499,
+        0.2973
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Grille7_Geo_lodA_Kit2_Grille7_Geo_lodA_McLaren_SennaLE_2018Grille7A_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Grille7A_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.1147,
+        1.7351,
+        0.5625
+      ],
+      "max": [
+        0.1147,
+        1.9844,
+        0.7816
+      ],
+      "size": [
+        0.2294,
+        0.2493,
+        0.2191
+      ],
+      "center": [
+        0.0,
+        1.8598,
+        0.6721
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Interior_Geo_lodA_Kit2_Interior_Geo_lodA_McLaren_SennaLE_2018InteriorB_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018InteriorB_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9038,
+        -1.2338,
+        0.1157
+      ],
+      "max": [
+        0.9038,
+        0.7449,
+        1.1855
+      ],
+      "size": [
+        1.8077,
+        1.9787,
+        1.0698
+      ],
+      "center": [
+        0.0,
+        -0.2445,
+        0.6506
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Light_Geo_lodA_Kit2_Light_Geo_lodA_McLaren_SennaLE_2018LightA_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018LightA_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9731,
+        -2.1808,
+        0.2535
+      ],
+      "max": [
+        0.9731,
+        2.3234,
+        0.9007
+      ],
+      "size": [
+        1.9463,
+        4.5042,
+        0.6473
+      ],
+      "center": [
+        0.0,
+        0.0713,
+        0.5771
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_ManufacturerPlate_Geo_lodA_Kit2_ManufacturerPlate_Geo_lodA_McLaren_SennaLE_2018ManufacturerPlateA_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018ManufacturerPlateA_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.1511,
+        2.2975,
+        0.3174
+      ],
+      "max": [
+        0.1537,
+        2.3328,
+        0.4667
+      ],
+      "size": [
+        0.3048,
+        0.0353,
+        0.1493
+      ],
+      "center": [
+        0.0013,
+        2.3152,
+        0.3921
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Paint_Geo_lodA_Kit2_Paint_Geo_lodA_McLaren_SennaLE_2018Paint_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Paint_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -1.0765,
+        -2.3197,
+        0.095
+      ],
+      "max": [
+        1.0765,
+        2.3106,
+        1.1967
+      ],
+      "size": [
+        2.153,
+        4.6302,
+        1.1017
+      ],
+      "center": [
+        0.0,
+        -0.0046,
+        0.6458
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_SeatBelt_Geo_lodA_Kit2_SeatBelt_Geo_lodA_McLaren_SennaLE_2018SeatBelt_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Coloured_Material1"
+    ],
+    "bounds": {
+      "min": [
+        0.4638,
+        -0.0898,
+        0.1586
+      ],
+      "max": [
+        0.577,
+        0.3993,
+        0.8673
+      ],
+      "size": [
+        0.1132,
+        0.4892,
+        0.7086
+      ],
+      "center": [
+        0.5204,
+        0.1547,
+        0.513
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Textured_Geo_lodA_Kit2_Textured_Geo_lodA_McLaren_SennaLE_2018TexturedB_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018TexturedB_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.9271,
+        -1.9811,
+        0.1383
+      ],
+      "max": [
+        0.9271,
+        0.3619,
+        0.7645
+      ],
+      "size": [
+        1.8541,
+        2.343,
+        0.6262
+      ],
+      "center": [
+        0.0,
+        -0.8096,
+        0.4514
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_WindowInside_Geo_lodA_Kit2_WindowInside_Geo_lodA_McLaren_SennaLE_2018WindowInside_Material",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Window_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.8396,
+        -1.1264,
+        0.3356
+      ],
+      "max": [
+        0.8396,
+        1.4015,
+        1.1824
+      ],
+      "size": [
+        1.6791,
+        2.5279,
+        0.8469
+      ],
+      "center": [
+        0.0,
+        0.1376,
+        0.759
+      ]
+    }
+  },
+  {
+    "name": "m:Kit2_Window_Geo_lodA_Kit2_Window_Geo_lodA_McLaren_SennaLE_2018Window_Material",
+    "children": 2,
+    "meshes": 2,
+    "materials": [
+      "mMcLaren_SennaLE_2018Window_Material1",
+      "red_glass"
+    ],
+    "bounds": {
+      "min": [
+        -0.9752,
+        -2.1826,
+        0.2535
+      ],
+      "max": [
+        0.9752,
+        2.3234,
+        1.1914
+      ],
+      "size": [
+        1.9504,
+        4.5059,
+        0.938
+      ],
+      "center": [
+        0.0,
+        0.0704,
+        0.7225
+      ]
+    }
+  },
+  {
+    "name": "ex:lodA_Exterior_a_Coloured_1_Hard_NonTextured_NoSkin_Geo_lodA_Exterior_a_Coloured_1_Hard_NonTextured_NoSkin_Geo_McLaren_Senna_20",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Coloured_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.1082,
+        1.9221,
+        0.569
+      ],
+      "max": [
+        0.1082,
+        2.2523,
+        0.7919
+      ],
+      "size": [
+        0.2164,
+        0.3302,
+        0.2229
+      ],
+      "center": [
+        0.0,
+        2.0872,
+        0.6804
+      ]
+    }
+  },
+  {
+    "name": "ex:lodA_Exterior_a_Coloured_1_Hard_Textured_DirtyA_NoSkin_Geo_lodA_Exterior_a_Coloured_1_Hard_Textured_DirtyA_NoSkin_Geo_McLaren_",
+    "children": 1,
+    "meshes": 1,
+    "materials": [
+      "mMcLaren_SennaLE_2018Coloured_Material1"
+    ],
+    "bounds": {
+      "min": [
+        -0.1396,
+        1.8126,
+        0.5937
+      ],
+      "max": [
+        0.1396,
+        2.1034,
+        0.7564
+      ],
+      "size": [
+        0.2792,
+        0.2908,
+        0.1628
+      ],
+      "center": [
+        0.0,
+        1.958,
+        0.675
+      ]
+    }
+  }
+]

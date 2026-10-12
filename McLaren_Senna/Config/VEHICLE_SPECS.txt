@@ -1,0 +1,32 @@
+# McLaren Senna vehicle setup
+
+The setup uses the 2019 road-going McLaren Senna specifications and the supplied Senna GLB.
+
+| Setting | Value used | Basis |
+| --- | ---: | --- |
+| Engine | 3,994 cc twin-turbo V8 | Manufacturer data |
+| Maximum power | 588 kW / 800 PS at 7,250 rpm | 2019 technical specification |
+| Maximum torque | 800 Nm from 5,500 to 6,700 rpm | 2019 technical specification |
+| Rev limit | 8,500 rpm | Manufacturer specification |
+| Transmission | 7-speed seamless shift gearbox, rear-wheel drive | Manufacturer specification |
+| Forward gear ratios and final drive | 3.982, 2.612, 1.905, 1.479, 1.160, 0.906, 0.686; final drive 3.308 | Senna owner's handbook |
+| Reverse gear ratio | 2.800 | Approximation used for the game physics; the published handbook does not list a reverse ratio |
+| Kerb mass | 1,309 kg | Manufacturer specification |
+| Top speed | 335 km/h | Manufacturer data |
+| 0–100 km/h | 2.8 s | Manufacturer data |
+| Length × width × height | 4,744 × 2,153 × 1,195 mm | Manufacturer data |
+| Wheelbase | 2,670 mm | Senna owner's handbook |
+| Tyres | 245/35 ZR19 front; 315/30 ZR20 rear | 2019 technical specification |
+| Track | 1,645 mm front; 1,610 mm rear | Measured from the supplied model's wheel anchors |
+| Game purchase price | $958,966 | Original U.S. launch price |
+
+The NWH power curve follows the published torque plateau and 7,250 rpm power peak. Suspension travel, tyre friction, brake torque, collider shape, and centre of mass are game-physics tuning values; they are calibrated against the vehicle mass, dimensions, staggered tyre sizes, and the RS6R, M4 G82, and 911 GT3 RS integration patterns.
+
+The model has separate front and rear wheel groups plus independent caliper and badge groups. These are scaled and attached to the target wheel controllers at the factory tyre dimensions. Paint, carbon, windows, lamps, interior, and wheel materials are kept in their authored GLB groups.
+
+## Sources
+
+- [McLaren Automotive: Senna specifications and performance](https://cars.mclaren.com/gl_en/ultimate-models/mclaren-senna)
+- [McLaren Senna owner's handbook](https://mclaren-web.s3.eu-west-2.amazonaws.com/files/Senna%20-%20Owner%20Manual%20-%20P15%20-%20APAC%20-%20English%20-%2015QA026CP.pdf)
+- [2019 McLaren Senna technical specification](https://asset.moto.it/pricelist/auto/0b9a80156b709210e015540cd351bf71/scheda-tecnica-2019.pdf)
+- [McLaren's Senna launch specification and performance figures](https://www.senna.com/en/mclaren-senna-novos-fatos-estatisticas-e-detalhes-revelados-antes-do-salao-do-automovel-de-genebra/)

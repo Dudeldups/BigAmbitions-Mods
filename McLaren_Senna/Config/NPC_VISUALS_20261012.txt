@@ -1,0 +1,60 @@
+McLaren Senna - ambient paint / native wheel ownership, 2026-10-12
+
+NPC spawning is confirmed by the user screenshot and current Player.log.
+The user reports uniformly gray NPC Senna and some wheels half below the road.
+
+Wheel diagnosis and comparison (read-only):
+- Native Gley VehicleComponent.Initialize raises suspension ray origins.
+- Its UpdateWheelJob sets wheelGraphics position from ray hit and wheel radius
+  and writes roll/steering. These are the authoritative graphical wheel poses.
+- The previous target helper separately saved an initialSourcePosition during
+  prefab creation/Awake/OnEnable, then applied visualCenter + source - initial.
+  This retains template wheel height and depends on initialization timing.
+- The same frozen-baseline WheelBinding pattern exists in AudiRS6R, BMW M4,
+  Porsche GT3 RS, Bugatti, Cadillac, Camaro, Challenger, Ferrari, Koenigsegg,
+  Lamborghini and Amarok sources. It can cause the same type of height mismatch;
+  those mods were inspected, not changed in this task.
+- Current origin/main T1 code also retains that baseline pattern, with an
+  additional 0.40 m visual wheel lift as compensation. It was not changed here.
+- Colleague's installed Opel Combo workshop item 3808301889 was inspected only
+  for wheels. It supplies centered graphical hubs directly to Gley, aligns ray
+  origins in X/Z and derives tire radius/circumference/raycast length and axle
+  distance from its geometry. No Opel source/assets are copied into this mod.
+- Examined installed Opel DLL SHA256:
+  932577D311C6E63225E7B00734AA1139F095F119829B890D8DCDF4AC3C4BA09A.
+
+McLaren correction:
+- Four centered native wheelGraphics hubs preserve the imported visual axle,
+  rotation and scale. Radii are measured from target mesh bounds before binding;
+  expected front/rear values are 0.32705 / 0.34850 m.
+- Align physics ray origins in X/Z, preserve native vertical suspension setup,
+  recompute circumference/raycast length and measured axle spacing once.
+- Remove the separate per-frame rolling-wheel correction and its frozen baseline.
+  Gley moves/spins/steers the target hubs; calipers only follow position/steering.
+- NPC activations now explicitly select from the native weighted color palette
+  and apply the target HDRP paint through instance-owned materials/property blocks.
+  Previously a missing/uninitialized live template color left imported gray paint.
+- Existing private-driver saved paint takes precedence over ambient selection.
+- Player vehicle geometry, accepted handling, brakes and dealer paint are unchanged.
+
+Technical verification:
+- Unity 2022.3.62f2 native TrafficVehicles allocation and UpdateWheelJob execute
+  against both pooled Senna instances. Nine full-roll/opposite-steering poses,
+  a translated/rotated car, repeated helper Awake, road contact from actual mesh
+  vertices, unchanged graphical hub positions and caliper non-spin are checked.
+- Native weighted-palette spawn coroutine runs twelve times from absent initial
+  native color and yields two distinct fixture colors. Per-instance paint and
+  saved chauffeur color protection pass.
+- Existing ownership, pool, ground/state, source/Windows-bundle and Mac manifest,
+  paint/wash/deformation/dynamics fixtures pass. Diagnostics remain default-off.
+- Editor references use already installed Unity Collections/Mathematics packages.
+  No third-party code or new runtime dependency is added. No serialized vehicle
+  asset changed, so the existing validated platform bundles are retained.
+
+User confirmation, 2026-10-12:
+- NPC wheels and colors are now correct in game. BAMODS-68 and BAMODS-69 accepted.
+
+Final user acceptance, 2026-10-12:
+- All vehicle functions work in game, including the remaining chauffeur checks.
+- Other mods still need their own requested corrections if the user wants the
+  identified wheel pattern replaced there. They are not part of this fix.

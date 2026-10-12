@@ -1,0 +1,38 @@
+# McLaren Senna: wash bay and wear restoration, 12 October 2026
+
+The user clarified that Speedometer mileage wear is intended. Remove the
+McLaren mileage-wear exception completely: runtime guard, registrations,
+subscriptions and its dedicated fixture are removed. Speedometer keeps its
+original 1% damage/km behavior. Native collision and repair behavior are retained.
+Historical reports documenting the temporary exception remain as history.
+
+Wash failure evidence: Player.log reports NullReferenceException in
+CarController.<WashCoroutine>d__62.MoveNext at IL offset 0x73. The serialized
+McLaren CarController.washVfx reference was null. Native code first sets the
+washing navigation blocker, freezes the car and plays looping audio, then calls
+washVfx.SetActive(true). The exception aborts before sound/FX/blocker/unfreeze
+cleanup. The prefab now binds a target-owned inactive wash effect with HDRP mist;
+source/bundle checks require all wash audio/VFX bindings. A focused per-instance
+runtime binding safeguard warns on missing bindings and repairs a lost VFX link.
+
+The native coroutine is retained. The Editor fixture reproduces the old missing-
+VFX failure, then exercises two complete native washes, including animation
+activation, saved dirtiness progress, audio-end clip/non-loop state, effect
+deactivation, Rigidbody unfreeze and removal of the exact washing blocker.
+
+Latest performance input: vehicle-diagnostics-20261012-132834.csv
+SHA256: bba8b08442ad9fe22af970922706d551e4ab42522406dda4b16c0e2f19a9a186
+Report: tools~/drive-analysis-20261012-132834.json
+Two qualified runs: 0-100 2.808/2.810 s; 0-200 6.801/6.804 s;
+0-300 17.397/17.399 s. Full-pedal straight stops to <=1 km/h:
+100 23.516/23.498 m, 200 79.602/79.611 m. Peak full-throttle RPM 8077.396,
+no limiter contacts and no valid collisions. Performance stays unchanged:
+factory targets 2.8/6.8/17.5 s and requested brake targets 23.6/80 m are closely
+matched within the sampling/road uncertainty. Restored mileage wear can now
+accumulate naturally in subsequent drives; it is not contact damage evidence.
+
+Rebuild Windows and Mac bundles, externally build and install. User runtime check:
+restart, wash in the bay twice, verify wash sound ends and driving immediately
+returns, then save/reload and repeat. Verify intended wear accumulates while
+ordinary rolling produces no abrupt crash damage. In-game wash behavior is still
+pending confirmation; native Editor execution is not an observed game result.

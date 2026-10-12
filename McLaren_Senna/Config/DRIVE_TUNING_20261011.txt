@@ -1,0 +1,67 @@
+# McLaren Senna: 11 October 2026 driving feedback
+
+Input: vehicle-diagnostics-20261011-121821.csv
+SHA256: 36f55fbceef54dacda7f1d17f17629a9828931480142ebd17b31d297f091be18
+Report: tools~/drive-analysis-20261011-121821.json
+The original user telemetry is not distributed with the mod.
+
+Qualified straight, continuously powered/grounded acceleration:
+0-100: six runs, 2.845..2.850 s (mean 2.848 s), target 2.8 s.
+0-200: three runs, 6.950..6.960 s (mean 6.955 s), target 6.8 s.
+0-300: one qualified run, 14.273 s, target 17.5 s.
+Run 3 is excluded for pedal/gear interruption.
+Full-pedal straight stops to <=1 km/h:
+100: six stops, 23.646..24.459 m (mean 24.029 m), target 23.6 m.
+200: two stops, 85.495/88.588 m (mean 87.042 m), target 80 m.
+The ~0.2 s sampling interval, interpolation and road conditions introduce uncertainty.
+Full-throttle peak RPM: 8060.895; no low-wear full-throttle limiter contacts.
+Keep factory 8500 RPM limit, 8000/4500 shift thresholds and gear ratios.
+
+Applied calibration (candidate until measured in the installed build):
+- Native game force calibration .81 -> .828 (+2.22%) approaches 2.8/6.8 s.
+  Factory 588 kW / 800 Nm curve, 1309 kg DIN mass and launch envelope retained.
+- Above 200 km/h a smooth speed-squared torque envelope reaches .439 at 300.
+  Integrating the recorded 200..300 interval with this envelope and .828/.81
+  predicts approximately 17.50 s total. This assumes acceleration responds
+  proportionally to net native torque; shifts/traction/road drag may change it.
+  It is empirical resistance-equivalent calibration, not a published aero model,
+  velocity scaling, or a changed crankshaft specification. Neutral/reverse and
+  speeds <=200 are unchanged by this high-speed factor. Top-speed cap is 335.
+- Native brakes: 2140 Nm below 100, speed-squared blend to 3380 at 200 and above.
+  Integrating the two old stopping traces with the new torque ratios predicts
+  approximately 81.3/78.7 m from 200. This is an estimate, not an observed result.
+  25% stronger deceleration means 29.5/1.25=23.6 m and 100/1.25=80 m.
+- Native maximum steering angle 35 -> 37 degrees; small turning-radius reduction.
+  VehicleType.turnRadius is an angle despite its name, and is synchronized to 37.
+- Both headlight cones are authored 0.12 m forward of their emitting geometry.
+
+Rolling damage:
+No valid collision appears in this CSV. Native/saved damage rises .005 -> .029
+over 2389.746 m, matching the installed Speedometer's 1%/km distance wear.
+McLaren-only optional compatibility removes that exact synchronous contribution
+via the native variables-changed event. Mileage recording and every other car
+remain unaffected. Explicit/impact damage, repair and saturated destruction are
+preserved, including an impact immediately before the wear callback. No polling.
+
+Crash performance safeguard adapted from the current VW Amarok implementation:
+- Preallocated working/detail arrays; per-mesh vehicle matrices/bounds cached.
+- Contacts transformed and region/falloff constants computed once per impact.
+- Broad-phase bounds rejection avoids unrelated vertices.
+- Dynamic owned meshes retain authored hard-edge normals/tangents.
+- Conservative bounds measured once at initialization, expanded by the 0.50 m
+  cumulative displacement limit; no per-impact bounds/normal/tangent rescans.
+- Native collision health, full exterior coverage, source isolation and exact
+  repair restoration remain. Gated impact timing logs support runtime diagnosis.
+
+Validation required in game after restart:
+Repair, roll out of the workshop without contact, drive normally and verify that
+repair cost does not grow. Then perform front/rear/side impacts, verify real damage
+and repair, check crash hitch and complete deformation. Check both cones at night
+and small steering change. Repeat straight full-throttle 0-100/200/300 runs and
+full-pedal 100/200 stops without steering or handbrake; send the new CSV.
+Build/editor fixtures do not establish in-game timing, brake distance or hitch.
+
+Sources (manufacturer documents for road Senna):
+https://www.mclaren.com/cars/gl_en/ultimate-models/mclaren-senna
+https://a3.myautoworld.com/wp-content/uploads/2018/01/McLaren-Senna-Technical-Specification.pdf
+https://asset.moto.it/pricelist/auto/0b9a80156b709210e015540cd351bf71/scheda-tecnica-2019.pdf

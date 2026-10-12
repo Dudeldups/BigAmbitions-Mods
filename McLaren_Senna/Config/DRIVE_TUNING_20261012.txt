@@ -1,0 +1,54 @@
+# McLaren Senna: 12 October 2026 feedback
+
+Input: vehicle-diagnostics-20261012-122706.csv
+SHA256: a24bd01707d38aee0bbbf1a98647610688f554dace34c51b813771ff7aba86e3
+Report: tools~/drive-analysis-20261012-122706.json
+The 12:02 Kia Ceed and 12:17 Audi R8 sessions are excluded.
+
+Qualified installed-build results:
+- 0-100: eight runs, 2.806..2.815 s, mean 2.810625 s; factory target 2.8 s.
+- 0-200: four runs, 6.797..6.805 s, mean 6.801750 s; target 6.8 s.
+- 0-300: two runs, 18.163/18.173 s, mean 18.168 s; target 17.5 s.
+- 100-to-near-zero: six stops, 23.199..23.890 m, mean 23.490167 m; target 23.6 m.
+- 200-to-near-zero: three stops, 79.586/82.103/79.596 m, mean 80.428333 m; target 80 m.
+- All are straight uninterrupted/grounded baselines with no valid crash contact.
+  Endpoints <=1 km/h and ~.2 s sampling introduce measurement uncertainty.
+- Full-throttle RPM peak 8091.13, no full-throttle low-wear limiter events.
+- Saved and physical damage remain exactly zero over 4419.992 m. The user also
+  confirms that ordinary-driving damage no longer occurs and steering is good.
+
+Applied corrections:
+- Front visible dent depth 90% of previous; rear 85%. The entire per-impact
+  envelope is scaled, including small-hit floors and large-hit caps: front cap
+  .360 -> .324 m, rear .420 -> .357 m. Regional radii, side response, native
+  collision-health intensity .45, ownership and repair restoration stay intact.
+- Native game force .828, launch .65 and steering 37 degrees are retained.
+  Brake torque 2140..3380 Nm is retained: mean distances are within about .55%
+  of targets derived from 1.25x factory deceleration (29.5/1.25 and 100/1.25).
+- Above 200 only, high-speed torque floor .439 -> .494. Integrating both latest
+  measured traces with old/new torque-envelope ratios predicts ~17.49 s to 300.
+  This is an estimate assuming acceleration scales with net torque; actual new
+  timing still requires a drive. Factory curve, ratios and 8500 limit stay intact.
+- Enable Windows and Mac targets; McLaren previously shipped only Windows.
+  Mac bundle includes the same five NWH script references, StateDefinition and
+  SurfaceMap restored for Ferrari/Koenigsegg in private PR 32 on 12 October.
+  The SDK native importer configures compatible macOS DLL imports. CRC and all
+  seven manifest references are checked on both platforms, alongside source and
+  Windows-bundle ground/tire/state-profile checks. macOS gameplay needs a Mac.
+
+Confirmed ordinary-driving damage fix:
+Installed Speedometer applies 1% damage per kilometre and raises the native
+variables-changed event synchronously. The McLaren-owned optional wear guard
+recognizes that exact caller and subtracts only its known mileage contribution.
+Mileage recording is preserved. Actual collision/explicit damage, repair,
+destruction and other vehicles are preserved; no polling or global setting change.
+This guard is retained unchanged, with global/feature diagnostic defaults off.
+
+Next game checks after restart: reduced front/rear deformation, complete lenses/
+splitter/spoiler/support movement and repair, fresh straight 0-300 timing. Check
+loading, driving physics, ground contact and repair on macOS when available.
+
+Sources (manufacturer documents):
+https://www.mclaren.com/cars/gl_en/ultimate-models/mclaren-senna
+https://a3.myautoworld.com/wp-content/uploads/2018/01/McLaren-Senna-Technical-Specification.pdf
+https://asset.moto.it/pricelist/auto/0b9a80156b709210e015540cd351bf71/scheda-tecnica-2019.pdf

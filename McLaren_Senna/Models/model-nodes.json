@@ -1,0 +1,6589 @@
+[
+  {
+    "name": "Light",
+    "type": "LIGHT",
+    "parent": null,
+    "children": 0,
+    "meshes": 0
+  },
+  {
+    "name": "Camera",
+    "type": "CAMERA",
+    "parent": null,
+    "children": 0,
+    "meshes": 0
+  },
+  {
+    "name": "Sketchfab_model",
+    "type": "EMPTY",
+    "parent": null,
+    "children": 1,
+    "meshes": 924
+  },
+  {
+    "name": "FINAL_MODEL_3.fbx",
+    "type": "EMPTY",
+    "parent": "Sketchfab_model",
+    "children": 1,
+    "meshes": 924
+  },
+  {
+    "name": "RootNode",
+    "type": "EMPTY",
+    "parent": "FINAL_MODEL_3.fbx",
+    "children": 1,
+    "meshes": 924
+  },
+  {
+    "name": "Object_3",
+    "type": "ARMATURE",
+    "parent": "RootNode",
+    "children": 35,
+    "meshes": 924
+  },
+  {
+    "name": "CalliperBadge Front L",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface95",
+    "type": "EMPTY",
+    "parent": "CalliperBadge Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "CalliperExotic6 Front L",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 18,
+    "meshes": 18
+  },
+  {
+    "name": "polySurface76",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface75",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface74",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface73",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface72",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface71",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface70",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface69",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface68",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface67",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface66",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface65",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface64",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface63",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface62",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface61",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface60",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface59",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "CalliperBadge Front R",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface96",
+    "type": "EMPTY",
+    "parent": "CalliperBadge Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "CalliperExotic6 Front R",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 18,
+    "meshes": 18
+  },
+  {
+    "name": "polySurface77",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface78",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface79",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface80",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface81",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface82",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface83",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface84",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface85",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface86",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface87",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface88",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface89",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface90",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface91",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface92",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface93",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface94",
+    "type": "EMPTY",
+    "parent": "CalliperExotic6 Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "CalliperBadge Rear L",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface97",
+    "type": "EMPTY",
+    "parent": "CalliperBadge Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "CalliperExotic4 Rear L",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 29,
+    "meshes": 29
+  },
+  {
+    "name": "polySurface29",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface28",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface27",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface26",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface25",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface24",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface23",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface22",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface21",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface20",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface19",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface18",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface17",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface16",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface15",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface14",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface13",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface12",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface11",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface10",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface9",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface8",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface7",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface6",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface5",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface4",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface3",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface2",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface1",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "CalliperBadge Rear R",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface98",
+    "type": "EMPTY",
+    "parent": "CalliperBadge Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "CalliperExotic4 Rear R",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 29,
+    "meshes": 29
+  },
+  {
+    "name": "polySurface30",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface31",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface32",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface33",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface34",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface35",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface36",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface37",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface38",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface39",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface40",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface41",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface42",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface43",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface44",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface45",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface46",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface47",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface48",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface49",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface50",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface51",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface52",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface53",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface54",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface55",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface56",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface57",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface58",
+    "type": "EMPTY",
+    "parent": "CalliperExotic4 Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "3DWheel Front L",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 183,
+    "meshes": 183
+  },
+  {
+    "name": "polySurface281",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface280",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface279",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface278",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface277",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface276",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface275",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface274",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface273",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface272",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface271",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface270",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface269",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface268",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface267",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface266",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface265",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface264",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface263",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface262",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface261",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface260",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface259",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface258",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface257",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface256",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface255",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface254",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface253",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface252",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface251",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface250",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface249",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface248",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface247",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface246",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface245",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface244",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface243",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface242",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface241",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface240",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface239",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface238",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface237",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface236",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface235",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface234",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface233",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface232",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface231",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface230",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface229",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface228",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface227",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface226",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface225",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface224",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface223",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface222",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface221",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface220",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface219",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface218",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface217",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface216",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface215",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface214",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface213",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface212",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface211",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface210",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface209",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface208",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface207",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface206",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface205",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface204",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface203",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface202",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface201",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface200",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface199",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface198",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface197",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface196",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface195",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface194",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface193",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface192",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface191",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface190",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface189",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface188",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface187",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface186",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface185",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface184",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface183",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface182",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface181",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface180",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface179",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface178",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface177",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface176",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface175",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface174",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface173",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface172",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface171",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface170",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface169",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface168",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface167",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface166",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface165",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface164",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface163",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface162",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface161",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface160",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface159",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface158",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface157",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface156",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface155",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface154",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface153",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface152",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface151",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface150",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface149",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface148",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface147",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface146",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface145",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface144",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface143",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface142",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface141",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface140",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface139",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface138",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface137",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface136",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface135",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface134",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface133",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface132",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface131",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface130",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface129",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface128",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface127",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface126",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface125",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface124",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface123",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface122",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface121",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface120",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface119",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface118",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface117",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface116",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface115",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface114",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface113",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface112",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface111",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface110",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface109",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface108",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface107",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface106",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface105",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface104",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface103",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface102",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface101",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface100",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface99",
+    "type": "EMPTY",
+    "parent": "3DWheel Front L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "3DWheel Front R",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 183,
+    "meshes": 183
+  },
+  {
+    "name": "polySurface464",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface463",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface462",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface461",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface460",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface459",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface458",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface457",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface456",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface455",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface454",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface453",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface452",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface451",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface450",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface449",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface448",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface447",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface446",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface445",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface444",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface443",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface442",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface441",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface440",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface439",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface438",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface437",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface436",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface435",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface434",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface433",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface432",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface431",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface430",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface429",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface428",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface427",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface426",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface425",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface424",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface423",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface422",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface421",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface420",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface419",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface418",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface417",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface416",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface415",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface414",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface413",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface412",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface411",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface410",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface409",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface408",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface407",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface406",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface405",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface404",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface403",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface402",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface401",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface400",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface399",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface398",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface397",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface396",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface395",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface394",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface393",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface392",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface391",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface390",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface389",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface388",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface387",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface386",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface385",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface384",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface383",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface382",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface381",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface380",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface379",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface378",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface377",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface376",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface375",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface374",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface373",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface372",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface371",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface370",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface369",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface368",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface367",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface366",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface365",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface364",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface363",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface362",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface361",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface360",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface359",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface358",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface357",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface356",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface355",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface354",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface353",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface352",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface351",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface350",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface349",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface348",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface347",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface346",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface345",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface344",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface343",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface342",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface341",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface340",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface339",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface338",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface337",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface336",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface335",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface334",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface333",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface332",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface331",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface330",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface329",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface328",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface327",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface326",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface325",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface324",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface323",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface322",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface321",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface320",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface319",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface318",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface317",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface316",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface315",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface314",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface313",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface312",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface311",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface310",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface309",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface308",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface307",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface306",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface305",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface304",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface303",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface302",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface301",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface300",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface299",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface298",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface297",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface296",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface295",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface294",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface293",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface292",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface291",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface290",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface289",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface288",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface287",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface286",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface285",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface284",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface283",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface282",
+    "type": "EMPTY",
+    "parent": "3DWheel Front R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "3DWheel Rear L",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 218,
+    "meshes": 218
+  },
+  {
+    "name": "polySurface682",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface681",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface680",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface679",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface678",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface677",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface676",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface675",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface674",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface673",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface672",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface671",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface670",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface669",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface668",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface667",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface666",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface665",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface664",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface663",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface662",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface661",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface660",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface659",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface658",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface657",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface656",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface655",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface654",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface653",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface652",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface651",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface650",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface649",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface648",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface647",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface646",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface645",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface644",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface643",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface642",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface641",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface640",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface639",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface638",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface637",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface636",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface635",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface634",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface633",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface632",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface631",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface630",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface629",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface628",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface627",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface626",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface625",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface624",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface623",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface622",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface621",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface620",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface619",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface618",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface617",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface616",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface615",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface614",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface613",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface612",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface611",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface610",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface609",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface608",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface607",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface606",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface605",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface604",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface603",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface602",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface601",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface600",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface599",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface598",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface597",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface596",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface595",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface594",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface593",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface592",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface591",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface590",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface589",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface588",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface587",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface586",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface585",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface584",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface583",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface582",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface581",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface580",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface579",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface578",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface577",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface576",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface575",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface574",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface573",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface572",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface571",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface570",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface569",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface568",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface567",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface566",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface565",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface564",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface563",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface562",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface561",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface560",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface559",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface558",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface557",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface556",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface555",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface554",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface553",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface552",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface551",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface550",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface549",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface548",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface547",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface546",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface545",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface544",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface543",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface542",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface541",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface540",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface539",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface538",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface537",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface536",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface535",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface534",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface533",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface532",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface531",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface530",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface529",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface528",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface527",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface526",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface525",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface524",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface523",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface522",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface521",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface520",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface519",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface518",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface517",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface516",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface515",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface514",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface513",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface512",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface511",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface510",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface509",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface508",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface507",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface506",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface505",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface504",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface503",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface502",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface501",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface500",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface499",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface498",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface497",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface496",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface495",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface494",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface493",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface492",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface491",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface490",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface489",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface488",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface487",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface486",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface485",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface484",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface483",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface482",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface481",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface480",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface479",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface478",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface477",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface476",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface475",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface474",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface473",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface472",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface471",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface470",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface469",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface468",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface467",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface466",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface465",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear L",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "3DWheel Rear R",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 218,
+    "meshes": 218
+  },
+  {
+    "name": "polySurface900",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface899",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface898",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface897",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface896",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface895",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface894",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface893",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface892",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface891",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface890",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface889",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface888",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface887",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface886",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface885",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface884",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface883",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface882",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface881",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface880",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface879",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface878",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface877",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface876",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface875",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface874",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface873",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface872",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface871",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface870",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface869",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface868",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface867",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface866",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface865",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface864",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface863",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface862",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface861",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface860",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface859",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface858",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface857",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface856",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface855",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface854",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface853",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface852",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface851",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface850",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface849",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface848",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface847",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface846",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface845",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface844",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface843",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface842",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface841",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface840",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface839",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface838",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface837",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface836",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface835",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface834",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface833",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface832",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface831",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface830",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface829",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface828",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface827",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface826",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface825",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface824",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface823",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface822",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface821",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface820",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface819",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface818",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface817",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface816",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface815",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface814",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface813",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface812",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface811",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface810",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface809",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface808",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface807",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface806",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface805",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface804",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface803",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface802",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface801",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface800",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface799",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface798",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface797",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface796",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface795",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface794",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface793",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface792",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface791",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface790",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface789",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface788",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface787",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface786",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface785",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface784",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface783",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface782",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface781",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface780",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface779",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface778",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface777",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface776",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface775",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface774",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface773",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface772",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface771",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface770",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface769",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface768",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface767",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface766",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface765",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface764",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface763",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface762",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface761",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface760",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface759",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface758",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface757",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface756",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface755",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface754",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface753",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface752",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface751",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface750",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface749",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface748",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface747",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface746",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface745",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface744",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface743",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface742",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface741",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface740",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface739",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface738",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface737",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface736",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface735",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface734",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface733",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface732",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface731",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface730",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface729",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface728",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface727",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface726",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface725",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface724",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface723",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface722",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface721",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface720",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface719",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface718",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface717",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface716",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface715",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface714",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface713",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface712",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface711",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface710",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface709",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface708",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface707",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface706",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface705",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface704",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface703",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface702",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface701",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface700",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface699",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface698",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface697",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface696",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface695",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface694",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface693",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface692",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface691",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface690",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface689",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface688",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface687",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface686",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface685",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface684",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "polySurface683",
+    "type": "EMPTY",
+    "parent": "3DWheel Rear R",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Badge_Geo_lodA_Kit2_Badge_Geo_lodA_McLaren_SennaLE_2018BadgeA_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Base_Geo_lodA_Kit2_Base_Geo_lodA_McLaren_SennaLE_2018Base_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Carbon1M_Geo_lodA_Kit2_Carbon1M_Geo_lodA_McLaren_SennaLE_2018Carbon1M_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Carbon1_Geo_lodA_Kit2_Carbon1_Geo_lodA_McLaren_SennaLE_2018Carbon1_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Coloured_Geo_lodA_Kit2_Coloured_Geo_lodA_McLaren_SennaLE_2018Coloured_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Engine_Geo_lodA_Kit2_Engine_Geo_lodA_McLaren_SennaLE_2018EngineA_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Grille1_Geo_lodA_Kit2_Grille1_Geo_lodA_McLaren_SennaLE_2018Grille1A_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Grille2_Geo_lodA_Kit2_Grille2_Geo_lodA_McLaren_SennaLE_2018Grille2A_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Grille3_Geo_lodA_Kit2_Grille3_Geo_lodA_McLaren_SennaLE_2018Grille3A_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Grille4_Geo_lodA_Kit2_Grille4_Geo_lodA_McLaren_SennaLE_2018Grille4A_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Grille5_Geo_lodA_Kit2_Grille5_Geo_lodA_McLaren_SennaLE_2018Grille5A_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Grille6_Geo_lodA_Kit2_Grille6_Geo_lodA_McLaren_SennaLE_2018Grille6A_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Grille7_Geo_lodA_Kit2_Grille7_Geo_lodA_McLaren_SennaLE_2018Grille7A_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Interior_Geo_lodA_Kit2_Interior_Geo_lodA_McLaren_SennaLE_2018InteriorB_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Light_Geo_lodA_Kit2_Light_Geo_lodA_McLaren_SennaLE_2018LightA_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_ManufacturerPlate_Geo_lodA_Kit2_ManufacturerPlate_Geo_lodA_McLaren_SennaLE_2018ManufacturerPlateA_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Paint_Geo_lodA_Kit2_Paint_Geo_lodA_McLaren_SennaLE_2018Paint_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_SeatBelt_Geo_lodA_Kit2_SeatBelt_Geo_lodA_McLaren_SennaLE_2018SeatBelt_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Textured_Geo_lodA_Kit2_Textured_Geo_lodA_McLaren_SennaLE_2018TexturedB_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_WindowInside_Geo_lodA_Kit2_WindowInside_Geo_lodA_McLaren_SennaLE_2018WindowInside_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "m:Kit2_Window_Geo_lodA_Kit2_Window_Geo_lodA_McLaren_SennaLE_2018Window_Material",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 2,
+    "meshes": 2
+  },
+  {
+    "name": "ex:lodA_Exterior_a_Coloured_1_Hard_NonTextured_NoSkin_Geo_lodA_Exterior_a_Coloured_1_Hard_NonTextured_NoSkin_Geo_McLaren_Senna_20",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  },
+  {
+    "name": "ex:lodA_Exterior_a_Coloured_1_Hard_Textured_DirtyA_NoSkin_Geo_lodA_Exterior_a_Coloured_1_Hard_Textured_DirtyA_NoSkin_Geo_McLaren_",
+    "type": "EMPTY",
+    "parent": "Object_3",
+    "children": 1,
+    "meshes": 1
+  }
+]

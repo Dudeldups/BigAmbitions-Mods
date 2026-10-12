@@ -1,0 +1,53 @@
+McLaren Senna - traffic / Private Driver correction, 2026-10-12
+
+Observed in Player.log:
+- McLaren pool unavailable at mod-load, TransitionToSave and game-loaded-late.
+- Native call failure: No vehicle of prefab McLarenSennaPrivateDriver found in
+  the vehicle list, followed by Failed to spawn private driver vehicle.
+- The NPC traffic mix contains other mod types but no McLaren.
+
+Cause and implementation:
+- MainScene sceneLoaded is the window after TrafficComponent.Awake and before
+  CityManager's game-loaded callback constructs the native Gley lists.
+- The previous dealer-layout loading return skipped that independent pool
+  registration. Traffic preparation now runs before the dealer-only gate.
+- Contract eligibility requires successful traffic-pool setup. Existing saved
+  assignments are preserved. No append to an already initialized pool.
+- AI-template loading is deferred until an actual TrafficComponent/pool exists.
+- The four target caliper visuals are included alongside body and wheels.
+- Native cached collider references are rebound to the active target body,
+  preserving traffic triggers/wheels and excluding disabled template colliders.
+- Existing 1% ambient-traffic frequency is retained. No global pool reset or
+  recurring scene search, readiness watcher, or retry timer is introduced.
+- Focused pool/lifecycle diagnostics require DebugEnabled and the separate
+  PrivateDriverDebugEnabled; both default false. Late missing-pool warning is
+  deduplicated per pool and remains actionable in release mode.
+
+Technical verification:
+- Unity 2022.3.62f2 isolated fresh-process source/Windows bundle and both-platform
+  manifest checks pass, including the existing appearance/damage/wash/dynamics
+  fixtures.
+- Traffic fixture keeps dealer layouts loading across simulated city creation,
+  proves one unique Senna pool entry, and executes native TrafficVehicles.Initialize.
+  Both Senna instances are present in the list queried by chauffeur spawning.
+- Complete body/wheels/calipers, native active collider cache, idempotence,
+  refusal to append after native initialization, eligibility gate and ownership
+  safe cache/pool cleanup are checked with stock and foreign sentinel entries.
+- This is runtime C# work; existing Windows/Mac bundles retain valid native
+  dependencies and do not require serialized asset changes.
+
+User-confirmed prior behavior:
+- Dealer purchase paint appears correctly before entry.
+- Wash completes and driving away works.
+- Driving/performance tests are accepted as complete.
+
+Previous in-game verification matrix (now accepted):
+- Cold-load the existing save with the assigned Senna; call it from a reachable
+  roadside point and check arrival, paint, boarding, dismissal and departure.
+- Verify occasional Senna NPC traffic (intended ~1% over a longer sample).
+- Save/restart/repeat with other modded chauffeur cars assigned; verify their
+  calls and UI remain functional.
+
+Final user acceptance, 2026-10-12:
+- The user confirms all functions work in game. Development is accepted;
+  Workshop release preparation continues separately.

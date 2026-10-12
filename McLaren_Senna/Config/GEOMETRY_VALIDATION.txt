@@ -1,0 +1,44 @@
+McLaren Senna geometry and lifecycle corrections
+
+Reference: McLaren Senna Owner Handbook, exterior lighting, US page 1.27:
+https://mclaren-web.s3.eu-west-2.amazonaws.com/files/Senna%20-%20Owner%20Manual%20-%20P15%20-%20US%20-%20English%20-%2015QA029CP%20-%2022-05-2018.pdf
+
+Lamp map for the supplied LightA mesh/atlas:
+- Front switchback DRL/indicator strips: UV y 0.715..0.825, x >0.115; 150 triangles per side.
+- Separate upper headlamp optics: UV x 0.13..0.735, y 0.03..0.455; 405 triangles per side.
+- Rear combined strip emitters: UV x <0.115, rear lateral modules; 91 triangles per side.
+- High central brake emitter: slim lens atlas island, 22 triangles.
+- Low central reverse emitter: module atlas island, 12 triangles.
+Position checks isolate each physical module; complete triangles are retained. Housings, lower reflectors and license lamps are excluded from these switched surfaces. Front white DRLs yield to amber indicators through both flash phases. Rear shared modules have per-side indicator priority. Emission uses one mesh per physical surface.
+
+Driver: dedicated LHD steering and pelvis anchors measured from the source interior. No Porsche steering marker or donor seat offset. Entry/exit and pooled activation initialize the seated character; LateUpdate only evaluates the seated pose.
+
+Damage: lamps and emitter subsets use the same vertex displacement rule. Grilles, badges, exterior trim and plate geometry participate in per-instance deformation and repair.
+
+Asset validation: authoring checks non-empty emitter meshes, unique anchors, two road beams, upright orientation, complete target-owned mesh/material references and damage coverage. Persistent production meshes/textures survive a fresh GLB import. Generated production prefab is verified from disk and again from the built bundle.
+
+Dealer purchase and save loading: the loaded McLaren player prefab is registered under the native key Prefabs/Vehicles/PlayerVehicles/mclarensenna.prefab before the vehicle type becomes purchasable. Initialization, main-menu transition and city-load entrypoints restore that exact key after the native cache is cleared. Binding checks the native lookup immediately; missing native/physics controllers or failed initial binding prevent vehicle registration. No bundle-wide filename search is required. Unload removes only our owned binding or restores its previous entry in the current cache generation.
+
+Editor purchase-path verification: McLarenSennaGeometrySetup.VerifyPurchaseLookup exercises the source and built prefab through the actual native lookup, repeated binding, save-cache reset/rebind, previous-owner restoration and preservation of unrelated cache entries. No contract, money or save data is touched.
+
+Spawn visibility and driver occupancy: production materials use HDRP/Lit or HDRP/Unlit rather than glTFast's built-in shaders. Paint is explicitly opaque with alpha one and depth writing enabled. Authored base/normal/emissive maps and PBR scalars are preserved; metallic/roughness/occlusion textures are packed into persistent linear HDRP mask maps. Cutout and transparent material modes are preserved. Setup and runtime normalize only McLaren material assets or per-instance copies. Validation now rejects non-HDRP production shaders and non-opaque paint.
+
+DeveloperTools uses enter listeners as vehicle-created callbacks without occupying the car. The McLaren driver refreshes native controlledByPlayer state instead of assuming an entry. SetOccupied also rejects requests while the parked vehicle has no native player control. A one-frame startup handoff rechecks occupancy; per-frame pose evaluation only animates an already occupied seat. Editor validation checks parked creation, real control, exit and another parked callback.
+
+Runtime validation still required: dealer purchase with outside spawn and first entry, then save/reload and another purchase after returning to the menu; driver pose/entry/exit, day/night lamps with brake/reverse/indicators and hazards, front/rear impacts with lights on, repair, reload, a second vehicle and private-driver call/dismissal. Build/editor verification does not establish in-game behavior.
+
+October 2026 runtime-feedback corrections:
+- All four contacts, rolling pivots and fixed caliper pivots: 30 mm outward, 100 mm rearward; wheelbase preserved. Idempotent prefab repair sets absolute positions.
+- Driver seat: another 30 mm rearward from the measured wheel, back lean 12 -> 22 degrees, hand offset -50 -> -80 mm.
+- BadgeA lettering: explicit HDRP alpha test (0.15 cutoff), opaque depth/pass state and preserved atlas alpha. Rear badge vertices are separated 4 mm from the grille using a dedicated target-owned mesh; repeated repair does not accumulate offsets.
+- Engine: low-RPM power reduced, rotational inertia 0.20, loss coefficient 0.25, clutch inertia 0.02 and 1200 Nm slip limit. Native stall detection and autoStartOnThrottle are enabled. The previous no-stall setting kept IsRunning true at zero RPM, blocking the native starter. Editor verification reproduces that state, then checks three native automatic recoveries and the canRun safety gate. This is a solver lifecycle fixture, not a full in-game driving test.
+- Audio: owned low V8 idle replaces the inherited idle sample. Audible carrier range lowered to 50..320 Hz; upper harmonic energy reduced. Four-second periodic engine loops retain continuous band/load blending. Native-source setup happens once after startup; audio ticks only mix established voices. Horn unchanged.
+- Per-instance engine start/stop, shift and physics enable/disable diagnostics are event based and require global DebugEnabled plus DealerEntryDebugEnabled; both default false.
+
+Required game retest after restart: repeated accelerate/brake/standstill/relaunch, reverse and re-entry; all wheel positions and calipers; seat/hands; complete rear lettering without white rectangles; lower idle and loaded sound. Previous user reports remain unresolved until the installed build is observed in game.
+
+3 October 2026 second feedback calibration:
+- Another 80 mm rearward for controller/rolling/caliper pivots and 30 mm lower supported chassis.
+- Lamp covers separated from cabin glass; clear front/rear covers and red rear lenses enter the same pointwise dent field as emitters. Rear regional height includes the spoiler. Damage recalculates normals/tangents; repair restores authored vertex/normal/tangent data and instance-owned bindings.
+- Synthetic front/rear fixtures: 752 front clear, 142 rear clear, 641 red rear lens vertices and 4931 high rear/spoiler vertices changed. Cabin, wheels and shared source meshes stayed pristine.
+- CSV qualification, factory targets, native power/brake calibration and upper-only audio compression are documented in DRIVE_TUNING_20261003.txt. Another straight in-game CSV remains required.

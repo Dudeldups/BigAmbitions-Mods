@@ -1,0 +1,76 @@
+# McLaren Senna: CSV calibration, 3 October 2026
+
+Input: vehicle-diagnostics-20261003-145333.csv
+SHA256: 465b87ab844438f9f9f2d6d20417bd876b7fa0d5413b2fbf113d71cd4eee0799
+Use tools~/analyze_drive.py with the input CSV to reproduce the qualification.
+The CSV itself is user telemetry and is not distributed with the mod.
+
+## Baseline and targets
+
+| Measurement | Old installed build | Target for next drive |
+| --- | --- | --- |
+| 0-100 km/h | Runs 1/3/4/11: 2.396/2.410/2.416/2.468 s | 2.8 s |
+| 0-200 km/h | 5.529 s observed, steering-contaminated; not a valid straight run | 6.8 s |
+| 100-0 km/h | 18.882 m to 0.769 km/h in the straight portion of the 9.792 s stop | 23.6 m |
+| 200-0 km/h | 72.840 m observed, steering-contaminated; not a valid straight stop | 80 m |
+| Limiter | 23 events before the first contact, maximum 8500 RPM | Keep the factory 8500 limit; reduce limiter dwell/gear reversals |
+
+Acceleration validation stops at throttle/brake interruption, steering, lost
+wheel contact or the first collision (158.347 s). Braking distances interpolate
+the threshold crossing; endpoints <=1 km/h approximate a stop. The ~0.2 s
+sampling interval introduces additional measurement uncertainty. Initial
+neutral selection at near-zero road speed is accepted as normal launch.
+
+## Applied calibration
+
+- Absolute wheel/controller/caliper pivots: front z=1.155 m, rear z=-1.515 m;
+  another 80 mm rearward, retaining the 2.670 m wheelbase and current tracks.
+- Wheel contact/visual centres raised 30 mm relative to the chassis pivot:
+  front y=0.38705 m, rear y=0.40850 m. With tyre sizes/springs preserved, this
+  lowers the supported chassis by approximately 30 mm rather than moving
+  body visuals through their physical colliders at runtime.
+- Shared engine curve: 588 kW at 7250 RPM, no interpolated torque above
+  800 Nm, 800 Nm plateau at 5500..6700 RPM. Intermediate turbo-spool values
+  are game calibration; McLaren does not publish a full dyno trace here.
+- Native engine modifier models 85% net driveline efficiency. NWH already
+  compensates its internal engineLossPercent at full throttle, so changing
+  that field alone would not provide wheel-power losses. Real mass/power,
+  tyre dimensions, gearing and the 335 km/h speed limit are retained.
+- Upshift 8000 RPM, downshift 4500 RPM, post-shift ban 0.18 s. First-to-second
+  now drops to ~5248 RPM, safely above the downshift threshold. The former
+  5500 threshold crossed that drop and caused repeated 1/2 reversals.
+- Native brake modifier: 2100 Nm below 100 km/h, progressive speed-squared
+  response to a 2800 Nm cap at/above 200 km/h. This approximates additional
+  Senna aero braking without altering grip/steering. Targets use 1.25 times
+  factory deceleration: 29.5/1.25=23.6 m and 100/1.25=80 m, not 25% more than
+  the already excessive installed brake torque. This response remains a
+  candidate calibration until another straight CSV validates both stops.
+- Engine loudness/load crossfade unchanged. Carrier matches the previous
+  50..320 Hz curve through 6000 RPM; above it rolls off monotonically to
+  220 Hz instead of 320 Hz at 8500 RPM. Horn and existing clips unchanged.
+- Clear front/rear lamp-cover triangles split from the imported cabin-window
+  mesh, retaining coordinates and UVs. Clear and red lenses own damage
+  clones; cabin glass is excluded. Rear dent height reaches the spoiler.
+  Changed meshes recalculate normals/tangents; repair restores authored data.
+
+## Verification and remaining runtime work
+
+Unity fixtures exercise exact controller/rolling/caliper positions, power
+and torque bounds, shift hysteresis, native modifier deduplication/removal,
+native zero-RPM restart safety, upper audio compression, front/rear lens and
+spoiler deformation, shared-source isolation and repair of mesh bindings,
+vertices, normals and tangents. Stored and bundled prefabs are checked.
+This does not establish achieved in-game acceleration or braking times.
+
+After installing/restarting: drive straight from rest to 100 and 200 with
+continuous full throttle and no steering; brake from above 100/200 to rest
+without steering/handbrake. Repeat 0-100 at least three times. Include one
+stop/relaunch, reverse, exit/re-entry and repair/relaunch. Check road contact,
+upper-RPM sound, front/rear lights-on impacts and spoiler deformation. Send
+that CSV for the next measured correction; do not mark performance complete
+until the installed build meets the agreed targets in game.
+
+Sources (manufacturer documents, road Senna):
+https://cars.mclaren.com/gl_en/ultimate-models/mclaren-senna
+https://asset.moto.it/pricelist/auto/0b9a80156b709210e015540cd351bf71/scheda-tecnica-2019.pdf
+https://mclaren-web.s3.eu-west-2.amazonaws.com/files/Senna%20-%20Owner%20Manual%20-%20P15%20-%20US%20-%20English%20-%2015QA029CP%20-%2022-05-2018.pdf
