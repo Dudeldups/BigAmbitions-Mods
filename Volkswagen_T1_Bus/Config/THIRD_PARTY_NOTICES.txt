@@ -1,0 +1,7 @@
+# Third-party notices
+
+The bundled VW T1 style Bus Free 3D model is by Libau Media (Robin Mikart) and
+is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+See ATTRIBUTION.md for the source and license links and the modifications made.
+Volkswagen names and marks belong to Volkswagen AG. This fan-made mod is not
+endorsed by or affiliated with Volkswagen AG.

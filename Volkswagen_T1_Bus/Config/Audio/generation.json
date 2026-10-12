@@ -1,0 +1,44 @@
+{
+  "engine": "1967 Volkswagen Type 2 T1 1500, naturally aspirated air-cooled flat-four",
+  "source": {
+    "file": "VW_T1_Worn_Old_Engine_740RPM_Source.wav",
+    "provenance": "Generated with ChatGPT and supplied by the user for this mod.",
+    "recorded_engine_speed_rpm": 740,
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "duration_seconds": 10.0,
+    "peak": 0.87994384765625,
+    "rms": 0.29921144509323794
+  },
+  "runtime_loop": {
+    "file": "EngineT1Worn740RPM_2x.wav",
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "duration_seconds": 4.9,
+    "recording_speed_factor": 2,
+    "source_equivalent_rpm_at_pitch_1": 1480,
+    "loop_crossfade_ms": 100,
+    "peak": 0.85308837890625,
+    "rms": 0.2976296167423054,
+    "processing": "63-tap windowed-sinc anti-alias decimation and periodic 100 ms crossfade; no extra tones or noise"
+  },
+  "constant_drive_loop": {
+    "file": "VW_T1_Worn_ConstantDrive_Mixer_Friendly.wav",
+    "provenance": "Generated with ChatGPT and supplied by the user for this mod.",
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bit_depth": 16,
+    "duration_seconds": 8.0,
+    "peak": 0.8999908444471572,
+    "rms": 0.3274898126301184,
+    "processing": "Used unchanged; pitch follows the measured approximately 70.6 Hz firing cadence through 2,300 RPM, equivalent to about 2,120 RPM at 1x pitch. Above 2,300 RPM the pitch response uses a 0.30 compression exponent, reaching about 1.31x at the 4,300 RPM limiter."
+  },
+  "playback": "The 740 RPM engine recording is used at idle and crossfades to the user-supplied driving loop between 1250 and 2300 RPM. Both loops match engine firing cadence across the crossfade; driving-loop pitch response is compressed above 2,300 RPM to retain the worn air-cooled engine character.",
+  "added_turbo_whistle": false,
+  "added_transmission_whine": false,
+  "added_broadband_noise": false,
+  "added_pops_or_crackles": false,
+  "note": "The user confirms the recordings were generated with ChatGPT and may be redistributed with this mod."
+}

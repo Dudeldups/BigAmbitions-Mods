@@ -1,0 +1,11 @@
+# Attribution
+
+"VW T1 style Bus Free" by Libau Media (Robin Mikart)
+https://sketchfab.com/3d-models/vw-t1-style-bus-free-c6dc0d2275524bb1a43ddc398d2be3bc
+
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+The model is redistributed under CC BY 4.0, normalized to Volkswagen Type 2 T1
+Bus dimensions, and adapted for this Big Ambitions mod. The GLB metadata also
+records the author, source, title, and CC-BY-4.0 license.
