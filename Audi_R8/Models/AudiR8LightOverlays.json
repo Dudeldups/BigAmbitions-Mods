@@ -1,0 +1,117 @@
+{
+  "sourceBlend": "AudiR8LightOverlays.blend",
+  "sourceBlendSha256": "ed903c2b2f7d8ed015eace87eb2868673bac4dac50fb0c30ee1fe7fec1b7fdea",
+  "productionSha256": "33361750f963aceea2d65ed59f0bd670e06c35a1083b496e8a0d7e091d1c8eef",
+  "groups": [
+    {
+      "group": "Headlamps",
+      "mesh": "AudiR8LightRef_Headlamps",
+      "source": "r:Light_Geo_lodA_Light_Geo_lodA_Audi_R8V10_2020LightA_Material_r:Audi_R8V10_2020LightA_Material1_0",
+      "sourceVertices": 13527,
+      "selectedVertices": 94,
+      "faces": 132,
+      "boundaryPartialFaces": 0,
+      "maxLocalPositionDelta": 0.0
+    },
+    {
+      "group": "DRL",
+      "mesh": "AudiR8LightRef_DRL",
+      "source": "r:Light_Geo_lodA_Light_Geo_lodA_Audi_R8V10_2020LightA_Material_r:Audi_R8V10_2020LightA_Material1_0",
+      "sourceVertices": 13527,
+      "selectedVertices": 62,
+      "faces": 50,
+      "boundaryPartialFaces": 6,
+      "maxLocalPositionDelta": 0.0
+    },
+    {
+      "group": "DRL_Indicator_left",
+      "mesh": "AudiR8LightRef_DRL_Indicator_left",
+      "source": "r:Light_Geo_lodA_Light_Geo_lodA_Audi_R8V10_2020LightA_Material_r:Audi_R8V10_2020LightA_Material1_0",
+      "sourceVertices": 13527,
+      "selectedVertices": 15,
+      "faces": 13,
+      "boundaryPartialFaces": 2,
+      "maxLocalPositionDelta": 0.0
+    },
+    {
+      "group": "DRL_Indicator_right",
+      "mesh": "AudiR8LightRef_DRL_Indicator_right",
+      "source": "r:Light_Geo_lodA_Light_Geo_lodA_Audi_R8V10_2020LightA_Material_r:Audi_R8V10_2020LightA_Material1_0",
+      "sourceVertices": 13527,
+      "selectedVertices": 15,
+      "faces": 13,
+      "boundaryPartialFaces": 2,
+      "maxLocalPositionDelta": 0.0
+    },
+    {
+      "group": "Rear_Driving_Lights",
+      "mesh": "AudiR8LightRef_Rear_Driving_Lights",
+      "source": "r:Light_Geo_lodA_Light_Geo_lodA_Audi_R8V10_2020LightA_Material_r:Audi_R8V10_2020LightA_Material1_0",
+      "sourceVertices": 13527,
+      "selectedVertices": 314,
+      "faces": 358,
+      "boundaryPartialFaces": 0,
+      "maxLocalPositionDelta": 0.0
+    },
+    {
+      "group": "Brake_Lights",
+      "mesh": "AudiR8LightRef_Brake_Lights",
+      "source": "r:Light_Geo_lodA_Light_Geo_lodA_Audi_R8V10_2020LightA_Material_r:Audi_R8V10_2020LightA_Material1_0",
+      "sourceVertices": 13527,
+      "selectedVertices": 698,
+      "faces": 576,
+      "boundaryPartialFaces": 0,
+      "maxLocalPositionDelta": 0.0
+    },
+    {
+      "group": "Indicator_RL",
+      "mesh": "AudiR8LightRef_Indicator_RL",
+      "source": "r:Light_Geo_lodA_Light_Geo_lodA_Audi_R8V10_2020LightA_Material_r:Audi_R8V10_2020LightA_Material1_0",
+      "sourceVertices": 13527,
+      "selectedVertices": 18,
+      "faces": 16,
+      "boundaryPartialFaces": 0,
+      "maxLocalPositionDelta": 0.0
+    },
+    {
+      "group": "Indicator_RR",
+      "mesh": "AudiR8LightRef_Indicator_RR",
+      "source": "r:Light_Geo_lodA_Light_Geo_lodA_Audi_R8V10_2020LightA_Material_r:Audi_R8V10_2020LightA_Material1_0",
+      "sourceVertices": 13527,
+      "selectedVertices": 18,
+      "faces": 16,
+      "boundaryPartialFaces": 0,
+      "maxLocalPositionDelta": 0.0
+    },
+    {
+      "group": "Reverse_Lights",
+      "mesh": "AudiR8LightRef_Reverse_Lights",
+      "source": "r:Light_Geo_lodA_Light_Geo_lodA_Audi_R8V10_2020LightA_Material_r:Audi_R8V10_2020LightA_Material1_0",
+      "sourceVertices": 13527,
+      "selectedVertices": 8,
+      "faces": 4,
+      "boundaryPartialFaces": 4,
+      "maxLocalPositionDelta": 0.0
+    },
+    {
+      "group": "Indicator_Mirror_left",
+      "mesh": "AudiR8LightRef_Indicator_Mirror_left",
+      "source": "r:Light_Geo_lodA_Light_Geo_lodA_Audi_R8V10_2020LightA_Material_r:Audi_R8V10_2020LightA_Material1_0",
+      "sourceVertices": 13527,
+      "selectedVertices": 27,
+      "faces": 23,
+      "boundaryPartialFaces": 0,
+      "maxLocalPositionDelta": 0.0
+    },
+    {
+      "group": "Indicator_Mirror_right",
+      "mesh": "AudiR8LightRef_Indicator_Mirror_right",
+      "source": "r:Light_Geo_lodA_Light_Geo_lodA_Audi_R8V10_2020LightA_Material_r:Audi_R8V10_2020LightA_Material1_0",
+      "sourceVertices": 13527,
+      "selectedVertices": 27,
+      "faces": 23,
+      "boundaryPartialFaces": 0,
+      "maxLocalPositionDelta": 0.0
+    }
+  ]
+}

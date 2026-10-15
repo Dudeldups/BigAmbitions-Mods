@@ -1,0 +1,20 @@
+Vehicle geometry and textures: Ddiaz Design, 2021 Audi R8 Green Hell Edition, CC BY-NC-SA 4.0.
+See ATTRIBUTION.txt for the source page, creator page and license.
+
+Current engine WAVs are byte-identical copies of the existing McLaren Senna
+mod's original synthetic EngineIdle and six coast/load clips, reused at the
+user's request under the repository MIT license (SDK_LICENSE.txt).
+No new engine synthesis, recording processing or exhaust crackle is used.
+
+Historical recording, retained only in tools~/audio-source, not used at runtime:
+"Audi R8 Idling Reving Backfire.wav" by Jonas Jocys
+(Jonas_Jocys), published 2019-01-30, Freesound ID 457733.
+Source: https://freesound.org/people/Jonas_Jocys/sounds/457733/
+Public HQ preview: https://cdn.freesound.org/previews/457/457733_1900571-hq.mp3
+License: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Full license: Audio/LICENSE-CC-BY-4.0.txt
+Historical edits: select clean idle/rev sections, mono conversion, rumble/hiss filtering,
+crossfade loop seams and level normalization. Backfire/clipped sections excluded.
+Recording RPM estimates and upper pitch compression are mod adaptations.
+Horn WAVs remain original synthetic sounds. Native car-wash clips originate
+from the SDK Example-Vehicle under the repository MIT license (SDK_LICENSE.txt).

@@ -1,0 +1,23 @@
+Model: 2021 Audi R8 Green Hell Edition
+Creator: Ddiaz Design
+Model page: https://sketchfab.com/3d-models/2021-audi-r8-green-hell-edition-8ab3e0f5f18b46508fd9caefbf0f9b33
+Creator page: https://sketchfab.com/ddiaz-design
+License: CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+The original GLB is included unchanged. This mod's Unity setup adds game-side systems and fits the supplied model to the game's vehicle axes and scale.
+
+Current engine audio: existing McLaren Senna mod's original synthetic WAVs,
+copied unchanged at the user's request. Repository MIT license: SDK_LICENSE.txt.
+
+Crash01.wav through Crash07.wav: unchanged Car_Crash_01_alt2.wav through
+Car_Crash_07_alt2.wav from the SDK Example-Vehicle/Audio assets (Hovgaard Games).
+Copied into this mod with independent Unity asset GUIDs for standalone bundling.
+Repository license: SDK_LICENSE.txt. Native NWH playback remains in the game;
+no third-party plugin code or binaries are redistributed.
+
+Historical recording (tools~ archive only):
+"Audi R8 Idling Reving Backfire.wav" by Jonas Jocys (Jonas_Jocys).
+https://freesound.org/people/Jonas_Jocys/sounds/457733/
+CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Adapted from the public HQ MP3 preview: clean sections cropped, mono conversion,
+filtering, seam crossfades and normalization. See THIRD_PARTY_NOTICES.txt.

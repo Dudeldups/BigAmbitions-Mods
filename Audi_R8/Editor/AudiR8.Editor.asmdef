@@ -1,0 +1,17 @@
+{
+  "name": "AudiR8.Editor",
+  "rootNamespace": "",
+  "references": [
+    "AudiR8",
+    "ModBuilder.Editor"
+  ],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": ["ExternalPlugins.dll", "BigAmbitions.dll", "BigAmbitions.ModAPI.dll", "BigAmbitions.InputSystem.dll"],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
