@@ -1,0 +1,79 @@
+{
+  "engine": "6.2 litre supercharged HEMI V8, 702 hp, even-fire cross-plane character",
+  "firing_frequency": "four combustion events per crankshaft revolution; approximately 46.7 Hz at 700 rpm and 406.7 Hz at 6100 rpm",
+  "recorded_samples": false,
+  "acoustic_mapping": "46.5..316.5 Hz firing clock, half/quarter-order exhaust body; logarithmic three-band blend",
+  "third_party_recordings": false,
+  "layers": [
+    {
+      "name": "EngineLow.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.185845,
+      "rms": 0.105,
+      "method": "deterministic low-order cross-plane V8 exhaust-bank and filtered combustion synthesis"
+    },
+    {
+      "name": "EngineLowLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.182941,
+      "rms": 0.108,
+      "method": "loaded low-order V8 pulses, combustion noise and restrained supercharger synthesis"
+    },
+    {
+      "name": "EngineMid.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.186082,
+      "rms": 0.105,
+      "method": "deterministic low-order cross-plane V8 exhaust-bank and filtered combustion synthesis"
+    },
+    {
+      "name": "EngineMidLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.182949,
+      "rms": 0.108,
+      "method": "loaded low-order V8 pulses, combustion noise and restrained supercharger synthesis"
+    },
+    {
+      "name": "EngineHigh.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.18619,
+      "rms": 0.105,
+      "method": "deterministic low-order cross-plane V8 exhaust-bank and filtered combustion synthesis"
+    },
+    {
+      "name": "EngineHighLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.183158,
+      "rms": 0.108,
+      "method": "loaded low-order V8 pulses, combustion noise and restrained supercharger synthesis"
+    }
+  ],
+  "horns": [
+    {
+      "name": "HornLow.wav",
+      "samples": 44100,
+      "seconds": 1.0,
+      "peak": 0.217282,
+      "rms": 0.16,
+      "method": "deterministic additive low dual-tone road-horn voice"
+    },
+    {
+      "name": "HornHigh.wav",
+      "samples": 44100,
+      "seconds": 1.0,
+      "peak": 0.148059,
+      "rms": 0.11,
+      "method": "deterministic additive high dual-tone road-horn voice"
+    }
+  ],
+  "transients": [],
+  "runtime_layers": [
+    "very-low-gain procedural exhaust texture"
+  ]
+}

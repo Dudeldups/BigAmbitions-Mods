@@ -1,0 +1,26 @@
+{
+  "name": "Dodge_Ram_1500.Editor",
+  "rootNamespace": "",
+  "references": [
+    "Dodge_Ram_1500",
+    "ModBuilder.Editor",
+    "Unity.Newtonsoft.Json"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "ExternalPlugins.dll",
+    "BigAmbitions.dll",
+    "BigAmbitions.ModAPI.dll",
+    "BigAmbitions.InputSystem.dll",
+    "Newtonsoft.Json.dll"
+  ],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
