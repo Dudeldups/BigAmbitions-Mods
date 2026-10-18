@@ -1,0 +1,11 @@
+Third-party asset notice
+
+Vehicle model: 2022 Kia Ceed Sportswagon GT-PlusLine
+Creator: Ddiaz Design (https://sketchfab.com/ddiaz-design)
+Source: https://sketchfab.com/3d-models/2022-kia-ceed-sportswagon-gt-plusline-c3bf8357b4b349349f3414dca2dc70fb
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+License text: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+The supplied GLB's mesh data is unmodified. This mod orients and scales it for the game, prepares a deformable body mesh and moving wheel assemblies, and adds vehicle integration and lamp overlays. Adaptations remain subject to the source work's share-alike terms. The model license does not grant commercial use.
+
+Procedural engine and horn audio in this mod is generated from mathematical waveforms; no third-party or recorded vehicle sounds are included.

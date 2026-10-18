@@ -1,0 +1,51 @@
+{
+  "engine": "1.5 litre turbocharged inline-four (T-GDi)",
+  "firing_frequency": "two combustion events per crankshaft revolution (25 Hz at 750 rpm idle)",
+  "recorded_samples": false,
+  "layers": [
+    {
+      "name": "EngineLow.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.1678327564338091,
+      "method": "deterministic additive turbocharged inline-four synthesis"
+    },
+    {
+      "name": "EngineLowLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.15647864053409402,
+      "method": "deterministic additive turbocharged inline-four synthesis"
+    },
+    {
+      "name": "EngineMid.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.17864650875553267,
+      "method": "deterministic additive turbocharged inline-four synthesis"
+    },
+    {
+      "name": "EngineMidLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.16508269590615177,
+      "method": "deterministic additive turbocharged inline-four synthesis"
+    },
+    {
+      "name": "EngineHigh.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.1685225970411359,
+      "method": "deterministic additive turbocharged inline-four synthesis"
+    },
+    {
+      "name": "EngineHighLoad.wav",
+      "samples": 88200,
+      "seconds": 2.0,
+      "peak": 0.16565376298985915,
+      "method": "deterministic additive turbocharged inline-four synthesis"
+    }
+  ],
+  "transients": [],
+  "runtime_layers": []
+}

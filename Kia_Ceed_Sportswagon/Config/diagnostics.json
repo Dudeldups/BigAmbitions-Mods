@@ -1,0 +1,8 @@
+{
+  "debugEnabled": false,
+  "damageDebugEnabled": false,
+  "washDebugEnabled": false,
+  "paintDebugEnabled": false,
+  "npcTrafficDebugEnabled": false,
+  "nativeAudioDebugEnabled": false
+}
