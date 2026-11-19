@@ -120,6 +120,13 @@ public sealed class VolkswagenT1BusMod : IModBigAmbitions
 
     public Task OnLoadAsync(ModContext context)
     {
+        if (Environment.GetEnvironmentVariable("BA_VEHICLE_EXIT_DEBUG") == "1" ||
+            Array.IndexOf(Environment.GetCommandLineArgs(), "-ba-vehicle-exit-debug") >= 0)
+        {
+            VolkswagenT1BusDiagnostics.DebugEnabled = true;
+            VolkswagenT1BusDiagnostics.WarehouseExitDebugEnabled = true;
+            context.Logger.Info("VolkswagenT1Bus building transition diagnostics enabled.");
+        }
         this.context = context;
         var bundle = AssetService.GetBundle(context.ModId, BundleKey);
         if (bundle == null)

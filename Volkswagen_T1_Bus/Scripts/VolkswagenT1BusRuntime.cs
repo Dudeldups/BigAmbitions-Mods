@@ -612,6 +612,11 @@ public sealed class VolkswagenT1BusRuntime : MonoBehaviour
 
     private void HandleBuildingEntered(Address address)
     {
+        var diagnosticVehicle = VehicleHelper.GetCurrentVehicleBase();
+        if (VolkswagenT1BusDiagnostics.DebugEnabled && VolkswagenT1BusDiagnostics.WarehouseExitDebugEnabled &&
+            diagnosticVehicle != null && IsTargetVehicle(diagnosticVehicle))
+            VolkswagenT1BusDiagnostics.WarehouseExitInfo(context,
+                $"VolkswagenT1Bus building-transition: entered type='{(address == null ? "null" : BuildingHelper.GetBuilding(address)?.BuildingType)}', {DescribeVehicleState(diagnosticVehicle)}");
         if (address == null)
             return;
         var registration = BuildingHelper.GetBuildingRegistration(address);
@@ -632,11 +637,15 @@ public sealed class VolkswagenT1BusRuntime : MonoBehaviour
 
     private void HandleBuildingExited(Address address)
     {
-        if (address == null ||
-            !string.Equals(
-                BuildingHelper.GetBuilding(address)?.BuildingType,
-                "ba:buildingtype_warehouse",
-                StringComparison.Ordinal))
+        var diagnosticVehicle = VehicleHelper.GetCurrentVehicleBase();
+        if (VolkswagenT1BusDiagnostics.DebugEnabled && VolkswagenT1BusDiagnostics.WarehouseExitDebugEnabled &&
+            diagnosticVehicle != null && IsTargetVehicle(diagnosticVehicle))
+            VolkswagenT1BusDiagnostics.WarehouseExitInfo(context,
+                $"VolkswagenT1Bus building-transition: exited type='{(address == null ? "null" : BuildingHelper.GetBuilding(address)?.BuildingType)}', {DescribeVehicleState(diagnosticVehicle)}");
+        var buildingType = address == null ? null : BuildingHelper.GetBuilding(address)?.BuildingType;
+        var isWarehouse = string.Equals(buildingType, "ba:buildingtype_warehouse", StringComparison.Ordinal);
+        var isSpecial = string.Equals(buildingType, "ba:buildingtype_special", StringComparison.Ordinal);
+        if (!isWarehouse && !isSpecial)
         {
             return;
         }
@@ -652,7 +661,7 @@ public sealed class VolkswagenT1BusRuntime : MonoBehaviour
         }
 
         var entrance = FindClosestDriveInEntrance(vehicle.transform.position);
-        if (entrance == null)
+        if (entrance == null || (isSpecial && (entrance.transform.position - vehicle.transform.position).sqrMagnitude > 144f))
         {
             VolkswagenT1BusDiagnostics.WarehouseExitInfo(
                 context,
@@ -687,7 +696,7 @@ public sealed class VolkswagenT1BusRuntime : MonoBehaviour
             collider.enabled = false;
         }
 
-        if (warehouseExitGuardColliders.Count == 0)
+        if (warehouseExitGuardColliders.Count == 0 && warehouseExitGuardEntryController == null)
         {
             warehouseExitGuardEntryController?.ClearSuppressedEntrance(
                 entrance,
