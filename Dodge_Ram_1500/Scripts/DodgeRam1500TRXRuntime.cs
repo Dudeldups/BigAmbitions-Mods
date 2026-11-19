@@ -675,6 +675,11 @@ public sealed class DodgeRam1500TRXRuntime : MonoBehaviour
 
     private void HandleBuildingEntered(Address address)
     {
+        var diagnosticVehicle = VehicleHelper.GetCurrentVehicleBase();
+        if (DodgeRam1500TRXDiagnostics.DebugEnabled && DodgeRam1500TRXDiagnostics.WarehouseExitDebugEnabled &&
+            diagnosticVehicle != null && IsTargetVehicle(diagnosticVehicle))
+            DodgeRam1500TRXDiagnostics.WarehouseExitInfo(context,
+                $"DodgeRam1500TRX building-transition: entered type='{(address == null ? "null" : BuildingHelper.GetBuilding(address)?.BuildingType)}', {DescribeVehicleState(diagnosticVehicle)}");
         if (address == null)
             return;
         var registration = BuildingHelper.GetBuildingRegistration(address);
@@ -695,11 +700,15 @@ public sealed class DodgeRam1500TRXRuntime : MonoBehaviour
 
     private void HandleBuildingExited(Address address)
     {
-        if (address == null ||
-            !string.Equals(
-                BuildingHelper.GetBuilding(address)?.BuildingType,
-                "ba:buildingtype_warehouse",
-                StringComparison.Ordinal))
+        var diagnosticVehicle = VehicleHelper.GetCurrentVehicleBase();
+        if (DodgeRam1500TRXDiagnostics.DebugEnabled && DodgeRam1500TRXDiagnostics.WarehouseExitDebugEnabled &&
+            diagnosticVehicle != null && IsTargetVehicle(diagnosticVehicle))
+            DodgeRam1500TRXDiagnostics.WarehouseExitInfo(context,
+                $"DodgeRam1500TRX building-transition: exited type='{(address == null ? "null" : BuildingHelper.GetBuilding(address)?.BuildingType)}', {DescribeVehicleState(diagnosticVehicle)}");
+        var buildingType = address == null ? null : BuildingHelper.GetBuilding(address)?.BuildingType;
+        var isWarehouse = string.Equals(buildingType, "ba:buildingtype_warehouse", StringComparison.Ordinal);
+        var isSpecial = string.Equals(buildingType, "ba:buildingtype_special", StringComparison.Ordinal);
+        if (!isWarehouse && !isSpecial)
         {
             return;
         }
@@ -714,10 +723,13 @@ public sealed class DodgeRam1500TRXRuntime : MonoBehaviour
             return;
         }
 
-        StopWarehouseControlRecovery();
-        warehouseControlRecoveryCoroutine = StartCoroutine(RecoverWarehouseControls(vehicle));
+        if (isWarehouse)
+        {
+            StopWarehouseControlRecovery();
+            warehouseControlRecoveryCoroutine = StartCoroutine(RecoverWarehouseControls(vehicle));
+        }
         var entrance = FindClosestDriveInEntrance(vehicle.transform.position);
-        if (entrance == null)
+        if (entrance == null || (isSpecial && (entrance.transform.position - vehicle.transform.position).sqrMagnitude > 144f))
         {
             DodgeRam1500TRXDiagnostics.WarehouseExitInfo(
                 context,
@@ -752,7 +764,7 @@ public sealed class DodgeRam1500TRXRuntime : MonoBehaviour
             collider.enabled = false;
         }
 
-        if (warehouseExitGuardColliders.Count == 0)
+        if (warehouseExitGuardColliders.Count == 0 && warehouseExitGuardEntryController == null)
         {
             warehouseExitGuardEntryController?.ClearSuppressedEntrance(
                 entrance,

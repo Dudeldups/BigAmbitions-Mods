@@ -136,6 +136,13 @@ public sealed class DodgeRam1500TRXMod : IModBigAmbitions
 
     public Task OnLoadAsync(ModContext context)
     {
+        if (Environment.GetEnvironmentVariable("BA_VEHICLE_EXIT_DEBUG") == "1" ||
+            Array.IndexOf(Environment.GetCommandLineArgs(), "-ba-vehicle-exit-debug") >= 0)
+        {
+            DodgeRam1500TRXDiagnostics.DebugEnabled = true;
+            DodgeRam1500TRXDiagnostics.WarehouseExitDebugEnabled = true;
+            context.Logger.Info("DodgeRam1500TRX building transition diagnostics enabled.");
+        }
         var bundle = AssetService.GetBundle(context.ModId, BundleKey);
         if (bundle == null)
         {
