@@ -1,0 +1,19 @@
+Engine audio
+------------
+EngineIdle.wav, EngineLow.wav, EngineLowLoad.wav, EngineMid.wav,
+EngineMidLoad.wav, EngineHigh.wav, and EngineHighLoad.wav are unchanged copies
+of the existing synthetic V8 loops in Assets/Mods/McLaren_Senna/Config/Audio.
+They are reused from the repository under the MIT license in SDK_LICENSE.txt.
+The Bentley mod does not synthesize, record, or process engine audio.
+
+Native wash audio
+-----------------
+Audio/BentleyWashLoop.wav and Audio/BentleyWashEnd.wav are unchanged byte
+copies of the SDK's Example-Vehicle/Audio/CarWashLoop.wav and
+CarWash_Ending.wav, the clips used by the canonical vehicle wash setup.
+They are reused from the repository under the MIT license in SDK_LICENSE.txt.
+The Bentley wash setup no longer synthesizes or processes wash audio.
+Original SDK asset GUIDs (provenance only):
+loop 7ee76d1b2ed0d21439cb83b2e65dc2f8
+ending c46893eb4eb22fe4fad4703f2ce50c98
+The Bentley-owned asset GUIDs are preserved; no Example-Vehicle mod is required.

@@ -1,0 +1,26 @@
+{
+  "name": "BentleyContinentalGTSpeed.Editor",
+  "rootNamespace": "",
+  "references": [
+    "BentleyContinentalGTSpeed",
+    "ModBuilder.Editor",
+    "glTFast",
+    "Unity.Collections",
+    "Unity.Mathematics"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "ExternalPlugins.dll",
+    "BigAmbitions.dll",
+    "HGPlugins.dll"
+  ],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
