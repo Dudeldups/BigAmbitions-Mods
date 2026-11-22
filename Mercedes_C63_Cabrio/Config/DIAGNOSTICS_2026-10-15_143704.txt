@@ -1,0 +1,31 @@
+Mercedes C63 Vehicle Diagnostics analysis
+Input: vehicle-diagnostics-20261015-143704.csv
+SHA256: f97420923f21110b83b4be60de3ff80249db2491d52005065052595c0e4a9a62
+Samples: 394
+
+Launch times describe the installed build captured by this CSV. Invalid runs are not acceptance results.
+run=1: 0-60mph=3.742s (sample interpolation), 0-100kph=3.888s (native milestone); bounded straight run
+run=2: 0-60mph=3.591s (sample interpolation), 0-100kph=3.881s (native milestone); INVALID: damage already present at launch, damage increased
+run=3: 0-60mph=3.649s (sample interpolation), 0-100kph=not reached; INVALID: damage already present at launch, damage increased, 100 km/h not reached
+run=4: 0-60mph=3.647s (sample interpolation), 0-100kph=3.878s (native milestone); INVALID: damage already present at launch
+run=5: 0-60mph=3.577s (sample interpolation), 0-100kph=3.887s (native milestone); INVALID: damage already present at launch
+run=6: 0-60mph=not reached, 0-100kph=not reached; INVALID: damage already present at launch, 100 km/h not reached
+run=7: 0-60mph=not reached, 0-100kph=not reached; INVALID: damage already present at launch, 100 km/h not reached
+run=8: 0-60mph=not reached, 0-100kph=not reached; INVALID: damage already present at launch, 100 km/h not reached
+
+Transmission events:
+60-64kph: 5 full-throttle shifts; gears 2
+93-98kph: 5 full-throttle shifts; gears 3
+
+Full-brake 100-10 km/h intervals (sample-interpolated distance; excludes reaction):
+t=5.357s: 30.11m; equivalent deceleration=1.294g; steering max=0.000; road grade/friction not recorded
+t=47.015s: 28.72m; equivalent deceleration=1.356g; steering max=0.000; road grade/friction not recorded
+t=63.659s: 28.79m; equivalent deceleration=1.353g; steering max=0.000; road grade/friction not recorded
+
+Full-throttle interruptions outside +/-0.35 s gear-change windows:
+4/142 samples have load < .02 and negative generated power.
+Native TCS IL was inspected separately: over-threshold slip returns power modifier .01.
+CSV sampling cannot identify every physics step; correlation is not direct TCS-state logging.
+Interpret against the configuration captured by vehicle_started; this is recorded-build telemetry.
+New tuning requires another bounded clean road test; it cannot be validated by replaying this CSV.
+No new-build performance acceptance is implied by this analysis.

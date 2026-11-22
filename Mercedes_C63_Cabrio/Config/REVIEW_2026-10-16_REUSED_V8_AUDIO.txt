@@ -1,0 +1,32 @@
+Mercedes C63 audio replacement - 2026-10-16
+
+User accepts damage and the current sound level, rejects the engine character,
+and explicitly requests a suitable engine sound from another finished vehicle.
+Use Audi RS6R: tools~/AUDIO.md documents acceptance of the engine in revision 12
+and unchanged finalized engine in revision 15.
+
+Implemented:
+- Original SDK Car idle copied byte-identically from the finished Audi, with its
+  original stereo 48 kHz/52918-frame format and fixed pitch 1.0.
+- Six Audi driving/coast/load clips copied into Mercedes. Only amplitude is
+  normalized to RMS .22 to preserve the previously accepted Mercedes level.
+  No new synthesized harmonic bank, filtering, distortion, noise or crackle.
+- Audi mapping/fade: references 96/176/320 Hz, target 80..180 Hz, equal-power idle
+  and driving crossover, original load blend. Same shared Engine mixer and
+  per-instance source/mute/entry lifecycle. Seven loops scheduled together.
+- All clips local with Mercedes GUIDs; no Audi runtime reference or dependency.
+  Sources/hashes/authoring imports and SDK MIT notice included. Audi untouched.
+- Wave loader supports the original stereo 48 kHz idle and existing mono
+  44.1 kHz voices without resampling the accepted material.
+- Global/audio diagnostics remain disabled by default; output probe includes idle.
+- Damage code and all accepted dent/physics calibration are unchanged.
+
+Verification:
+- Idle exact source bytes; drive PCM equals source times a scalar within half
+  a 16-bit PCM unit. Formats, metadata/hashes and unchanged donor files checked.
+- 243 complete idle/drive stereo mixes: RMS .1079...2410, maximum peak .5562;
+  no clipping or silent crossover. Nine-clip runtime load and lifecycle checks,
+  full bundle regression, external build and local install required for handoff.
+- No in-game listening of this Mercedes revision is claimed. Check idle, gentle
+  and full throttle, coast, shift transitions, pause/menus, entry and saved/new
+  vehicles after restart. PR #27 remains open for the remaining audio acceptance.

@@ -1,0 +1,327 @@
+Mercedes C63 Cabriolet follow-up review — 2026-10-03
+
+Reference comparison: AudiRS6R structural/native setup and safeguards;
+BMW_M4_G82 sleep/wash lifecycle and materials; Porsche_911_GT3_RS
+private-driver/traffic, player pose, audio, collision/repair and warehouse paths.
+Only Mercedes_C63_Cabrio was changed.
+
+Confirmed and corrected defects
+- 57/58 prefab material references were null: editor generation had serialized
+  transient runtime clones. Saved materials now use persistent, role-specific assets.
+- Graphics-less glTF import lost texture properties. Embedded GLB color/normal
+  images are extracted unchanged; two metallic/roughness maps become HDRP masks.
+  A rendered preview confirmed recognizable tires, trim and interior afterward.
+- The validated Windows bundle differed from the flat runtime bundle. Generation
+  now copies the completed Windows payload to the canonical loaded path and
+  validates that canonical bundle.
+- Empty locale folder: added English vehicle-name key.
+- Invalid Porsche steering marker: extracted 1746 triangles from the Mercedes
+  interior, authored its measured pivot and bound native/player/NPC steering.
+- Wrong front lamp source was actually the center brake lamp. Replaced all
+  inherited geometric selectors with measured Mercedes components: 13 surfaces.
+- NWH powerCurve contained torque-shaped values. Corrected normalized power
+  gives 650 Nm from 1750 to 4500 rpm and 350 kW from 5500 to 6250 rpm.
+- Added the manufacturer's mechanical rear limited-slip differential.
+- Corrected tire centering, track widths, driver-side exit and engine audio origin.
+- Extended damage ownership from paint alone to 34 exterior parts including lamps.
+  Native Reset now restores every exterior mesh even without a UI event, using
+  per-instance pristine sources. Later impacts use mutable instance meshes.
+- Added own sleep configuration, wash audio and wash particles; no native donor
+  activity resources were copied. Removed per-frame driver/repair state discovery.
+- Added a prefab-derived thumbnail and removed obsolete generated assets.
+
+Verification completed
+- Unity 2022.3.62f2 isolated generation and AssetBundle build.
+- Saved prefab and loaded canonical bundle: 58 enabled mesh material slots valid;
+  no missing scripts; no foreign vehicle-mod asset dependencies.
+- 13 nonempty lamp surfaces on the correct vehicle end and at identity transforms;
+  2 HDRP road beams; native steering reference; paint/chrome isolation.
+- 4 tire sizes and mesh centers match the authored physics pivots and track.
+- Sleep/wash references exist before vehicle initialization.
+- Native repair Reset restored 34 deliberately changed exterior meshes;
+  subsequent mutable damage ownership restored without mutating pristine meshes.
+- External C# build and normal local installation; installed payload hash checked.
+
+Runtime verification pending
+No Big Ambitions play session was driven or observed for this review. Dealer
+purchase, save/reload, driving/braking/shifts, actual light visibility and input,
+seated pose/hand alignment, repaint and material appearance under game lighting,
+collision separation and repair, bridge/warehouse enter/exit, audio mix, sleep/wash,
+and private-driver dispatch/dismissal still need an in-game acceptance run.
+The PR remains open; no merge or Workshop upload is authorized by this review.
+
+Reproduction
+MercedesC63CabrioSetup.GenerateAndBuild (Unity, -modName Mercedes_C63_Cabrio)
+MercedesC63CabrioSetup.VerifyBuiltBundle (includes functional/repair asset audits)
+MercedesC63CabrioReview.RenderThumbnail (requires a graphics device)
+tools/external-build/BuildBigAmbitionsMods.ps1 -ModName Mercedes_C63_Cabrio -Install
+
+Dealer purchase correction after user runtime feedback
+- Player.log confirmed ContractVehicleForSale.Purchase debited the purchase price
+  and then failed: Prefab wasn't found: Vehicles/PlayerVehicles/mercedes.
+- The native HGExtensions GetIdWithoutType implementation takes the second
+  underscore-separated segment, so the existing saved vehicle type resolves to
+  mercedes, not mercedes_c63_cabrio or MercedesC63Cabrio.
+- Renamed the target prefab to Mercedes.prefab together with its existing .meta.
+  The prefab GUID, saved vehicle identifier, locale and vehicle data are retained.
+  All target setup/review/runtime asset paths use the corrected filename.
+- OnLoad now checks the native PrefabHelper result against the loaded Mercedes
+  prefab before registering the vehicle or exposing dealer/private-driver stock.
+  Missing or conflicting bindings produce a warning and stop registration.
+  Unload unregisters only a vehicle type successfully registered by this instance.
+- Unity bundle verification now uses AssetService and the actual native
+  PrefabHelper lookup and creation path. The created car controller and native
+  body-collider path were checked successfully, alongside the existing material,
+  foreign-reference, light and native repair audits.
+- Reproduction: MercedesC63CabrioSetup.BuildAndVerify with -modName
+  Mercedes_C63_Cabrio in the isolated Unity 2022.3.62f2 project.
+- This is an editor/native-prefab check, not a completed in-game purchase test.
+  Retest after restarting Big Ambitions: select the Mercedes at the dealer, buy
+  it, confirm the menu closes and exactly one car appears outside, then enter,
+  drive, save and reload it. Existing failed purchase money was not edited.
+
+Registration correction after the second user runtime report
+- The previous global lookup preflight incorrectly stopped registration. The
+  runtime log showed AssetService.FindAssetInAnyBundleByFileName throwing
+  Collection was modified while lazily loading other registered bundles.
+- Use the current BMW M4 native player-prefab binding architecture: load the
+  Mercedes from its own known bundle, bind only its exact native cache key, then
+  exercise the native lookup as a cache hit before vehicle type registration.
+- Add main-menu load/unload and city-load entrypoints to restore the binding after
+  the native prefab cache is cleared. Root initialization is idempotent. Lifecycle
+  rebinding is enabled only after successful root registration and disabled on
+  unload, so later entrypoints cannot recreate an unloaded mod's binding.
+- Refuse live foreign owners at the Mercedes key. On unload restore/remove only
+  the captured entry when it is still owned by this mod; preserve later owners.
+- Unity verification now registers a valid but unloaded manifest bundle first,
+  verifies that Mercedes binding does not load it, checks native vehicle type
+  lookup, repeated binding, cache-reset rebind, collision refusal and safe release,
+  and then exercises the native prefab creation path. All passed in 2022.3.62f2.
+- Vehicle assets and saved identifiers stay as in the corrected purchase bundle;
+  this iteration changes registration/lifecycle C# only.
+- In-game acceptance remains pending: restart, check developer spawn list and both
+  luxury dealers, buy/spawn the Mercedes, then save/load and repeat after returning
+  to the main menu. No other mods or saved money were changed.
+
+Driving and appearance feedback correction (2026-10-03)
+- All wheels 70 mm forward/40 mm inward; controller, visual and caliper centers
+  match. Wheelbase unchanged. Sixteen own baked meshes remove inherited importer
+  transforms/shear; normals, tangents and winding preserve the authored surface.
+- Fit body-only height to 1.2621 m + 0.14 m ground offset, rather than stretching
+  it to full 1.4021 m vehicle height. Preserve length/width. Adapt lamp/steering
+  selection bounds to their measured authoring coordinates.
+- Keep visible steering wheel fixed (ratio 0). Driver lean 12 -> 17 degrees and
+  hand offset -0.05 -> -0.07 m, including NPC pose using the same seat anchor.
+- Preserve GLB alpha masks for AMG/C63/V8 Biturbo badges, rim symbols and grilles.
+  Texture alpha import and HDRP alpha-test survive per-instance initialization.
+- Clear outer/internal lamp covers use neutral transparent HDRP Lit states,
+  forward-pass validation, zero metallic and no depth writing. Keep red rear tint.
+- Lower V8 acoustic target from ~60-432 to 48-301 Hz and always use Mercedes own
+  low-RPM idle loop at pitch 0.70. Engine and drivetrain specs are unchanged.
+- Remove registration retries and scene-wide damage searches from driving-value
+  notifications. Use native owned vehicles and their target components. Keep
+  registration in lifecycle/dealer/full-menu hooks; gate diagnostic construction.
+- Share immutable lamp partitions by source mesh, local authoring transform and
+  role. Moving/rotating a vehicle cannot change the key. Reference-counted cleanup
+  releases the last lease; render/material state and mutable damage remain local.
+- Hold native brake/transmission sources and cache light/blinker accessors, removing
+  repeated per-frame member searches. Bounded performance diagnostics remain opt-in;
+  the global flag and all sub-flags, including PerformanceDebugEnabled, are false.
+- Compared current Audi RS6R, BMW M4 G82 and Porsche GT3 RS lifecycle/audio/driver
+  patterns. Changes are confined to the Mercedes mod.
+
+Verification of this correction
+- Unity 2022.3.62f2 MercedesC63CabrioReview.BuildAndRender: generation, canonical
+  Windows bundle build, direct native type/prefab lookup and creation passed.
+- Twelve 30-degree wheel-spin phases passed on all four wheels: stable center and
+  diameter, identity geometry; no inherited steering-wheel movement.
+- Source/runtime material audit passed: masked emblem maps/alpha-test preserved;
+  clear lens surface/alpha/metallic/ZWrite checked. Red front/rear/side preview views
+  inspected: no emblem backing rectangles and clear front lamp internals. Built-in
+  preview shading is not an in-game HDRP verification.
+- Second vehicle at (123.4, 2.1, -89.5), yaw 37 degrees reused all 13 lamp partitions
+  without rebuilding topology; its destruction preserved the first instance.
+- Existing 13-lamp/2-beam, paint-isolation, 650 Nm, sleep/wash and foreign-reference
+  audits passed. Native Reset restored 34 deliberately changed exterior meshes;
+  safe writable ownership remained after repair, excluding cabin and wheels.
+- External C# build: 0 warnings, 0 errors. The first normal ModsLocal copy completed;
+  installed DLL, canonical bundle and thumbnail matched SHA256. The game started
+  during the following documentation update, so that -Install run queued its
+  verified payload below obj/ExternalModBuild/PendingInstalls/Mercedes_C63_Cabrio/
+  20261003-143028. The installer confirmed completion after game exit at 14:30:39.
+  The subsequent normal installation and installed source/DLL/bundle hash checks
+  passed. Runtime testing must use a restart after the installed payload is current.
+- DLL: AEFFD745E58F135EDD5B904320A8D1EF5A608C9A92898809761007123DA316CC
+- Bundle: 11FF1C15F7663D0BE8B461A3E1965BE0007071CF8433131221B7AD7D2D3475D4
+- In-game acceptance is pending. Restart and check driving smoothness with traffic
+  loading, wheel fit/runout, fixed steering, hands/seat, idle/load/high-RPM sound,
+  red-paint emblems and actual HDRP lamp appearance. Recheck buy/manual spawn,
+  save/load and crash/repair. No changed driving session was observed; keep PR #27
+  open until explicit successful runtime confirmation. No other mods were changed.
+
+2026-10-03 follow-up: wheel wobble, missing cabin/grilles and telemetry tuning
+- Latest Mercedes CSV: vehicle-diagnostics-20261003-145949.csv, SHA256
+  c97f6b1797cf94c19f8bf11095ccab6a214da99398b95f62e447035a45b09a13.
+  289 samples; older adjacent files are McLaren/Dodge and excluded. Full report:
+  DIAGNOSTICS_2026-10-03.txt; reproducible tools~/analyse_diagnostics.py.
+- Diagnosed full-throttle 1/2 hunting at 60-64 km/h and 2/3 at 93-98 km/h:
+  old upshift 6750 rpm lands at 4408/4531 rpm, below old downshift 5100 rpm.
+  New shared up/down points 6500/2600, 0.15 s shift, 0.4 s shift ban and native
+  variable points intensity 0.35. Original seven ratios/final drive are retained.
+- CSV reaches the 7000 rpm limiter near 15 km/h with excessive wheel slip. Own
+  road tire curve replaces the arcade curve; native ABS/TCS wrappers are enabled.
+  Front/rear grip 1.0/0.85, inertia 0.30; no speed multiplier or custom polling.
+- Brake torque is 2312.5 = simulated baseline 1850 * 1.25, shared by VehicleType,
+  prefab and runtime. This factor is implemented, but a precise 25% improvement
+  in measured deceleration still requires comparable straight-line in-game runs.
+  Published C63 S optional-ceramic stopping data is only a proxy for the base C63.
+- Target base C63 Cabriolet acceleration: 0-60 mph 4.1 s and 0-100 km/h about
+  4.2 s. Current CSV runs include steering/yaw/damage, so none accepts the new
+  tune. Factory 350 kW, 650 Nm, 1909 kg, 250 km/h and 7-speed MCT remain intact.
+- Rebuild wheel meshes in each uncambered source axle frame. The previous baked
+  1-1.5 degree source camber rotated with the mesh. Recenter the common rim axis,
+  fit tire dimensions there, and choose outward rim faces from measured geometry.
+  Keep prior requested 70 mm forward / 40 mm inward wheel offsets. Calipers are
+  separate; identity rolling pivots and fixed steering-wheel behavior are retained.
+- Preserve GLB doubleSided authoring through HDRP validation. Opaque cabin/body/
+  chassis/engine no longer receive alpha clipping merely for source BLEND state.
+  Only explicit badge/rim-cap/grille masks retain clipping. Instance paint/material
+  ownership is preserved. No new body filler geometry or shared SDK asset changes.
+- Replace six procedural V8 loops with deep cross-plane bank pulses and periodic
+  exhaust texture. Reference RPM 900/3600/6000 = firing Hz 60/240/400. Target follows
+  actual 900-7000 rpm (four firing events per crank revolution), idle pitch 1.0;
+  coherent coast/load mixing and lower maximum gain. These are own synthesis,
+  not actual Mercedes recordings. Authoring/provenance lives in Config/Audio/SOURCES.
+- Unity 2022.3.62f2 isolated BuildAndRender exited 0. Direct native registration,
+  cache-reset/foreign ownership guards, donor-reference audit, 13 lamp surfaces /
+  2 beams, paint isolation, sleep/wash and 34-mesh repair restoration passed again.
+- New audit passed 24 actual native NWH wheel spin/steer/suspension poses per corner,
+  sub-0.5 mm rim runout, outward faces, opaque double-sided cabin/engine/body,
+  grille masks, road tire peak slip, native ABS/TCS and all post-shift RPM gaps.
+  Second translated/rotated vehicle reused all 13 cached lamp partitions.
+- Six PCM loops and 243 RPM/load mixtures passed RMS/peak/seam checks. Mixed peak
+  at maximum gain is 0.2612; reproducible tools~/verify_engine_audio.py. Technical
+  waveform validation is not an in-game listening result.
+- Red front/rear/side/cabin/low-front editor images inspected. Cabin now contains
+  visible seats, dashboard/console and inner doors; front grille has Mercedes star,
+  perforations and radiator/chassis behind it instead of exposing the driver.
+  Preview uses an editor-only two-sided shader; actual game HDRP remains untested.
+- All global/feature diagnostic flags remain disabled. Changes are Mercedes-only.
+- Final normal external build/install result and payload hashes are appended below.
+  Keep PR #27 open and Plane Needs Verification until explicit successful runtime
+  confirmation. Required next run: restart after deferred installation completes,
+  inspect wheel/cabin/grille appearance and listen to idle/load/shifts, then record
+  straight undamaged level-road 0-100 and full-brake 100-0 with the same conditions.
+- Final external runtime C# build on this iteration succeeded: 0 compiler warnings,
+  0 errors. Normal -Install queued the verified package at
+  obj/ExternalModBuild/PendingInstalls/Mercedes_C63_Cabrio/20261003-155405.
+  Final target: LocalLow/Hovgaard Games/Big Ambitions/ModsLocal/Mercedes_C63_Cabrio.
+  Source/build DLL, canonical bundle and thumbnail match the staged payload:
+  DLL 727C58B24E7FF9CC962BDCB19604D6F5B48DEEA05E77A0FB7E3EA0AB28914EA6
+  Bundle BEE3FB56C271F1C2C28F2389B382C5CC3F1E535DE7410D8C7CF963441F5357CF
+  Thumbnail BA88640B19AFB8E79054D351C613EDC9F8ECF64C5F21C518D61D0C0712D28B3F
+  A following documentation-only package refresh uses the same verified binaries.
+  Game was still running at handoff; queued copy is not a completed installation.
+
+
+2026-10-03 follow-up: recorded engine, requested stance and missing rear details
+- Move all contact mounts another 25 mm forward (total 95 mm); retain concentric
+  uncambered rolling meshes and native NWH suspension/steering animation.
+- Pose the body rigidly 50 mm down at the front axle and 40 mm at the rear axle;
+  no new nonuniform scale. Colliders, COM, steering pivot and headlamp locations
+  follow the pose. Raise contact mounts 50 mm for additional native root lowering;
+  parked visuals/calipers use 85 mm initial spring extension so tires start at
+  local ground contact. Ground clearance under load needs actual game acceptance.
+- Include both lower trunk-lid red emitters in the brake signature. Keep taller
+  adjacent reverse lens islands separate. Existing upper tail/brake segments stay.
+- Preserve thin badge alpha coverage with an uncompressed atlas and lower cutoff;
+  silver material has diffuse response with dark reflection probes. Own badge mesh
+  sits 0.6 mm above its authored surface. Apply LessEqual depth after runtime
+  material cloning because HDRP editor validation restores Equal on saved assets.
+- Replace rejected procedural engine loops with a real CC0 AMG S63 V8 recording
+  by marcelweiss, Freesound 505321. This is not an exact C63/M177 recording.
+  Source, legal text and reproducible authoring are retained in the mod.
+- Six waveform loops preserve recorded exhaust character; bounded 60-240 Hz
+  playback, phase-aligned idle/drive crossover and reduced artificial crackle.
+  243 RPM/load and 36 crossover mixtures passed waveform checks; max gain peak
+  0.3519 with no clipping. Offline validation does not establish listening quality.
+- Isolated Unity 2022.3.62f2 BuildAndRender exited 0. Source and loaded-bundle
+  audits passed for contact/parked wheel positions, body pose, badge runtime
+  settings, both inner brake emitters, native prefab registration, clean donor
+  references, all 13 lamp partitions / 2 beams, material ownership, translated
+  instance cache reuse, 24 NWH poses per wheel, tire/ABS/TCS/shift setup and
+  native repair restoration of 34 exterior meshes.
+- New red rear/low-front/side editor previews inspected: stars front/rear and
+  AMG/C63/V8 badges are visible; wheel arches follow the requested lower body.
+  Editor preview shading is not actual in-game HDRP lighting or road physics.
+- Prior factory power, ratios, shift-gap and 1.25 brake-torque calibration are
+  retained. Straight undamaged 0-100 and 100-0 game telemetry is still pending.
+- Only Mercedes assets changed; diagnostic flags remain disabled. Final external
+  build/install result is appended below. PR #27 remains open for runtime testing.
+- External runtime build succeeded with 0 compiler warnings and 0 errors.
+  Normal ModsLocal installation completed; installed DLL/bundle/thumbnail hashes
+  match the verified output (not a deferred payload).
+  DLL aa600f4148f63040e3af192c0eff04a79ac0427430cf858d9d83d363f1a25247
+  Bundle 6d85c0cbd9fd22d1dbcfdb806849a4ac315619dc73f7e80883f6d18cbe603b1f
+  Thumbnail e7cb9add4bb18bf15fc822eb98a70dc9369b344d1cda39e17dbb944fba2f3ee6
+  All Config/locale JSON and Unity asset/meta pairs passed validation.
+- In-game verification remains required after restart: wheel/body/road contact,
+  red-paint front/rear stars and trunk text, both inner brake lights and recorded
+  idle/coast/load/shift sound. No changed game session was observed here.
+- Task branch synchronized without conflicts with origin/main 133aa1c. This
+  brings in the approved shared external-builder game-reference priority fix;
+  no other mod was edited for this task. Rebuilt and normally installed the
+  Mercedes afterward: 0 compiler warnings/errors and identical installed DLL
+  hash AA600F4148F63040E3AF192C0EFF04A79AC0427430CF858D9D83D363F1A25247.
+  Unity-generated mesh YAML contains its normal empty-field trailing spaces;
+  source/config diff checks are clean. No runtime confirmation or merge yet.
+
+2026-10-03 latest failed runtime feedback: depth passes, cabin alpha, traction/audio
+- Screenshots show actual game cutout loss despite earlier built-in editor previews.
+  Concrete cause: inherited disabled DepthOnly on opaque alpha-tested materials,
+  while HDRP GBuffer depth comparison is Equal. Restore depth/shadow passes in
+  source and runtime variants; apply own diffuse badge settings afterward.
+- Correct earlier BLEND-atlas classification: cabin/chassis/engine contain actual
+  alpha cutouts. Restore clipping to suppress transparent white texture padding;
+  preserve separate solid meshes. Source carbon UV transforms are now retained.
+- Cabin topology audit confirms all 19689 source triangles are retained across
+  original cabin and extracted steering geometry. No substitute cabin was added.
+- Apply body +20 mm, front wheels +2.5 mm, rear wheels +10 mm; retain prior ground
+  correction and native suspension. Four-corner pose/runout/caliper audits retained.
+- New Mercedes CSV 20261003-212155 (SHA256 in its saved report) contains 229 samples.
+  Nearby latest CSVs are Dodge Ram/McLaren and excluded. 0-100 milestones are
+  7.181/8.053/7.112 s; runs have damage/steering limits and are not acceptance.
+  40/105 non-shift-window full-throttle samples show load near zero/negative power.
+  Native TCS IL confirms binary .01 power gain when slip exceeds its threshold.
+- Progressive cached rear-axle power callback now smooths ordinary traction cuts;
+  native .65 severe-slip TCS safety remains and original .18 fallback is restored
+  on teardown/failure without overwriting foreign tuning. Rear grip 1.0 replaces
+  .85. No factory power/ratio increase or speed multiplier. Static response and
+  explicit runtime lifecycle-method tests cover binding once, disable/re-enable,
+  safe restoration and removing the callback. These are not a physics road run.
+- Compared actual Audi/BMW/Porsche source and authoring pipelines. Adopt Audi's
+  native fixed-pitch Car idle plus stationary spectral driving architecture.
+  AMG S63 CC0 source reused for own new spectral layers, not another mod's clips.
+  Native idle/mixer rebind on vehicle-entry event; no recurring discovery polling.
+  Own spectral low loop is fallback when a manual spawn lacks native audio.
+- Six PCM loops / 243 RPM-load mixtures pass RMS, seam, stationary-envelope and
+  clipping checks; max mix peak at .70 gain .2537. Borrowed native idle is not
+  processed; native/source startup details available behind the disabled global
+  diagnostic flag. Recorded-derived spectral layers are not an exact C63 sound.
+- Unity source/bundle audits include opaque pass states, authored alpha masks and
+  carbon tiling, cabin topology, progressive traction response/lifecycle, wheel
+  centers/runout, native registry/creation, clean donor refs, 13 lamp surfaces/
+  2 beams, both inner brakes, cache reuse, sleep/wash, paint isolation and native
+  repair of 34 exterior meshes. Red cabin/front/rear previews inspected; actual
+  game HDRP and listening/road behavior are still awaiting user verification.
+- Diagnostics remain disabled. Final external build and installation below.
+- Final Unity source/bundle BuildAndRender exited 0. Final external C# build
+  succeeded with 0 warnings/errors. Normal ModsLocal installation completed;
+  installed files match verified output by SHA256 (not a queued installation).
+  MercedesC63Cabrio.dll c98c4a79a2e3833cd2f1d19f261a26b0bc35f7313bbff6be15caca5784117870
+  mercedes_c63_cabrio.unity3d 1d6b0beab471a2507bfae15b06da648ccae318912335107f1b2cf37deb4e0560
+  thumbnail.png 97aa2bacfaf1d6478e63885522884042f7648885bf21647fa4ccd7cc140478a6
+- Keep PR #27 open. Restart the game and retest front/rear stars, grille holes,
+  AMG/C63/V8 letters, interior details from both sides, wheel/body fit, idle/coast/
+  throttle/shift sound, a straight undamaged 0-100 and 100-0 CSV. No changed game
+  rendering/listening/driving session was observed here; 4.2 s remains a target.

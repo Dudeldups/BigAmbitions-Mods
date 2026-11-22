@@ -1,0 +1,35 @@
+Engine sound - accepted Audi RS6R V8 profile (2026-10-16)
+
+The user explicitly requested replacing the rejected Mercedes engine sound with
+an appropriate finished vehicle sound. AudiRS6R/tools~/AUDIO.md documents in-game
+acceptance of engine revision 12 and the unchanged finalized engine in revision 15.
+This reuse is limited to engine audio; Audi files and other mods are untouched.
+
+- EngineIdle.wav: byte-identical copy of AudiRS6R/Audio/Car.wav, the original SDK
+  idle used by that finished vehicle. Stereo 48 kHz, 16-bit PCM; pitch fixed at 1.
+  Existing SDK MIT copyright/license is included verbatim in SDK_LICENSE.txt.
+- Six driving/load WAVs: copied from AudiRS6R/Config/Audio. Their waveforms,
+  texture, loop timing and relative phases are retained. Amplitude normalization
+  to RMS .22 is the sole PCM edit, maintaining the last accepted Mercedes level.
+- The source stems were authored in AudiRS6R from the user's supplied
+  AudiRevving.wav. They are reused at the project owner's explicit request.
+  Original source SHA256 from Audi metadata:
+  f190ee6c5879bf8df625ab76ffba2e96c9afd15696055064be83decc0a246cff
+- Match the Audi acoustic references 96/176/320 Hz and target 80..180 Hz, original
+  idle pitch and equal-power idle/drive fade. Mercedes playback gains .60 idle (-3.99 dB from .95, 2026-10-18),
+  .504...784 driving compensate levels without changing the sound's waveform.
+- No new engine synthesis, filtering, saturation, generated noise or crackle.
+  Horn files and behavior retained. No claim of an exact C63 engine recording.
+- All nine WAVs are owned local Mercedes files. New idle has a new Mercedes GUID;
+  existing six drive/load GUIDs retained. No Audi runtime path, DLL dependency,
+  mixer or prefab reference. The game Engine bus/master/menu/mute remain active.
+- generation.json records source and local hashes, formats, gains and provenance.
+  tools~/generate_engine_audio.py now imports these accepted clips; it cannot
+  regenerate the rejected harmonic AMG sound. Prior S63 source under tools~ is
+  an inactive historical authoring input, not part of current playback.
+
+Verification: tools~/verify_engine_audio.py checks 243 complete idle/drive
+stereo mixtures at the current playback gains for clipping and silent crossover. Idle is byte-identical to the
+accepted source; drive stems match source PCM times a scalar within half a
+16-bit PCM unit. These are technical checks; listen to the installed Mercedes
+in game to confirm its final sound at the user's camera and volume settings.

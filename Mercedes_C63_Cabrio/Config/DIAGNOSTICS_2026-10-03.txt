@@ -1,0 +1,24 @@
+Mercedes C63 Vehicle Diagnostics analysis
+Input: vehicle-diagnostics-20261003-145949.csv
+SHA256: c97f6b1797cf94c19f8bf11095ccab6a214da99398b95f62e447035a45b09a13
+Samples: 289
+
+Launch times below describe the OLD installed build. Invalid runs are not acceptance results.
+run=1: 0-60mph=6.857s (sample interpolation), 0-100kph=7.66s (native milestone); INVALID: yaw above 10 deg/s, damage increased
+run=2: 0-60mph=not reached, 0-100kph=not reached; INVALID: steering input, yaw above 10 deg/s, damage increased
+run=3: 0-60mph=5.002s (sample interpolation), 0-100kph=5.17s (native milestone); INVALID: steering input, yaw above 10 deg/s, damage increased
+run=4: 0-60mph=4.015s (sample interpolation), 0-100kph=4.261s (native milestone); INVALID: steering input, damage increased
+
+Transmission events:
+60-64kph: 28 full-throttle shifts; gears 1, 2
+93-98kph: 25 full-throttle shifts; gears 2, 3
+
+Full-brake 100-10 km/h intervals (sample-interpolated distance; excludes reaction):
+t=34.879s: 28.70m; equivalent deceleration=1.357g; steering max=0.000; road grade/friction not recorded
+t=46.345s: 28.52m; equivalent deceleration=1.366g; steering max=1.000; road grade/friction not recorded
+
+Diagnosis: 5100 rpm downshift threshold exceeds the 1->2 and 2->3 post-upshift RPM.
+The 7-speed ratios imply 4408 and 4531 rpm after a 6750 rpm shift, causing immediate kickdown.
+Launch reached 7000 rpm near 15 km/h with about 0.6 longitudinal slip and >1g acceleration.
+Arcade tire preset peak near 1.0 slip is unsuitable for road-car traction control.
+Revised build needs new controlled telemetry before acceleration/braking can be accepted.

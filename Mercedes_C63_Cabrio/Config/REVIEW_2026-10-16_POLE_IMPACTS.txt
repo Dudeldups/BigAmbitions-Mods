@@ -1,0 +1,49 @@
+Mercedes C63 feedback correction - 2026-10-16
+
+User still finds idle/driving quiet and reports missed percentage damage at
+lamps/traffic lights. Visual deformation remains accepted. Only Mercedes authored.
+Prior installed DLL SHA256 matches 5dad7210cd7147eef047349243337f5d5d1fb5da275fc62c2ca79d82515ed88f.
+No new VehicleDiagnostics CSV; acceleration/brakes unchanged.
+
+Evidence and implementation:
+- Read-only installed level16 Unity metadata identifies Prefab_StreetLamp on
+  StreetProps layer 26, untagged, with capsule colliders. Native ground exclusion
+  is not the explanation for these colliders.
+- Installed ExternalPlugins.dll DamageHandler reacts only to OnCollisionEnter;
+  Enqueue accepts zero impulse and HandleCollision still advances lastCollisionTime.
+  A late nonzero Stay impulse therefore has no native damage callback.
+- Add event-scoped reconciliation for this Mercedes's StreetProps contacts only.
+  Physics sampling caches velocity and damage before each simulation step.
+  Horizontal normal speed >2 m/s, actual impulse or measured normal velocity loss
+  required; no arbitrary flat percentage. Follow-up contact window 0.12 seconds.
+- Use the game's native impulse/mass/fixedDeltaTime/intensity coefficient as a
+  minimum total after the contact, based on pre-step damage. Commit after native
+  callbacks; preserve any higher native damage. No duplicate charge.
+- Actual CarController.OnVehicleCollision() synchronizes native/save/UI state and
+  retains global damage-off and broken-car handling. A repair invalidates pending
+  older damage. No global hooks or scene discovery.
+- Keep accepted visual meshes, dent strengths, caps and cosmetic threshold.
+- Engine amplitude x2 (+6.02 dB), PCM RMS .11 -> .22. All six waveforms equal
+  previous samples x2 within one quantization unit. Horn, timbre, mixer, pitch,
+  spatial attenuation, game controls and saved/new path retained.
+- Audio output diagnostic probe is once per start, bounded and gated by existing
+  global + audio flags. Damage trace is bounded and uses global + damage flags.
+  All debug flags default false.
+
+Verification:
+- Isolated Unity native contact replay passes normal front/reverse damage without
+  doubling, zero initial impulse followed by Stay impulse recovered once, measured
+  CCD stop recovery, no-loss/no-impulse rejection, sustained/expired contact and
+  repair preservation, with actual CarController saved-percentage synchronization.
+- 243 audio mixes pass: raw RMS .2197...3070, raw peak .5665, final envelope .4291;
+  no clipping, no added noise. Seam slope within ordinary adjacent samples.
+- Source/bundle regression audit and external build/install are required before
+  handoff. Local build records are reported in the task tracker.
+- Unity build helper uses the existing DOS short project path to avoid Mono/Cecil
+  MAX_PATH failures on package DLLs; no generated cache edits/dependency changes.
+
+Limits: synthetic native contact replay is not live road/CCD simulation. No new
+in-game listening or lamp/traffic-light crash has been observed by Codex. Test
+front/reverse single and sequential pole hits, ordinary car/wall hits, repair,
+save/reload and new/saved engine level after restarting the installed build.
+PR #27 stays open for explicit successful runtime confirmation.

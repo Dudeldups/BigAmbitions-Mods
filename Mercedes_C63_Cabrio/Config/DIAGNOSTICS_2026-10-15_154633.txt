@@ -1,0 +1,22 @@
+Mercedes C63 Vehicle Diagnostics analysis
+Input: vehicle-diagnostics-20261015-154633.csv
+SHA256: 7d07046f0e46b6cfd3e82235c3c9ecf784224b97b44291bb26f202572528b53b
+Samples: 129
+
+Launch times describe the installed build captured by this CSV. Invalid runs are not acceptance results.
+run=1: 0-60mph=3.597s (sample interpolation), 0-100kph=3.863s (native milestone); bounded straight run
+
+Transmission events:
+60-64kph: 1 full-throttle shifts; gears 2
+93-98kph: 1 full-throttle shifts; gears 3
+
+Full-brake 100-10 km/h intervals (sample-interpolated distance; excludes reaction):
+t=19.234s: 28.80m; equivalent deceleration=1.352g; steering max=0.000; road grade/friction not recorded
+
+Full-throttle interruptions outside +/-0.35 s gear-change windows:
+2/73 samples have load < .02 and negative generated power.
+Native TCS IL was inspected separately: over-threshold slip returns power modifier .01.
+CSV sampling cannot identify every physics step; correlation is not direct TCS-state logging.
+Interpret against the configuration captured by vehicle_started; this is recorded-build telemetry.
+New tuning requires another bounded clean road test; it cannot be validated by replaying this CSV.
+No new-build performance acceptance is implied by this analysis.

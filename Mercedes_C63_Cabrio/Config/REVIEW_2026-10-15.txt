@@ -1,0 +1,70 @@
+Mercedes C63 runtime feedback correction - 2026-10-15
+
+User-confirmed game behavior from the prior build:
+- Interior transparency is now correct.
+- Mercedes emblems render correctly.
+These confirmations do not accept the remaining driving/audio/damage issues.
+
+Implemented:
+- All four wheels 50 mm further inward, front wheels another 2.5 mm forward.
+  Native controller, rolling geometry and caliper ownership stay concentric.
+- Remove duplicated AMG from the game name: Mercedes-AMG C63 Cabriolet.
+  Locale key, saved type, prefab cache path and GUIDs preserved.
+- Engine PCM load validation, nonzero native idle probe/owned fallback, one
+  bounded spawn continuation after native Start, event-driven entry rebind.
+  Engine gain no longer gets an extra .16 direct fallback attenuation.
+  Idle .65, drive .60..1.00; spatial min/max=8/65m. Mixer/master/mute retained.
+  Feature diagnostics retained behind disabled global + audio sub-flags.
+- CSV 20261015-143704 has 394 samples and one clean straight 0-100 result
+  of 3.888 s; later starts have saved damage and are not clean acceptance.
+  Native low-speed N-to-R/D transitions commonly took .425-.445 s.
+- Mechanical drivetrain efficiency .92 is an initial game-physics calibration
+  toward approximately 4.2 s 0-100; crankshaft 350 kW/650 Nm, mass and all factory
+  ratios retained. No speed multiplier. Fresh game telemetry still required.
+- Native post-shift ban .4 -> 0, matching Audi/BMW/Porsche; shift duration .10 s.
+  RPM hysteresis and native D/N/R speed safeguards remain.
+- Configured brakes remain 1850*1.25=2312.5 Nm. This is 25% more torque than
+  the reference calibration, not a claim of 25% shorter real stopping distance.
+- Exterior deformation now includes end-region chassis/engine support geometry.
+  Rest-position world-space crush field shared by body, trim, lamps and badges;
+  upper/lower end attachments move coherently. No whole-mesh averaging across
+  separate front/rear pieces in one atlas mesh. Cumulative cap .48 m.
+  Cabin/floor-center support vertices, interior, wheels, tires and calipers excluded.
+
+Verification:
+- Reused the existing task branch/PR and restored its externally missing checkout
+  at the attached worktree path. Synchronized latest origin/main without conflicts.
+  Only Mercedes files are authored in this iteration.
+- Unity 2022.3.62f2 source/bundle audits pass, including native registration and
+  creation guards, donor reference isolation, 19,689 cabin source triangles,
+  opaque HDRP depth/shadow passes, original cutout masks, carbon UV transforms,
+  24 wheel spin/steer/suspension poses per corner, exact inward/Z positions,
+  all 13 lamp partitions/2 beams and both inner brake emitters.
+- Damage tests pass for rotated/translated front/rear impacts, repeated impacts,
+  .48 m cumulative bound, shared-prefab isolation and full native Reset repair
+  of 36 owned meshes including end supports. Center support vertices unchanged.
+- Runtime WAV reader loads all eight engine/horn clips as nonzero sample data;
+  engine spatial profile validated. 243 mixtures pass; max peak .3624 at gain
+  1.0, owned-idle/full-drive crossover .3408. No new audio assets or donor clips.
+- Graphics-enabled clean and crash previews inspected. Initial no-graphics previews
+  were blank; the isolated build now uses graphics and rejects blank renders before
+  writing the thumbnail. Preview shading is not the game's HDRP presentation.
+- Diagnostic defaults are all false; optional existing parking marker is absent.
+
+Pending runtime verification after installation/restart:
+- Audible idle and driving at the usual chase/interior camera and game volume;
+  master/mute, entry/exit, horn and reload behavior.
+- Forward/reverse response, clean straight 0-100, braking and wheel/arch fit.
+- Front/rear/side impacts with lights active; no protruding unchanged structures;
+  native repair, immediate driving, another instance and save/reload.
+No changed game listening/rendering/driving session was observed here.
+PR #27 remains open; no merge or Workshop publication is authorized by this feedback.
+
+Final external build/install:
+- C# build succeeded: 0 warnings, 0 errors. Normal immediate ModsLocal install
+  completed (no deferred install). DLL, bundle, thumbnail, English locale and
+  this report verified against installed files. JSON and asset/meta validation passed.
+- DLL SHA256 6a5bd70a43d69152802134211a04818961aa172136ef0ecfbe4200435e7493c6
+- Bundle SHA256 6084d494a65489e3c76f1cc853d44c9343c95f7c9c42a9ed91e773acabe1a1c7
+- Thumbnail SHA256 d586cbecbcda1541346b37437fc43cfb981ecd0a99be90ee75465f1e78c9c75b
+- New display name verified in both locale and generated bundle manifest.

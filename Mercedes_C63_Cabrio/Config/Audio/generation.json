@@ -1,0 +1,104 @@
+{
+  "profile": "Accepted Audi RS6R V8 engine sound copied into Mercedes",
+  "authorization": "User explicitly requested reusing a suitable finished vehicle engine sound",
+  "source_mod": "AudiRS6R",
+  "source_acceptance": "tools~/AUDIO.md: engine revision 12 accepted in game; finalized revision 15 unchanged engine",
+  "method": "Original idle byte-identical; six original drive/load waveforms with amplitude normalization only; no resynthesis",
+  "source_provenance": "Driving stems derived in AudiRS6R from user-supplied AudiRevving.wav; idle is existing SDK Car.wav",
+  "sdk_license": "SDK_LICENSE.txt",
+  "runtime_dependency": "None; all clips are Mercedes-owned local files with local GUIDs",
+  "referenceLayerFrequenciesHz": [
+    96,
+    176,
+    320
+  ],
+  "acousticTargetHz": [
+    80,
+    180
+  ],
+  "idlePitch": 1.0,
+  "idleGain": 0.6,
+  "driveGain": [
+    0.504,
+    0.784
+  ],
+  "driveRms": 0.22,
+  "files": [
+    {
+      "file": "EngineLow.wav",
+      "source": "Config/Audio/EngineLow.wav",
+      "source_sha256": "a9ab152dfef18c33877f2becf32c68ba07ff8c7faf1e9fb6d64e614013fbd277",
+      "sha256": "3f610b12989b0168e0255263dc9306b599028a64886843bc44c342f46b9557fe",
+      "amplitude_gain": 1.8333890881750046,
+      "rms": 0.22,
+      "channels": 1,
+      "rate": 44100,
+      "frames": 88200
+    },
+    {
+      "file": "EngineLowLoad.wav",
+      "source": "Config/Audio/EngineLowLoad.wav",
+      "source_sha256": "e3cac809eb2e26044072361cb809aad9f230f297f656747c73f8d741e3822ff9",
+      "sha256": "a706263cca22d0ed78df6510bc90d5142bfdf334f632fc49be7d14f70148d087",
+      "amplitude_gain": 1.833388869617162,
+      "rms": 0.22,
+      "channels": 1,
+      "rate": 44100,
+      "frames": 88200
+    },
+    {
+      "file": "EngineMid.wav",
+      "source": "Config/Audio/EngineMid.wav",
+      "source_sha256": "bb1b638fa08b28ad94a2d9f04be668a6ff3843b4e8d21e8335749a4f10c956e9",
+      "sha256": "2c05eceac6a7a10a97ab19190f92774730a7fa46c06192c08c1a7ede947a6328",
+      "amplitude_gain": 1.8333889114260353,
+      "rms": 0.22,
+      "channels": 1,
+      "rate": 44100,
+      "frames": 88200
+    },
+    {
+      "file": "EngineMidLoad.wav",
+      "source": "Config/Audio/EngineMidLoad.wav",
+      "source_sha256": "614dc9b9db49eed16ed0da609f74e6de9c674bd88031a4c19cc7c82871be243d",
+      "sha256": "127a2af1b17afd6fa7c027b5d49cef0b4ca8e581fff44bd3b85fb0cc36951dea",
+      "amplitude_gain": 1.833389199177562,
+      "rms": 0.22,
+      "channels": 1,
+      "rate": 44100,
+      "frames": 88200
+    },
+    {
+      "file": "EngineHigh.wav",
+      "source": "Config/Audio/EngineHigh.wav",
+      "source_sha256": "8cb5e4ee22596831a45621d9a3443811396ae8960e5fa78ca2100d4b072179e0",
+      "sha256": "bccf4f5b0edd3f2d8e518acfba6134a28890e5b5fd2ce485ce6545c8a8766b7b",
+      "amplitude_gain": 1.8333887539722231,
+      "rms": 0.22,
+      "channels": 1,
+      "rate": 44100,
+      "frames": 88200
+    },
+    {
+      "file": "EngineHighLoad.wav",
+      "source": "Config/Audio/EngineHighLoad.wav",
+      "source_sha256": "c68147ebe27c2add477ff12f0eaa3c1a1caed90c80763dc8e386ed44e1713379",
+      "sha256": "4ad51100048d67fd5615e52061ef8e083aa0ccc93d60c26e85160c97a8422d39",
+      "amplitude_gain": 1.8333892753557464,
+      "rms": 0.22,
+      "channels": 1,
+      "rate": 44100,
+      "frames": 88200
+    },
+    {
+      "file": "EngineIdle.wav",
+      "source": "Audio/Car.wav",
+      "source_sha256": "0a61c8776ac22002103e3bd34465c596050fd5549666c04ba3751096dfd53153",
+      "sha256": "0a61c8776ac22002103e3bd34465c596050fd5549666c04ba3751096dfd53153",
+      "amplitude_gain": 1.0,
+      "channels": 2,
+      "rate": 48000,
+      "frames": 52918
+    }
+  ]
+}

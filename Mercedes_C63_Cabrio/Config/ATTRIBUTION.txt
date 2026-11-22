@@ -1,0 +1,9 @@
+3D model attribution
+
+Title: 2018 Mercedes-AMG C63 AMG Cabriolet
+Author: Ddiaz Design (https://sketchfab.com/ddiaz-design)
+Source: https://sketchfab.com/3d-models/2018-mercedes-amg-c63-amg-cabriolet-af1793cf9d0946dda4e35e82c9ff518f
+Original license: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+License text: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+The supplied GLB was normalized, fitted to the published 2018 C63 Cabriolet dimensions, separated into independently driven wheel/caliper assemblies, and given generated damage/lamp overlays for Big Ambitions. No original model source is claimed as authored by this mod.

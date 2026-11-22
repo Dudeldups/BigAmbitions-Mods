@@ -1,0 +1,235 @@
+# 2018 Mercedes-AMG C63 Cabriolet â€” applied specification
+
+Selected trim: US-market 2018 C63 Cabriolet (469 hp), not the higher-output C63 S and not the later 9-speed facelift.
+
+| Property | Reference value | Mod value |
+|---|---:|---:|
+| Layout | Front engine, rear-wheel drive | Rear-only drive in vehicle physics |
+| Engine | 3,982 cc twin-turbo V8 | 350 kW rated output, 650 Nm torque curve |
+| Power | 469 hp / 350 kW at 5,500â€“6,250 rpm | 350 kW, 7,000 rpm limiter |
+| Transmission | 7-speed AMG SPEEDSHIFT MCT | 7 forward ratios, 1 reverse, 3.06 final drive |
+| Ratios | 4.38 / 2.86 / 1.92 / 1.37 / 1.00 / 0.82 / 0.73; reverse 3.42 | Same |
+| 0â€“60 mph | 4.1 s | Reference for acceleration tuning |
+| Governed top speed | 155 mph / 250 km/h | 250 km/h limiter |
+| Fuel tank | 17.4 US gal / 65.9 L | 65.9 L |
+| Curb mass | 4,206 lb / 1,908.7 kg | 1,909 kg |
+| Length / width / height | 4,749.8 / 1,877.1 / 1,402.1 mm | Length/width fitted; roof height measured from reference ground with 0.14 m below the body |
+| Wheelbase | 2,839.7 mm | 2.8397 m |
+| Front/rear track | 1,635.8 / 1,592.6 mm | 1.5558 / 1.5126 m after requested 40 mm inward wheel adjustment per side |
+| Factory wheel/tire fitment | 9 Ã— 18 / 10.5 Ã— 18 in; 255/40ZR18 / 285/35ZR18 | 0.3306 / 0.32835 m radii; 0.255 / 0.285 m widths |
+| Turning circle | 37.1 ft / 11.3 m | Vehicle type turn/steering parameter set to 27, aligned with the M4/GT3 tuning scale |
+| US MSRP | $73,500 | $73,500 vehicle price |
+| Luggage capacity | 8.8 cu ft | Low sports-car cargo allowance |
+
+## Source
+
+Mercedes-Benz USA, [2018 Mercedes-AMG C63 Cabriolet and C63 S Cabriolet specifications](https://media.mbusa.com/news/2018-mercedes-amg-c63-cabrio-and-c63-s-cabrio-specifications).
+
+The values above keep the standard C63's 469 hp, seven-speed MCT and US-market 250 km/h governor together; the C63 S and European facelift use different power/transmission specifications.
+
+## Review corrections (2026-10-03)
+
+- The NWH power curve represents normalized kW, with 650 Nm between 1750 and 4500 rpm and 350 kW from 5500 to 6250 rpm. Intermediate/off-plateau values are simulation tuning, not a measured dyno trace.
+- Rear differential uses NWH mechanical limited-slip mode. Stiffness/ramp values are simulation tuning. Standard equipment confirmed by Mercedes-Benz USA: https://media.mbusa.com/news/2018-c-class-cabriolet-quick-reference-guide
+- Wheel centers retain the published wheelbase, with the requested 70 mm forward shift on both axles and 40 mm inward shift on every corner. Factory track values remain reference data. Seat/steering are on negative vehicle X; front is positive Z.
+- The supplied mesh depicts the roof open; the vehicle is configured as unenclosed.
+- WashLoop/WashEnd are original deterministic synthesized noise, with no donor sound clips. Sleep balance and wash VFX are authored Mercedes assets.
+
+## Runtime feedback tuning (2026-10-03)
+
+- Bake wheel geometry into identity transforms around the rolling +X axis. Tire radius and width remain the researched values above. Move controllers, visuals and calipers together.
+- Body-only height is 1.2621 m above a 0.14 m underside offset; the previous fit incorrectly stretched body-only geometry to the complete 1.4021 m vehicle height.
+- Visible steering wheel is fixed (visual turn ratio 0). Driver lean 12 -> 17 degrees; hand targets another 20 mm rearward.
+- Superseded acoustic compression: the revised original V8 loops use reference RPM 900/3600/6000, eight bank pulses per 720-degree cycle and physical firing frequency RPM/15. Idle pitch is 1; exhaust body is emphasized below the firing frequency.
+
+## CSV-guided correction and acceptance targets (2026-10-03 afternoon)
+
+- Base 2018 C63 target: manufacturer 0-60 mph in 4.1 s, not 0-100 km/h. A period Mercedes UK brochure lists base Cabriolet 0-62 mph in 4.2 s (S 4.1 s): https://www.mercedesonlease.co.uk/wp-content/uploads/2017/04/c-class-coupe-c205.pdf . Use 0-100 km/h about 4.2 s with a practical +/-0.3 s game calibration band. Manufacturer brochure figures are targets, not observed mod results.
+- The latest Mercedes CSV is vehicle-diagnostics-20261003-145949.csv. The immediately older 145333 and 145053 files are McLaren Senna and Dodge, respectively. They are excluded from Mercedes tuning.
+- See DIAGNOSTICS_2026-10-03.txt for timing, validity, braking intervals and input hash. No launch is accepted as a final straight, undamaged validation run.
+- Gear thresholds 6500/2600 rpm, 0.15 s shift, 0.4 s shift ban; throttle-dependent shift intensity 0.35. The original 5100 rpm downshift threshold was above post-upshift RPM. Keep all factory ratios, 350 kW, 650 Nm, 1909 kg, RWD and 250 km/h.
+- Original Mercedes road-tire preset uses the SDK asphalt curve shape, BCDE=(9,2.15,1.30,0.871), instead of the donor rig's arcade curve with peak near 100% slip. Native TCS/ABS are attached and enabled through native states. Rear longitudinal grip 0.85, front 1.0; stiffness 1.0. These are simulation calibration values, not claimed tire measurements.
+- Brake actuation: defined simulation stock baseline 1850 Nm per front wheel and rear coefficient 0.55; apply factor 1.25 = 2312.5 Nm. VehicleType and NWH agree. Baseline is an initial calibration, not a measured OEM caliper torque.
+- Real instrumented comparison: C/D 2017 C63 S Cabriolet with OPTIONAL CERAMIC front brakes stopped 70-0 mph in 155 ft (47.244 m): https://www.caranddriver.com/reviews/a15097871/2017-mercedes-amg-c63-cabriolet-test-review/ . This is a PROXY, not the exact base C63's stock brake test. Equivalent mean deceleration 1.057 g; +25% gives about 1.321 g, 37.80 m at 70 mph or 29.78 m at 100 km/h. Increasing deceleration by 25% means 20% shorter distance, not 25% shorter.
+- The old CSV's two complete 100-10 intervals are about 28.7/28.5 m (~1.36 g) (one interval includes steering); these are not proof that the revised build achieves a specific real-stock upgrade.
+- Re-test after restart: three undamaged, straight, flat-road launches at full throttle to 100 km/h, then a straight full-brake 100-0 stop. Capture another CSV. Abort on steering, impact, reverse, throttle release or wheels leaving the road. Confirm no 1/2 or 2/3 gear hunting, RPM no longer flares to limiter near 15 km/h, and driveability after repair/reload.
+
+## Height, rear brake and badge feedback (2026-10-03 evening)
+- Additional wheel forward correction: +0.025 m, total Z offset +0.095 m. Tracks,
+  researched tire sizes and unchanged wheelbase are preserved.
+- Body: front -0.050 m, rear -0.040 m through a rigid 0.202 degree nose-down pose,
+  not height scaling. Lower chassis collision centers, steering/seat anchors and
+  beam positions follow the same pose. Body mass center follows the body.
+- Additional road-height correction: raise native suspension contact mounts
+  +0.050 m relative to the root so dynamic contact lowers the root. Initial spring
+  extension 0.085 m is serialized; parked tire/caliper centers start at tire radius
+  instead of hovering at unextended contact mounts. Runtime native suspension
+  remains authoritative; no per-frame root or mesh position repair is introduced.
+- Select lamps in the canonical pre-stance body frame; emitter meshes remain on
+  their lowered production renderer. Add both inner lower trunk-lid red brake
+  emitters, excluding adjacent taller white reverse-light/housing islands.
+- Keep badge texture alpha, add 0.6 mm geometric separation, metallic 0.25 /
+  smoothness 0.45 for a visible silver diffuse response under dark game probes.
+  Preserve thin alpha coverage in mipmaps and use uncompressed badge atlas import.
+- Engine recording replaces rejected synthesized loops. CC0 source: 'S63 AMG V8
+  Engine Revs' by marcelweiss, Freesound 505321. It is an actual AMG twin-turbo V8,
+  but NOT an exact C63/M177 recording. Retain the source distinction and license.
+  Waveform-preserving held excerpts / correlated loop splices / mild load EQ;
+  acoustic layer references 60/140/180 Hz, target 60-240 Hz, RMS 0.11. This supersedes
+  the previous physical firing-frequency mapping for purely synthesized loops.
+  No continuous idle crackle is added; horn remains unchanged.
+- Acceleration and +25% brake acceptance still require controlled in-game telemetry.
+
+2026-10-03 latest feedback / corrected render and traction contract
+- Raise body 20 mm from prior iteration: body-only front drop now 30 mm and
+  rear 20 mm. Retain the 50 mm native ground correction and 85 mm parked spring.
+- Front wheels further +2.5 mm (0.25 cm), total forward offset 97.5 mm.
+  Rear wheels further +10 mm, total 105 mm. Physics/visual/caliper centers agree.
+  Requested unequal axle offsets yield 2.83222 m measured controller wheelbase;
+  reference factory wheelbase remains 2.83972 m in source scaling/spec history.
+- Repair HDRP DepthOnly/ShadowCaster on all opaque materials after conversion and
+  per-instance validation. Masked GBuffer uses Equal and requires its depth pass;
+  the previous preview shader never exercised this requirement.
+- Restore source BLEND-atlas alpha masks for cabin/chassis/engine detail. Their
+  white transparent padding must not render as solid trim. Source atlas padding:
+  approx. 28.6% interior, 10.6% chassis, 32.8% engine pixels below alpha 30/255.
+  Separate solid body/upholstery meshes and double-sided inner faces are retained.
+- Preserve KHR_texture_transform on source carbon base/normal textures (-128 scale).
+- No cabin triangles removed: 19689 source triangles remain in cabin/steering parts.
+- Latest CSV 212155: 0-100 7.181/8.053/7.112 seconds on damaged/non-acceptance runs.
+  Outside 0.35-second shift windows, 40/105 full-throttle samples have load < .02
+  and negative generated power. Native TCS returns .01 above slip threshold.
+- Add a target-owned native engine PowerModifier with cached two rear wheels:
+  slip .13-.32 progressively blends power gain 1.0-.20, smoothing .08-second
+  reduction/.16-second recovery. No Update/timer/state discovery. Native TCS at
+  .65 is retained for severe slip; .18 safety restored on disable/failure unless
+  a foreign tuning changed that owned value. ABS and all factory engine/ratio
+  settings remain. Rear forward grip 1.0 (from .85) matches front road-tire grip.
+- Audio adopts the Audi RS6R pattern: unchanged native Car idle at pitch 1.0,
+  native-entry rebinding and six own stationary spectral driving layers derived
+  from the licensed AMG S63 reference. No other mod clip is copied/referenced.
+  References 96/176/320 Hz, logarithmic playback 80-200 Hz, idle fade 1180-2440 RPM.
+- Real-world 4.2-second acceleration and upgraded brake acceptance still require
+  a new straight undamaged level-road recording after installing this iteration.
+
+
+## Runtime feedback tuning (2026-10-15)
+
+- User confirmed interior transparency and visible emblems in the prior game build.
+- Display name: Mercedes-AMG C63 Cabriolet. Saved vehicle type/cache identity unchanged.
+- Inward offset is now 90 mm per corner (prior 40 + requested 50 mm). Controller
+  tracks: front 1.4558 m, rear 1.4126 m. This is user-requested fitment, not factory track.
+- Front Z offset 100 mm (prior 97.5 + 2.5); rear Z remains 105 mm.
+- Latest CSV 20261015-143704 has one clean, straight 0-100 result of 3.888 s;
+  later runs already have damage and are not clean acceptance. The original
+  manufacturer reference remains 4.1 s 0-60 mph; the 0-100 tuning target is about 4.2 s.
+  https://media.mbusa.com/news/2018-mercedes-amg-c63-cabrio-and-c63-s-cabrio-specifications
+- Model an initial 8% driveline loss at the cached engine power callback before
+  torque reaches the drivetrain. This is a game-physics calibration (efficiency .92),
+  not a claimed measured transmission loss. Retain crankshaft 350 kW/650 Nm,
+  1909 kg, all seven factory ratios and 3.06 final drive. No speed multiplier.
+  A fresh clean game CSV is required to establish resulting acceleration.
+- Remove the .4 s post-shift ban, matching Audi/BMW/Porsche's zero additional ban;
+  shift duration .10 s, with existing RPM hysteresis and native D/N/R speed safeguards.
+  Recorded low-speed N-to-R/D events were commonly .425-.445 s apart.
+- Brake torque remains 1850 * 1.25 = 2312.5 Nm. Latest full-brake 100-10 intervals
+  are 30.11/28.72/28.79 m. These are not a controlled stock-versus-mod brake test;
+  +25% denotes configured brake torque, not guaranteed 25% shorter stopping distance.
+- Same world-space rest-position dent field now drives panels, lamps, badges,
+  grille and end-region chassis/engine supports. Feathered end crush plane reaches
+  upper and lower attachments; cumulative displacement capped at .48 m.
+  Cabin/floor-center support vertices, wheels, brakes and cabin meshes excluded.
+- Engine sources now use 8 m minimum / 65 m maximum logarithmic spatial range,
+  retaining native mixer/master/mute routing. Direct fallback engine gain 1.0
+  replaces .16; idle .65 replaces .24, driving .60..1.00 replaces .38...70.
+  Source-less horn keeps its prior .16 gain. Native idle must have readable nonzero
+  PCM; otherwise use own verified EngineLow fallback. Native Start initialization
+  uses one bounded spawn continuation, not recurring discovery.
+- Audio loader rejects silent PCM; disabled global + audio sub-flags expose load
+  path/state/sample counts and scheduled playback state for support.
+
+
+## Second runtime correction (2026-10-15, audio reload parity)
+
+- Prior-build CSV 20261015-154633: clean 0-100 3.863 s, 0-60 mph 3.597 s;
+  full-brake 100-10 28.80 m / 1.352 g. Brake torque unchanged at 2312.5 Nm.
+- Driveline calibration .92 -> .85 after the previous change did not achieve
+  the target. Crankshaft rating, mass and ratios retained; fresh game measurement
+  required. This is game-physics calibration, not a measured transmission loss.
+- Front slope .012 -> .004 m per excess m/s, per-impact cap .36 -> .14 m.
+  Rear .013 -> .0045, cap .42 -> .16 m. Cumulative end cap .48 -> .20 m.
+  Side calibration unchanged; a later end impact preserves stronger side dents.
+- Six harmonic-only coast/load voices now cover idle through redline without
+  separate idle doubling or procedural crackle. No added broadband noise layer.
+- Every engine voice routes explicitly to the shared game's vehicle Engine
+  mixer, rather than inheriting native/auxiliary/direct output. Native parked
+  mute no longer suppresses owned voices. Game master/SFX/menu remain honored.
+- Idle gain .38, driving .36...56, same fixed position and 8..65m profile.
+  One finite continuation after entry/native physics enable rebinds the current
+  native source to prevent a stale/missing reference and doubled engine audio.
+
+
+## Third runtime correction (2026-10-15, engine level and percentage damage)
+
+- User confirms equal engine level for saved/new Mercedes and acceptable visual
+  dent coverage/strength. Preserve those paths and all dent field parameters.
+- Engine gain increased 40% (+2.92 dB): idle .532, driving .504...784.
+  Same six harmonic voices, shared Engine mixer, spatial profile and game gates.
+- Native NWH overall damage uses impulse, with relative speed * 100 compared to
+  decelerationThreshold. Runtime previously forced 500 (5 m/s = 18 km/h), while
+  Audi/Porsche prefab references use 200. Change to 200 (2 m/s = 7.2 km/h).
+  Cosmetic impact threshold remains 5 m/s. Native cooldown .8 -> .2 seconds;
+  do not clear legitimate damage, change the impulse multiplier, or add a second
+  percentage calculation. Keep native road/ground/ignored-tag filtering.
+- Explicitly configure native handler enabled/visualOnly=false on runtime setup
+  and prefab generation. Preserve current Damage/save value on reconfiguration.
+- Gated, bounded collision diagnostics capture relative speed, impulse, native
+  and saved percentage after the game's one-frame collision synchronization.
+  Both global and damage diagnostic flags default false.
+- Native contact replay validates front/reverse 2.5/4.9/10 m/s percentage changes,
+  old-threshold regression, rapid distinct impacts, parking/ground/road/tag
+  exclusions and damage preservation. This is not an observed in-game crash.
+- 243 audio mixes pass with final envelope peak .2145. Fresh in-game listening
+  and front/rear percentage-damage checks are still required.
+
+
+## Fourth runtime correction (2026-10-16, street-prop impacts and engine level)
+
+- Latest feedback specifically identifies intermittent misses against lamps and
+  traffic lights. Installed DLL matches prior build; no new driving CSV exists.
+- Installed level16 metadata: Prefab_StreetLamp objects have layer 26 StreetProps,
+  untagged capsule colliders (class 136). They are not native excluded road layers.
+- Native DamageHandler handles only Enter, reserving its timeout even for zero
+  impulse. Add a Mercedes-only StreetProps reconciliation window (0.12 s) for
+  late Stay impulses and zero-impulse CCD contacts with measured normal velocity
+  loss. Relative normal speed must exceed 2 m/s; ground-support normals excluded.
+- Retain the native impulse-to-percentage coefficient and compare against the
+  pre-step Damage baseline. Deferred commit only fills a missing amount, never
+  adds on top of native damage. Real CarController collision synchronization
+  handles saved damage, UI, damage-off mode and broken-car feedback.
+- No fixed damage charge, arbitrary minimum percent, global collision hook,
+  other-mod edit or change to the accepted visual dent field.
+- Engine PCM RMS doubled to .22 (+6.02 dB) on all six coast/load loops. Waveforms
+  otherwise identical within one 16-bit PCM unit. Same mixer and lifecycle.
+  Combined playback peak .4291; no clipping in 243 offline mixtures.
+- Native contact replay now includes a narrow StreetProps capsule, front/reverse
+  zero first impulse + later Stay impulse, measured stop, native no-double-count,
+  persistent/expired contact, ignored tags, ground-support normals, repair and
+  actual save/UI synchronization. This is not a live in-game pole collision.
+
+
+## Engine sound replacement (2026-10-16, after accepted damage test)
+
+- User confirms sound level and damage behavior, rejects the engine timbre and
+  explicitly asks for an appropriate sound from a finished vehicle.
+- Adopt the accepted Audi RS6R idle and six drive/load stems. Owned local files;
+  original drive waveforms with amplitude normalization only, original idle
+  byte-identical. No dependency on installed Audi or donor GUIDs.
+- Audi acoustic playback 80..180 Hz, references 96/176/320, idle pitch 1 and
+  equal-power idle/drive transition. Seven synchronous voices, same shared Engine
+  mixer and saved/new source profile. Game volume/menu/mute and horn retained.
+- Stereo 48 kHz idle is loaded at its original format, avoiding resampling or
+  re-authoring the accepted clip. Mono 44.1 kHz drive/horn files still supported.
+- 243 stereo mixtures pass: RMS .1079...2410, peak .5562, no clipping or gaps.
+- Damage controller and dent calibration are retained exactly as accepted.
+  Re-listening in the Mercedes remains required; PR stays open for audio acceptance.

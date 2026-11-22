@@ -1,0 +1,26 @@
+Mercedes C63 Vehicle Diagnostics analysis
+Input: vehicle-diagnostics-20261003-212155.csv
+SHA256: 6d5b0c4d62f0c7e7694e9ff838c58dd52fa3b713db36cecd8e150feba8df8501
+Samples: 229
+
+Launch times describe the installed build captured by this CSV. Invalid runs are not acceptance results.
+run=1: 0-60mph=not reached, 0-100kph=not reached; INVALID: steering input, yaw above 10 deg/s
+run=2: 0-60mph=7.032s (sample interpolation), 0-100kph=7.181s (native milestone); INVALID: steering input, yaw above 10 deg/s, damage increased
+run=3: 0-60mph=7.919s (sample interpolation), 0-100kph=8.053s (native milestone); INVALID: damage increased
+run=4: 0-60mph=6.921s (sample interpolation), 0-100kph=7.112s (native milestone); INVALID: damage increased
+
+Transmission events:
+60-64kph: 3 full-throttle shifts; gears 2
+93-98kph: 3 full-throttle shifts; gears 3
+
+Full-brake 100-10 km/h intervals (sample-interpolated distance; excludes reaction):
+t=17.847s: 30.21m; equivalent deceleration=1.289g; steering max=1.000; road grade/friction not recorded
+t=31.671s: 31.17m; equivalent deceleration=1.250g; steering max=0.001; road grade/friction not recorded
+
+Full-throttle interruptions outside +/-0.35 s gear-change windows:
+40/105 samples have load < .02 and negative generated power.
+Native TCS IL was inspected separately: over-threshold slip returns power modifier .01.
+CSV sampling cannot identify every physics step; correlation is not direct TCS-state logging.
+New Mercedes progressive rear-axle power modifier replaces routine binary cuts;
+native TCS remains a .65 severe-slip backstop. Factory power and gear ratios unchanged.
+No new-build performance acceptance is implied by this analysis.

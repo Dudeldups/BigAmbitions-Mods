@@ -1,0 +1,36 @@
+Mercedes C63 Cabriolet: loaded launch RPM dip and idle balance (follow-up)
+
+Source: vehicle-diagnostics-20261018-142300.csv, 122 rows.
+SHA256: 204ad1961758e7353986016658efd9c665cdfa603533d526824ec8be050cdfea
+Five N-to-first gear selections take 19/27/17/17/28 ms. Movement begins
+immediately, but the sampled launch RPM falls under continuous full throttle:
+1539.6 -> 1227.2; 1680.7 -> 1228.4; 1540.5 -> 1265.5;
+1376.3 -> 1314.6; 1759.9 -> 1293.2 RPM. Associated generated power drops.
+The user confirms this RPM fall is the reported problem. The previous static
+one-frame clutch test proved transfer, but did not exercise the coupled load.
+
+Change only clutch engagement range from 500 to 1000 RPM. Engagement starts
+at 900 RPM, throttle offset stays zero, native slip torque stays 780 Nm.
+This retains prompt initial transfer while spreading the launch load. Native
+shift opening, below-idle release and speed-based lockup remain authoritative.
+Shared runtime/editor constants cover both saved and newly spawned vehicles.
+
+VerifyLoadedLaunch uses the installed native engine and clutch integration with
+a deterministic reflected chassis load (1909 kg, actual first/final ratio and
+rear radius). It checks the previous/new RPM drawdown, 50/75/100 percent throttle,
+speed-based native lockup and no stall. Full-throttle maximum drawdown in the
+load fixture is 50.8 RPM with the previous range versus 6.5 RPM with the new one.
+This fixture does not model tire contact
+or replace in-game validation; fresh telemetry and driving feel are still needed.
+The earlier neutral-selection evidence remains valid, but the previous report's
+500 RPM range and fully-coupled-at-1400 statement are superseded by this revision.
+
+Idle-only playback gain: 0.95 -> 0.60 (-3.99 dB). Driving gain 0.504..0.784,
+WAV bytes, pitch, crossfade timing, mixer routing and horn levels are retained.
+Both new/saved instances use the same runtime audio model. Audio metadata and
+waveform mix checks use the current idle gain: 243 stereo mixes, RMS
+0.0686..0.2410, peak 0.4358. Diagnostic defaults stay false.
+
+No power curve, gearing, shift thresholds/duration, brakes, damage or geometry
+changes. A limiter touch in the one longer acceleration was observed separately;
+this revision addresses the user-confirmed launch dip. No completed 0-100 run.

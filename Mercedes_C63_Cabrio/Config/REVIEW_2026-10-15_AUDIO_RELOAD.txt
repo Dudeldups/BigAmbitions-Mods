@@ -1,0 +1,44 @@
+Mercedes C63 second feedback - 2026-10-15
+
+User confirms deformation coverage, but requests substantially weaker front/rear
+crumpling and consistent, quieter, non-hissing engine audio on spawn/save reload.
+
+Implemented:
+- Engine routing explicitly uses GlobalReferences.vehicleAudioMixer/Engine,
+  verified against current game CarController.Awake IL. No shared mixer writes.
+  Remove native-idle/auxiliary/direct output alternatives and inherited parked
+  source mute. Game mixer/master/SFX, menu, pause, ignition and control retained.
+- Six owned harmonic coast/load voices cover idle through driving. Remove the
+  extra idle voice and procedural crackle/filter/generator; zero added noise bed.
+  Idle gain .38; drive .36...56; identical fixed position and 8..65m spatial range.
+- Bind current native source after a bounded two-frame entry/physics-enable
+  continuation; deduplicate listeners, cancel on disable, restore mute/distortion
+  on teardown/failure. No source discovery in audio ticks.
+- Front per-impact depth slope -67%, rear -65%; caps 14/16 cm. Cumulative end
+  cap 20 cm instead of 48 cm. Side settings unchanged; no undoing stronger side
+  dents. Existing 36-mesh coverage, ownership and native repair retained.
+- New prior-build CSV: 129 samples, clean 0-100 3.863 s; 100-10 braking 28.80m.
+  Driveline efficiency .92 -> .85 as initial calibration toward about 4.2 s;
+  crankshaft rating, mass/gears and reference*1.25 brakes retained.
+
+Verification:
+- Unity 2022.3.62f2 source/bundle audits pass: all eight runtime PCM reads,
+  different new/saved mute/spatial inputs converge to one Engine profile,
+  continuous bounded idle/drive gain, native creation/donor ownership, wheel
+  runout/positions, original cabin/alpha/UV, 13 lamps/2 beams, traction lifecycle,
+  repeated transformed end impacts with .20m cap, shared-mesh isolation and repair.
+- Offline 243 mixes pass: raw peak .2832, final envelope peak .1532, residual
+  outside harmonic bins < -40dB. Six waveforms regenerated from the same licensed
+  source, retaining phase alignment; no donor clips. Diagnostic defaults false.
+- No changed in-game listening, cold reload or physical road test observed here.
+  Compare new spawn and saved Mercedes at matched camera, location and volume;
+  idle/load/coast, menu and entry/exit; verify quieter end crashes/repair and
+  record a clean straight acceleration/braking CSV. PR #27 remains open.
+
+Final external C# compile succeeded: 0 warnings, 0 errors.
+Config/locale JSON and Unity asset/meta pairs validated.
+DLL SHA256 04b847793850cc8441d0cf1aceb300ec660b2fd72e6db1585e46746cdc34b324
+Bundle SHA256 7fa931cef278e84e4ebb0b459a29a74163ce2fcf388ac825649438a775d69e5b
+Normal installer determines immediate versus queued copy; PR/Plane and final handoff report the actual state.
+Audio lifecycle test also verifies deduplicated entry/menu listeners and clearing stale menu state on re-enable.
+Task branch synchronized with latest origin/main and external build repeated.

@@ -1,0 +1,39 @@
+Mercedes C63 third feedback correction - 2026-10-15
+
+Accepted user feedback: saved/new engine parity and visual dent strength/coverage.
+Scope: Mercedes_C63_Cabrio only. PR #27 stays open pending runtime acceptance.
+
+Engine: gain x1.40 (+2.92 dB), idle .532, drive .504...784. No mixer/source,
+noise, spatial, pitch, sample or lifecycle changes. Offline 243 RPM/load mixtures:
+raw peak .2832, final envelope peak .2145; nonharmonic energy < -40 dB.
+
+Percentage damage: actual installed ExternalPlugins.dll DamageHandler IL checks
+relativeVelocity.magnitude*100 against decelerationThreshold; its Enqueue uses
+collision.impulse/(fixedDeltaTime*mass*10)*damageIntensity*.005. Runtime was
+forcing threshold 500 and timeout .8s; Audi/Porsche prefab threshold is 200.
+Use 200 and .2s. Preserve existing intensity, native ignored tags and road layers,
+CarController native one-frame save/UI synchronization and game damage-off mode.
+Set enabled/visualOnly=false without resetting Damage. Apply the same setup to
+prefab and live instances. Do not replace native percentage arithmetic.
+
+Preserve all accepted cosmetic dent parameters, including 5 m/s visual threshold,
+front/rear .14/.16 m per-impact and .20 m cumulative cap, 36-mesh coverage and
+native repair. New diagnostics are event-triggered, two frames bounded, limited
+to 12 contacts and require existing global plus damage flags (both false).
+
+Verification:
+- Unity 2022.3.62f2 native percentage contact replay passes front/reverse contacts
+  at 2.5/4.9/10 m/s; old 500 threshold reproduces zero at 2.5 m/s.
+- Handler reconfiguration retains .35 current damage; real native impulse damage
+  rises above zero after correction. A second hit after .25s adds damage; a
+  duplicate at .1s is ignored. Parking speed 1.5 m/s, Wheel/ExitTrigger tags and
+  Ground/GroundUnplacable/Roads layers remain excluded.
+- Edit-mode fixture explicitly invokes native Awake for Rigidbody/layer cache;
+  actual game damage calculation is invoked, not a mock damage equation.
+- Existing source/bundle audits pass regional transformed/repeated impacts,
+  .20m end cap, repair/mesh isolation, eight PCM loads, source parity/lifecycle,
+  wheels, cabin, badges, lamps, registration, traction and brake factor.
+
+Not verified in game by Codex. Test new and saved Mercedes idle/load levels and
+front/reverse impacts at several speeds; inspect percentage, repair and reload.
+Keep PR open until explicit successful in-game confirmation.

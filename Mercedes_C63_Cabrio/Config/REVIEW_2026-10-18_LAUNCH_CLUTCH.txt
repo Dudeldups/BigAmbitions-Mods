@@ -1,0 +1,30 @@
+Mercedes-AMG C63 Cabriolet: neutral-to-first launch hesitation
+
+Evidence: vehicle-diagnostics-20261018-130344.csv (111 rows).
+SHA256: ba9fcce47baf839ef685033346103f84b2cfd93680c79375fa5f6441c6612983
+Four full-throttle starts selected first gear after 26, 24, 24 and 16 ms.
+First engaged-frame RPM: approximately 1,129; settled idle: approximately 768.
+Samples are about 0.20-0.22 s apart; they cannot resolve exact movement onset.
+
+The installed native TransmissionComponent treats every neutral transition as
+instant, independently of shiftDuration. Existing 0.10 s non-neutral shifts stay.
+The native automatic clutch previously required 1250 + 500 * throttle^2 RPM:
+1,750 RPM at full throttle before any drive, fully coupled at 2,250 RPM.
+The first engaged CSV frame therefore had zero clutch transfer.
+
+Change only the launch clutch threshold: 900 RPM (configured idle), zero throttle
+RPM offset. Retain the 500 RPM progressive engagement range, 780 Nm slip torque,
+zero creep, native below-idle safeguard, shift safeguards and reverse selection.
+At 1,129 RPM native clutch input is approximately 0.459 rather than zero; full
+coupling begins at 1,400 RPM. Editor and runtime use shared tuning constants so
+new and restored vehicles receive the same calibration. Existing gated runtime
+configuration logs include the launchClutch settings; debug stays disabled.
+
+VerifyNativeLaunchClutch exercises the installed game's real clutch implementation
+and reproduces the previous dead zone before checking the new transfer, partial
+throttle, full closure, below-idle/no-creep protection and repeat configuration.
+
+No power/ratio/brake/audio/damage changes. The CSV contains no valid completed
+0-100 run; it does not justify changing overall acceleration targets. An in-game
+retest is required for launch feel, gentle/full-throttle starts, reverse-to-first,
+coasting, upshifts/downshifts and existing/new vehicles. No runtime success claim.
