@@ -22,6 +22,7 @@ internal static class BentleyContinentalGTSpeedDiagnostics
     internal static bool LightingDebugEnabled { get; set; } = false;
     internal static bool DrivetrainDebugEnabled { get; set; } = false;
     internal static bool ExitSafetyDebugEnabled { get; set; } = false;
+    internal static bool WarehouseExitDebugEnabled { get; set; } = false;
     internal static bool DriverDebugEnabled { get; set; } = false;
 
     internal static void Info(ModContext? context, string message)
@@ -57,6 +58,12 @@ internal static class BentleyContinentalGTSpeedDiagnostics
             context?.Logger.Info("BentleyContinentalGTSpeed exit-safety: " + message);
     }
 
+    internal static void WarehouseExitInfo(ModContext? context, string message)
+    {
+        if (DebugEnabled && WarehouseExitDebugEnabled)
+            context?.Logger.Info("BentleyContinentalGTSpeed warehouse-exit: " + message);
+    }
+
     internal static void EnableExitSafetyDiagnostics(ModContext context)
     {
         var config = Path.Combine(Application.persistentDataPath,
@@ -75,6 +82,13 @@ internal static class BentleyContinentalGTSpeedDiagnostics
         {
             DebugEnabled = true;
             context.Logger.Info("BentleyContinentalGTSpeed local feature diagnostics enabled.");
+        }
+        WarehouseExitDebugEnabled = File.Exists(
+            Path.Combine(config, "warehouse-exit-diagnostics.enabled"));
+        if (WarehouseExitDebugEnabled)
+        {
+            DebugEnabled = true;
+            context.Logger.Info("BentleyContinentalGTSpeed warehouse-exit diagnostics enabled.");
         }
         ExitSafetyDebugEnabled = false;
         var marker = Path.Combine(Application.persistentDataPath,

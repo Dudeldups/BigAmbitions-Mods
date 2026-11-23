@@ -29,6 +29,9 @@ internal sealed class BentleyContinentalGTSpeedRuntime : MonoBehaviour
     private const float ExitPathProbeDistance = 1.5f;
     private const float ExitNavMeshSampleTolerance = 0.5f;
     private const float NavMeshObstacleGroundOverlap = 0.02f;
+    private const float WarehouseExitEntranceSearchRadius = 12f;
+    private const float WarehouseExitGuardDuration = 8f;
+    private const float WarehouseExitGuardClearDistance = 4f;
     private static readonly MethodInfo? NativeCarStartEngine = typeof(CarController).GetMethod(
         "StartEngine", BindingFlags.Instance | BindingFlags.NonPublic);
 
@@ -59,6 +62,8 @@ internal sealed class BentleyContinentalGTSpeedRuntime : MonoBehaviour
     private readonly Collider[] exitOverlapBuffer = new Collider[32];
     private Coroutine? drivetrainReadinessCoroutine;
     private Coroutine? exitObservationCoroutine;
+    private Coroutine? warehouseExitGuardCoroutine;
+    private readonly List<Collider> warehouseExitGuardColliders = new List<Collider>();
     private int drivetrainReadinessVehicleId;
 
     internal static BentleyContinentalGTSpeedRuntime Initialize(
@@ -75,6 +80,7 @@ internal sealed class BentleyContinentalGTSpeedRuntime : MonoBehaviour
 
         active.StopDrivetrainReadiness();
         active.StopExitObservation();
+        active.StopWarehouseExitGuard("runtime-reinitialized");
         active.context = context;
         active.vehicleTypeName = vehicleTypeName;
         active.playerVehiclePrefab = playerVehiclePrefab;
@@ -105,6 +111,7 @@ internal sealed class BentleyContinentalGTSpeedRuntime : MonoBehaviour
     {
         StopDrivetrainReadiness();
         StopExitObservation();
+        StopWarehouseExitGuard("runtime-shutdown");
         Unsubscribe();
         foreach (var audio in audioControllers)
         {
@@ -178,6 +185,7 @@ internal sealed class BentleyContinentalGTSpeedRuntime : MonoBehaviour
         Unsubscribe();
         StopDrivetrainReadiness();
         StopExitObservation();
+        StopWarehouseExitGuard("runtime-disabled");
     }
 
     private void Subscribe()
@@ -186,6 +194,8 @@ internal sealed class BentleyContinentalGTSpeedRuntime : MonoBehaviour
         GlobalEvents.onFullMenuToggle += HandleFullMenuToggle;
         GlobalEvents.onEnterBuilding -= HandleBuildingEntered;
         GlobalEvents.onEnterBuilding += HandleBuildingEntered;
+        GlobalEvents.onExitBuilding -= HandleBuildingExited;
+        GlobalEvents.onExitBuilding += HandleBuildingExited;
         GlobalEvents.onBuildingRegistrationChange -= HandleBuildingRegistrationChanged;
         GlobalEvents.onBuildingRegistrationChange += HandleBuildingRegistrationChanged;
         GlobalEvents.onGameUnloaded -= HandleGameUnloaded;
@@ -204,6 +214,7 @@ internal sealed class BentleyContinentalGTSpeedRuntime : MonoBehaviour
     {
         GlobalEvents.onFullMenuToggle -= HandleFullMenuToggle;
         GlobalEvents.onEnterBuilding -= HandleBuildingEntered;
+        GlobalEvents.onExitBuilding -= HandleBuildingExited;
         GlobalEvents.onBuildingRegistrationChange -= HandleBuildingRegistrationChanged;
         GlobalEvents.onGameUnloaded -= HandleGameUnloaded;
         GlobalEvents.onEnterVehicle -= HandleVehicleEntered;
@@ -279,6 +290,172 @@ internal sealed class BentleyContinentalGTSpeedRuntime : MonoBehaviour
             LogExitMovementState(vehicle, "native-exit-event-before-native-warp");
             exitObservationCoroutine = StartCoroutine(ObserveNativeExitAndCarving(vehicle));
         }
+    }
+
+    private void HandleBuildingExited(Address address)
+    {
+        if (address == null ||
+            !string.Equals(
+                BuildingHelper.GetBuilding(address)?.BuildingType,
+                "ba:buildingtype_warehouse",
+                StringComparison.Ordinal))
+        {
+            return;
+        }
+
+        var vehicle = VehicleHelper.GetCurrentVehicleBase();
+        if (vehicle == null || !vehicle.controlledByPlayer || !IsTargetVehicle(vehicle))
+        {
+            BentleyContinentalGTSpeedDiagnostics.WarehouseExitInfo(
+                context,
+                $"guard skipped: current vehicle is not a player-controlled Bentley " +
+                $"(vehicle={vehicle?.GetInstanceID() ?? 0}, controlled={vehicle?.controlledByPlayer ?? false}).");
+            return;
+        }
+
+        var entrance = FindClosestDriveInEntrance(vehicle.transform.position, out var distance);
+        if (entrance == null || distance > WarehouseExitEntranceSearchRadius)
+        {
+            BentleyContinentalGTSpeedDiagnostics.WarehouseExitInfo(
+                context,
+                $"guard skipped: no nearby drive-in entrance; vehicle={vehicle.GetInstanceID()}, " +
+                $"distance={distance:0.00}m, searchRadius={WarehouseExitEntranceSearchRadius:0.00}m.");
+            return;
+        }
+
+        StopWarehouseExitGuard("restarted-for-new-exit");
+        foreach (var enterTrigger in entrance.GetComponentsInChildren<DriveInEntranceEnterTrigger>(true))
+        foreach (var collider in enterTrigger.GetComponents<Collider>())
+        {
+            if (collider == null || !collider.enabled || !collider.isTrigger)
+                continue;
+
+            warehouseExitGuardColliders.Add(collider);
+            collider.enabled = false;
+        }
+
+        if (warehouseExitGuardColliders.Count == 0)
+        {
+            BentleyContinentalGTSpeedDiagnostics.WarehouseExitInfo(
+                context,
+                $"guard skipped: entrance='{entrance.name}' has no enabled entry-trigger colliders; " +
+                $"vehicle={vehicle.GetInstanceID()}.");
+            return;
+        }
+
+        var outward = Vector3.ProjectOnPlane(
+            vehicle.transform.position - entrance.transform.position,
+            Vector3.up);
+        if (outward.sqrMagnitude < 0.0001f)
+            outward = Vector3.ProjectOnPlane(entrance.transform.forward, Vector3.up);
+        if (outward.sqrMagnitude < 0.0001f)
+        {
+            BentleyContinentalGTSpeedDiagnostics.WarehouseExitInfo(
+                context,
+                $"guard aborted: outward direction is zero; vehicle={vehicle.GetInstanceID()}, " +
+                $"entrance='{entrance.name}'.");
+            StopWarehouseExitGuard("zero-outward-direction");
+            return;
+        }
+
+        outward.Normalize();
+        var startingProjection = Vector3.Dot(vehicle.transform.position, outward);
+        Physics.SyncTransforms();
+        BentleyContinentalGTSpeedDiagnostics.WarehouseExitInfo(
+            context,
+            $"guard started: vehicle={vehicle.GetInstanceID()}, entrance='{entrance.name}', " +
+            $"entranceDistance={distance:0.00}m, triggerCount={warehouseExitGuardColliders.Count}, " +
+            $"outward={outward}, startProjection={startingProjection:0.000}, " +
+            $"clearDistance={WarehouseExitGuardClearDistance:0.00}m, " +
+            $"timeout={WarehouseExitGuardDuration:0.0}s.");
+        warehouseExitGuardCoroutine = StartCoroutine(GuardWarehouseExit(
+            vehicle,
+            outward,
+            startingProjection));
+    }
+
+    private IEnumerator GuardWarehouseExit(
+        VehicleController vehicle,
+        Vector3 outward,
+        float startingProjection)
+    {
+        var expiresAt = Time.unscaledTime + WarehouseExitGuardDuration;
+        var reason = "timeout";
+        while (vehicle != null && vehicle.controlledByPlayer && Time.unscaledTime < expiresAt)
+        {
+            if (Vector3.Dot(vehicle.transform.position, outward) >=
+                startingProjection + WarehouseExitGuardClearDistance)
+            {
+                reason = "moved-away";
+                break;
+            }
+
+            yield return new WaitForFixedUpdate();
+        }
+
+        if (vehicle == null)
+            reason = "vehicle-destroyed";
+        else if (!vehicle.controlledByPlayer)
+            reason = "player-left-vehicle";
+
+        BentleyContinentalGTSpeedDiagnostics.WarehouseExitInfo(
+            context,
+            $"guard ending: reason={reason}, vehicle={vehicle?.GetInstanceID() ?? 0}, " +
+            $"projection={(vehicle == null ? float.NaN : Vector3.Dot(vehicle.transform.position, outward)):0.000}, " +
+            $"startProjection={startingProjection:0.000}.");
+        RestoreWarehouseExitTriggers(reason);
+    }
+
+    private void StopWarehouseExitGuard(string reason)
+    {
+        if (warehouseExitGuardCoroutine != null)
+            StopCoroutine(warehouseExitGuardCoroutine);
+        RestoreWarehouseExitTriggers(reason);
+    }
+
+    private void RestoreWarehouseExitTriggers(string reason)
+    {
+        if (warehouseExitGuardColliders.Count > 0)
+        {
+            BentleyContinentalGTSpeedDiagnostics.WarehouseExitInfo(
+                context,
+                $"restoring triggerCount={warehouseExitGuardColliders.Count}, reason={reason}.");
+        }
+
+        foreach (var collider in warehouseExitGuardColliders)
+        {
+            if (collider != null)
+                collider.enabled = true;
+        }
+
+        warehouseExitGuardColliders.Clear();
+        warehouseExitGuardCoroutine = null;
+        Physics.SyncTransforms();
+    }
+
+    private static DriveInEntrance? FindClosestDriveInEntrance(
+        Vector3 vehiclePosition,
+        out float distance)
+    {
+        DriveInEntrance? nearest = null;
+        var nearestDistanceSquared = float.PositiveInfinity;
+        foreach (var entrance in FindObjectsOfType<DriveInEntrance>(true))
+        {
+            if (entrance == null)
+                continue;
+
+            var distanceSquared = (entrance.transform.position - vehiclePosition).sqrMagnitude;
+            if (distanceSquared >= nearestDistanceSquared)
+                continue;
+
+            nearest = entrance;
+            nearestDistanceSquared = distanceSquared;
+        }
+
+        distance = nearest == null
+            ? float.PositiveInfinity
+            : Mathf.Sqrt(nearestDistanceSquared);
+        return nearest;
     }
 
     private void HandleVehicleVariablesChanged()
@@ -1079,6 +1256,7 @@ internal sealed class BentleyContinentalGTSpeedRuntime : MonoBehaviour
     {
         StopDrivetrainReadiness();
         StopExitObservation();
+        StopWarehouseExitGuard("game-unloaded");
         foreach (var audio in audioControllers)
         {
             if (audio == null)
