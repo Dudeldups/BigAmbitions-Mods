@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "blendFile": "LamborghiniAventadorLightOverlays.blend",
+  "blendSha256": "17f7e2393b78afdad94394d603b1c2c7066b1efc3588e65444500ce45235c715",
+  "productionSha256": "34f24728ca58a0a7d99af4d71343226edd12e3a6fc3a3f6e53d393b679e7077c",
+  "groups": [
+    {
+      "name": "Indicator_Side_L",
+      "source": "Object_12",
+      "sourceVertexCount": 1695,
+      "sourceFaceCount": 2108,
+      "faceCount": 60,
+      "partialNeighborFaces": 0
+    },
+    {
+      "name": "Indicator_Side_R",
+      "source": "Object_12",
+      "sourceVertexCount": 1695,
+      "sourceFaceCount": 2108,
+      "faceCount": 60,
+      "partialNeighborFaces": 0
+    },
+    {
+      "name": "DRL",
+      "source": "Object_25",
+      "sourceVertexCount": 8342,
+      "sourceFaceCount": 6514,
+      "faceCount": 76,
+      "partialNeighborFaces": 0
+    },
+    {
+      "name": "Headlights",
+      "source": "Object_25",
+      "sourceVertexCount": 8342,
+      "sourceFaceCount": 6514,
+      "faceCount": 120,
+      "partialNeighborFaces": 0
+    },
+    {
+      "name": "High_Mounted_Brake_Light",
+      "source": "Object_25",
+      "sourceVertexCount": 8342,
+      "sourceFaceCount": 6514,
+      "faceCount": 28,
+      "partialNeighborFaces": 0
+    },
+    {
+      "name": "Indicator_FL",
+      "source": "Object_25",
+      "sourceVertexCount": 8342,
+      "sourceFaceCount": 6514,
+      "faceCount": 168,
+      "partialNeighborFaces": 0
+    },
+    {
+      "name": "Indicator_FR",
+      "source": "Object_25",
+      "sourceVertexCount": 8342,
+      "sourceFaceCount": 6514,
+      "faceCount": 140,
+      "partialNeighborFaces": 0
+    },
+    {
+      "name": "Reverse_Lights",
+      "source": "Object_25",
+      "sourceVertexCount": 8342,
+      "sourceFaceCount": 6514,
+      "faceCount": 9,
+      "partialNeighborFaces": 7
+    },
+    {
+      "name": "Rear_Driving_Brake_Lights",
+      "source": "Object_42",
+      "sourceVertexCount": 566,
+      "sourceFaceCount": 666,
+      "faceCount": 328,
+      "partialNeighborFaces": 38
+    },
+    {
+      "name": "Indicator_RL",
+      "source": "Object_44",
+      "sourceVertexCount": 38,
+      "sourceFaceCount": 26,
+      "faceCount": 13,
+      "partialNeighborFaces": 0
+    },
+    {
+      "name": "Indicator_RR",
+      "source": "Object_44",
+      "sourceVertexCount": 38,
+      "sourceFaceCount": 26,
+      "faceCount": 13,
+      "partialNeighborFaces": 0
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "LamborghiniAventador.Editor",
+  "rootNamespace": "",
+  "references": [
+    "LamborghiniAventador",
+    "ModBuilder.Editor",
+    "Unity.Collections",
+    "Unity.Mathematics",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.RenderPipelines.HighDefinition.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "ExternalPlugins.dll",
+    "BigAmbitions.dll",
+    "HGPlugins.dll"
+  ],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

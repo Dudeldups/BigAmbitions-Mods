@@ -1,0 +1,787 @@
+{
+  "kind": "vehicle",
+  "schemaVersion": 1,
+  "vehicleId": "Lamborghini_Aventador",
+  "profile": "standard-road-car",
+  "specsPath": "Assets/Mods/Lamborghini_Aventador/VEHICLE_SPECS.md",
+  "exceptions": {},
+  "additionalRequirements": {},
+  "evidence": {
+    "integration.mod-registration": [
+      {
+        "method": "static",
+        "status": "not_run"
+      },
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "integration.dealer-purchase": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "integration.parked-spawn": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "integration.save-reload": [
+      {
+        "method": "runtime",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "integration.menu-reload": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "integration.unload-cleanup": [
+      {
+        "method": "static",
+        "status": "not_run"
+      },
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "integration.dependency-gates": [
+      {
+        "method": "static",
+        "status": "not_run"
+      },
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "integration.vehicle-identity": [
+      {
+        "method": "static",
+        "status": "not_run"
+      },
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "geometry.scale-and-stance": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "geometry.body-colliders": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "geometry.visual-groups": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "geometry.glass": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "geometry.instancing": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "wheels.player-axles": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "wheels.player-rolling": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "wheels.player-tyres": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "wheels.traffic-native-graphics": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "wheels.brake-calipers": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "dynamics.documented-specs": [
+      {
+        "method": "static",
+        "status": "not_run"
+      }
+    ],
+    "dynamics.acceleration": [
+      {
+        "method": "runtime",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "dynamics.braking": [
+      {
+        "method": "runtime",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "dynamics.steering": [
+      {
+        "method": "runtime",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "dynamics.suspension": [
+      {
+        "method": "runtime",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "dynamics.powertrain-recovery": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "dynamics.reverse-and-neutral": [
+      {
+        "method": "runtime",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "dynamics.no-false-impacts": [
+      {
+        "method": "runtime",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "occupants.seat-anchors": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "occupants.hands-and-steering": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "occupants.entry-exit": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "occupants.parked-state": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "occupants.animation-cleanup": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "lighting.headlights": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "lighting.drl": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "lighting.tail-lights": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "lighting.brake-lights": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "lighting.reverse-lights": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "lighting.indicators-hazards": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "lighting.deformable-assemblies": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "paint.dealer-pre-entry": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "paint.persisted": [
+      {
+        "method": "runtime",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "paint.repaint": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "paint.material-capability": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "paint.per-instance-isolation": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "paint.damage-service-stability": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "damage.native-condition": [
+      {
+        "method": "runtime",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "damage.regional-deformation": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "damage.details-follow-body": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "damage.repeated-impacts": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "damage.exact-repair": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "damage.ownership-isolation": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "damage.hot-path-performance": [
+      {
+        "method": "static",
+        "status": "not_run"
+      },
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "audio.engine-idle": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "audio.rev-load": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "audio.engine-start-stop": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "audio.level-pitch-limits": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "audio.horn": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "services.refuel": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "services.repair": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "services.wash": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "services.wash-exit-cleanup": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "services.dirt-wear": [
+      {
+        "method": "runtime",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "services.storage": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "traffic.native-pool": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "traffic.spawn-and-appearance": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "traffic.wheel-road-contact": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "traffic.pool-isolation": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "traffic.private-driver-eligibility": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "traffic.private-driver-dispatch": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "traffic.private-driver-reload": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "traffic.spawn-frequency": [
+      {
+        "method": "static",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ],
+    "quality.event-driven-hooks": [
+      {
+        "method": "static",
+        "status": "not_run"
+      }
+    ],
+    "quality.per-frame-budget": [
+      {
+        "method": "static",
+        "status": "not_run"
+      },
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "quality.idempotent-init": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "quality.debug-off-by-default": [
+      {
+        "method": "static",
+        "status": "not_run"
+      },
+      {
+        "method": "package",
+        "status": "not_run"
+      }
+    ],
+    "quality.foreign-mod-safety": [
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "quality.regression-evidence": [
+      {
+        "method": "static",
+        "status": "not_run"
+      }
+    ],
+    "release.windows-bundle": [
+      {
+        "method": "package",
+        "status": "not_run"
+      },
+      {
+        "method": "unity_editor",
+        "status": "not_run"
+      }
+    ],
+    "release.macos-bundle": [
+      {
+        "method": "package",
+        "status": "not_run"
+      }
+    ],
+    "release.manifest-localization": [
+      {
+        "method": "static",
+        "status": "not_run"
+      },
+      {
+        "method": "package",
+        "status": "not_run"
+      }
+    ],
+    "release.third-party-attribution": [
+      {
+        "method": "static",
+        "status": "not_run"
+      },
+      {
+        "method": "package",
+        "status": "not_run"
+      }
+    ],
+    "release.install-files": [
+      {
+        "method": "package",
+        "status": "not_run"
+      }
+    ],
+    "release.editor-and-user-signoff": [
+      {
+        "method": "static",
+        "status": "not_run"
+      },
+      {
+        "method": "in_game",
+        "status": "not_run"
+      }
+    ]
+  }
+}
